@@ -1,0 +1,25 @@
+[{'type': 'NOT_FOUND', 'path': ['user'], 'locations': [{'line': 3, 'column': 7}], 'message': "Could not resolve to a User with the login of 'dependabot'."}]
+[{'type': 'NOT_FOUND', 'path': ['user'], 'locations': [{'line': 3, 'column': 7}], 'message': "Could not resolve to a User with the login of 'dependabot'."}]
+[{'type': 'NOT_FOUND', 'path': ['user'], 'locations': [{'line': 3, 'column': 7}], 'message': "Could not resolve to a User with the login of 'dependabot'."}]
+User: mariajgrimaldi, Organizations: eduNEXT, fccn, openedx, edunext-hr
+User: anukaal, Organizations: EddieHubCommunity, Thundersharp-in
+User: tecoholic, Organizations: open-craft, openedx
+User: Jawayria, Organizations: None
+User: feanil, Organizations: openedx
+User: sarina, Organizations: openedx
+User: UsamaSadiq, Organizations: edx, arbisoft, openedx
+User: nedbat, Organizations: python, BostonPython
+User: felipemontoya, Organizations: edx, eduNEXT, arcco, fccn, openedx, edunext-hr, edunext-ops
+User: Henrrypg, Organizations: eduNEXT, fccn
+User: JuanDavidBuitrago, Organizations: eduNEXT
+User: edx-requirements-bot, Organizations: openedx
+User: xitij2000, Organizations: EpicGames, open-craft, NVIDIAGameWorks, 9dot9Media, openedx
+User: irfanuddinahmad, Organizations: openedx
+User: MAAngamarca, Organizations: eduNEXT
+User: kdmccormick, Organizations: openedx
+User: bilaltahir21, Organizations: None
+User: jajjibhai008, Organizations: openedx
+User: awais786, Organizations: openedx
+User: BryanttV, Organizations: eduNEXT, openedx
+User: nsprenkle, Organizations: edx, openedx
+Total number of users who opened pull requests in the repository openedx-filters belonging to openedx: 21

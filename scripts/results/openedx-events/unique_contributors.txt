@@ -1,0 +1,41 @@
+[{'type': 'NOT_FOUND', 'path': ['user'], 'locations': [{'line': 3, 'column': 7}], 'message': "Could not resolve to a User with the login of 'dependabot'."}]
+[{'type': 'NOT_FOUND', 'path': ['user'], 'locations': [{'line': 3, 'column': 7}], 'message': "Could not resolve to a User with the login of 'dependabot'."}]
+[{'type': 'NOT_FOUND', 'path': ['user'], 'locations': [{'line': 3, 'column': 7}], 'message': "Could not resolve to a User with the login of 'dependabot'."}]
+[{'type': 'NOT_FOUND', 'path': ['user'], 'locations': [{'line': 3, 'column': 7}], 'message': "Could not resolve to a User with the login of 'dependabot'."}]
+[{'type': 'NOT_FOUND', 'path': ['user'], 'locations': [{'line': 3, 'column': 7}], 'message': "Could not resolve to a User with the login of 'dependabot'."}]
+User: morenol, Organizations: None
+User: mariajgrimaldi, Organizations: eduNEXT, fccn, openedx, edunext-hr
+User: feanil, Organizations: openedx
+User: jinder1s, Organizations: None
+User: JuanDavidBuitrago, Organizations: eduNEXT
+User: robrap, Organizations: openedx
+User: xitij2000, Organizations: EpicGames, open-craft, NVIDIAGameWorks, 9dot9Media, openedx
+User: rgraber, Organizations: None
+User: sarina, Organizations: openedx
+User: e0d, Organizations: openedx
+User: timmc-edx, Organizations: edx, openedx
+User: Jawayria, Organizations: None
+User: whuang1202, Organizations: None
+User: DeimerM, Organizations: eduNEXT, fccn
+User: UsamaSadiq, Organizations: edx, arbisoft, openedx
+User: edx-requirements-bot, Organizations: openedx
+User: kdmccormick, Organizations: openedx
+User: nedbat, Organizations: python, BostonPython
+User: navinkarkera, Organizations: open-craft, openedx
+User: NikolayBorovenskiy, Organizations: None
+User: felipemontoya, Organizations: edx, eduNEXT, arcco, fccn, openedx, edunext-hr, edunext-ops
+User: Ian2012, Organizations: eduNEXT, fccn, openedx
+User: AhtishamShahid, Organizations: openedx
+User: rpenido, Organizations: open-craft, openedx, connectdash
+User: justinhynes, Organizations: edx, openedx
+User: bmtcril, Organizations: openedx
+User: ilee2u, Organizations: edx, openedx
+User: saadyousafarbi, Organizations: openedx
+User: zubairshakoorarbisoft, Organizations: None
+User: kyrylo-kh, Organizations: openedx
+User: Zacharis278, Organizations: edx, openedx
+User: yusuf-musleh, Organizations: open-craft, Verbozeteam, openedx
+User: irfanuddinahmad, Organizations: openedx
+User: BryanttV, Organizations: eduNEXT, openedx
+User: iloveagent57, Organizations: edx, openedx
+Total number of users who opened pull requests in the repository openedx-events belonging to openedx: 35
