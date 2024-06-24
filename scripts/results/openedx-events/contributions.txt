@@ -1,0 +1,288 @@
+All Unique Contributions:
+  URL: https://github.com/openedx/openedx-events/pull/1, Description: doc: Add purpose of this repo ADR, Author: morenol
+  URL: https://github.com/openedx/openedx-events/pull/2, Description: feat: add Hooks Extension Framework tooling for filters, Author: mariajgrimaldi
+  URL: https://github.com/openedx/openedx-events/pull/3, Description: feat: change login signal to only include user parameter, Author: morenol
+  URL: https://github.com/openedx/openedx-events/pull/4, Description: docs: Open edX events naming, Author: mariajgrimaldi
+  URL: https://github.com/openedx/openedx-events/pull/5, Description: test: testing attr package, Author: mariajgrimaldi
+  URL: https://github.com/openedx/openedx-events/pull/6, Description: refactor: change folder structure following community feedback, Author: mariajgrimaldi
+  URL: https://github.com/openedx/openedx-events/pull/7, Description: feat: add necessary tooling for Open edX events , Author: mariajgrimaldi
+  URL: https://github.com/openedx/openedx-events/pull/8, Description: feat: add data attributes definition for learning subdomain, Author: mariajgrimaldi
+  URL: https://github.com/openedx/openedx-events/pull/9, Description: feat: preliminary signal definition, Author: mariajgrimaldi
+  URL: https://github.com/openedx/openedx-events/pull/10, Description: test: add testing configuration, Author: mariajgrimaldi
+  URL: https://github.com/openedx/openedx-events/pull/11, Description: docs: update readme with project specifications, Author: mariajgrimaldi
+  URL: https://github.com/openedx/openedx-events/pull/12, Description: docs: update repo purpose, Author: mariajgrimaldi
+  URL: https://github.com/openedx/openedx-events/pull/13, Description: chore: add bumpversion configuration, Author: mariajgrimaldi
+  URL: https://github.com/openedx/openedx-events/pull/14, Description: fix: fix pypi rendering error, Author: mariajgrimaldi
+  URL: https://github.com/openedx/openedx-events/pull/15, Description: chores: update requirements and fix resulting errors, Author: mariajgrimaldi
+  URL: https://github.com/openedx/openedx-events/pull/16, Description: fix: add constraint to django so edx-opaque-keys can be used, Author: mariajgrimaldi
+  URL: https://github.com/openedx/openedx-events/pull/17, Description: feat: add Medatada as data attribute, Author: mariajgrimaldi
+  URL: https://github.com/openedx/openedx-events/pull/18, Description: feat: preliminary signal definition, Author: mariajgrimaldi
+  URL: https://github.com/openedx/openedx-events/pull/19, Description: test: remove max-doc-length from tox.ini file due to community recommendation, Author: mariajgrimaldi
+  URL: https://github.com/openedx/openedx-events/pull/20, Description: feat: add data attributes definition for learning subdomain, Author: mariajgrimaldi
+  URL: https://github.com/openedx/openedx-events/pull/21, Description: docs: add Open edX Events status ADR, Author: mariajgrimaldi
+  URL: https://github.com/openedx/openedx-events/pull/22, Description: ci: enable coverage in github actions, Author: mariajgrimaldi
+  URL: https://github.com/openedx/openedx-events/pull/23, Description: refactor: remove unnecessary instantiation check, Author: mariajgrimaldi
+  URL: https://github.com/openedx/openedx-events/pull/24, Description: feat: add event_status to inline docs add ADR to support it , Author: mariajgrimaldi
+  URL: https://github.com/openedx/openedx-events/pull/25, Description: fix: remove assignment to metadata object, Author: mariajgrimaldi
+  URL: https://github.com/openedx/openedx-events/pull/26, Description: test: add signal isolation class and methods, Author: mariajgrimaldi
+  URL: https://github.com/openedx/openedx-events/pull/27, Description: fix: remove TestCase inheritance to allow consistent method resolution, Author: mariajgrimaldi
+  URL: https://github.com/openedx/openedx-events/pull/29, Description: feat: change send_robust to default method, Author: mariajgrimaldi
+  URL: https://github.com/openedx/openedx-events/pull/30, Description: temp: A spike for using the current attrs objects with Avro., Author: feanil
+  URL: https://github.com/openedx/openedx-events/pull/31, Description: feat: avro and attr bridge for event bus, Author: jinder1s
+  URL: https://github.com/openedx/openedx-events/pull/32, Description: Mjg/authoring events, Author: mariajgrimaldi
+  URL: https://github.com/openedx/openedx-events/pull/33, Description: Mjg/learning events definition, Author: mariajgrimaldi
+  URL: https://github.com/openedx/openedx-events/pull/34, Description: build: incrementing version and updating changelog, Author: jinder1s
+  URL: https://github.com/openedx/openedx-events/pull/35, Description: doc: adding adr about avro attrs bridge, Author: jinder1s
+  URL: https://github.com/openedx/openedx-events/pull/36, Description: feat: Adding LicenseLifecycle data event, Author: jinder1s
+  URL: https://github.com/openedx/openedx-events/pull/37, Description: refactor: Name changes to fit standards, Author: jinder1s
+  URL: https://github.com/openedx/openedx-events/pull/40, Description: docs: event bus related ADRs, Author: jinder1s
+  URL: https://github.com/openedx/openedx-events/pull/41, Description: Modify avroattrsbridge to work with signal classes instead, Author: jinder1s
+  URL: https://github.com/openedx/openedx-events/pull/42, Description: Temp Adr PR, Author: jinder1s
+  URL: https://github.com/openedx/openedx-events/pull/43, Description: refactor: undate directory structure, Author: jinder1s
+  URL: https://github.com/openedx/openedx-events/pull/44, Description: Temp PR, Author: jinder1s
+  URL: https://github.com/openedx/openedx-events/pull/45, Description: feat: Discussion event extraction, in openedx-event library, Author: JuanDavidBuitrago
+  URL: https://github.com/openedx/openedx-events/pull/46, Description: docs: update docs including organization from eduNEXT/edx to openedx, Author: mariajgrimaldi
+  URL: https://github.com/openedx/openedx-events/pull/47, Description: refactor: add missing information to data classes, Author: mariajgrimaldi
+  URL: https://github.com/openedx/openedx-events/pull/48, Description: docs: fix eduNEXT to openedx move, Author: robrap
+  URL: https://github.com/openedx/openedx-events/pull/49, Description: build: Move where we set the DJANGO_SETTINGS_MODULE., Author: feanil
+  URL: https://github.com/openedx/openedx-events/pull/50, Description: build: Fail docs builds on sphinx warnings., Author: feanil
+  URL: https://github.com/openedx/openedx-events/pull/51, Description: feat: update DiscussionTopicContext to add additional context [BD-38] [TNL-9673], Author: xitij2000
+  URL: https://github.com/openedx/openedx-events/pull/52, Description: docs: point to readthedocs in README, Author: robrap
+  URL: https://github.com/openedx/openedx-events/pull/53, Description: chore: version bump, Author: rgraber
+  URL: https://github.com/openedx/openedx-events/pull/54, Description: feat: handle optional fields in bridge, Author: rgraber
+  URL: https://github.com/openedx/openedx-events/pull/55, Description: build: Add structured Maintainers information, Author: sarina
+  URL: https://github.com/openedx/openedx-events/pull/57, Description: docs: change readme structure following maintainers OEP, Author: mariajgrimaldi
+  URL: https://github.com/openedx/openedx-events/pull/58, Description: fix: remove email from subscription license event, Author: rgraber
+  URL: https://github.com/openedx/openedx-events/pull/60, Description: refactor!: split AvroAttrsBridge into distinct methods, Author: rgraber
+  URL: https://github.com/openedx/openedx-events/pull/61, Description: fix: need the a, Author: e0d
+  URL: https://github.com/openedx/openedx-events/pull/62, Description: docs: Fix org name in getting-started instructions, Author: timmc-edx
+  URL: https://github.com/openedx/openedx-events/pull/64, Description: fix: installed pip and pip-tools in upgrade script, Author: Jawayria
+  URL: https://github.com/openedx/openedx-events/pull/68, Description: unit tests for serializer, Author: whuang1202
+  URL: https://github.com/openedx/openedx-events/pull/70, Description: fix: Install pip and pip-tools in upgrade script, Author: Jawayria
+  URL: https://github.com/openedx/openedx-events/pull/71, Description: fix: Install pip and pip-tools in upgrade script, Author: Jawayria
+  URL: https://github.com/openedx/openedx-events/pull/73, Description: docs: add ADR for events and pii, Author: whuang1202
+  URL: https://github.com/openedx/openedx-events/pull/75, Description: fix: Update the slack invite link., Author: feanil
+  URL: https://github.com/openedx/openedx-events/pull/80, Description: docs: add open edx event guide, Author: mariajgrimaldi
+  URL: https://github.com/openedx/openedx-events/pull/81, Description: feat: new COURSE_CATALOG_INFO_CHANGED signal for course_authoring, Author: rgraber
+  URL: https://github.com/openedx/openedx-events/pull/83, Description: test: Add unit test locking in KeyError when signal not found, Author: timmc-edx
+  URL: https://github.com/openedx/openedx-events/pull/84, Description: fix: Handle optional (None) values for custom serializers, Author: timmc-edx
+  URL: https://github.com/openedx/openedx-events/pull/85, Description: feat: Configurable loading of event bus producer, Author: timmc-edx
+  URL: https://github.com/openedx/openedx-events/pull/95, Description: feat!: Removed `org` and `number` fields from `CourseCatalogData`, Author: timmc-edx
+  URL: https://github.com/openedx/openedx-events/pull/97, Description: build: add upgrade Python requirements GitHub action, Author: mariajgrimaldi
+  URL: https://github.com/openedx/openedx-events/pull/98, Description: docs: minor fixups/re-wording to docstrings, Author: mariajgrimaldi
+  URL: https://github.com/openedx/openedx-events/pull/99, Description: Feat: new PERSISTENT_GRADE_SUMMARY signal , Author: DeimerM
+  URL: https://github.com/openedx/openedx-events/pull/100, Description: docs: update readme following oep-55 recommendations, Author: mariajgrimaldi
+  URL: https://github.com/openedx/openedx-events/pull/101, Description: build: add linter for commit messages, Author: mariajgrimaldi
+  URL: https://github.com/openedx/openedx-events/pull/102, Description: chore: upgrade requirements, Author: mariajgrimaldi
+  URL: https://github.com/openedx/openedx-events/pull/103, Description: test: update command for pypi friendly package check, Author: mariajgrimaldi
+  URL: https://github.com/openedx/openedx-events/pull/104, Description: build: update make upgrade command, Author: UsamaSadiq
+  URL: https://github.com/openedx/openedx-events/pull/105, Description: Fix github url strings (org edx -> openedx), Author: sarina
+  URL: https://github.com/openedx/openedx-events/pull/106, Description: build: change GitHub to community maintained repository health file, Author: mariajgrimaldi
+  URL: https://github.com/openedx/openedx-events/pull/107, Description: Upgrade from Django 2.0 to Django 3.0, Author: UsamaSadiq
+  URL: https://github.com/openedx/openedx-events/pull/108, Description: fix: add missing secrets for requirements job, Author: mariajgrimaldi
+  URL: https://github.com/openedx/openedx-events/pull/109, Description: Python Requirements Update, Author: edx-requirements-bot
+  URL: https://github.com/openedx/openedx-events/pull/110, Description: Python Requirements Update, Author: edx-requirements-bot
+  URL: https://github.com/openedx/openedx-events/pull/111, Description: ci: add coverage step as part of CI pipeline, Author: mariajgrimaldi
+  URL: https://github.com/openedx/openedx-events/pull/112, Description: Update github paths, Author: sarina
+  URL: https://github.com/openedx/openedx-events/pull/113, Description: docs: update issue templates, Author: mariajgrimaldi
+  URL: https://github.com/openedx/openedx-events/pull/114, Description: docs: ADR for course-catalog-info-changed event design, Author: rgraber
+  URL: https://github.com/openedx/openedx-events/pull/115, Description: docs: add reference to documentation in backstage, Author: mariajgrimaldi
+  URL: https://github.com/openedx/openedx-events/pull/116, Description: fix: broken upgrade script to use proper syntax, Author: sarina
+  URL: https://github.com/openedx/openedx-events/pull/117, Description: Python Requirements Update, Author: edx-requirements-bot
+  URL: https://github.com/openedx/openedx-events/pull/118, Description: build: expand '$default-branch' in upgrade workflow, Author: kdmccormick
+  URL: https://github.com/openedx/openedx-events/pull/119, Description: fix: github workflow -branch to actual default branch, Author: sarina
+  URL: https://github.com/openedx/openedx-events/pull/120, Description: Bump version: 0.12.0 → 0.13.0, Author: mariajgrimaldi
+  URL: https://github.com/openedx/openedx-events/pull/122, Description: feat: remove unused short_description field on CourseCatalogData, Author: rgraber
+  URL: https://github.com/openedx/openedx-events/pull/123, Description: docs: Bump version to 1.x to acknowledge that this is in use in production, Author: timmc-edx
+  URL: https://github.com/openedx/openedx-events/pull/124, Description: Python Requirements Update, Author: edx-requirements-bot
+  URL: https://github.com/openedx/openedx-events/pull/125, Description: Python Requirements Update, Author: edx-requirements-bot
+  URL: https://github.com/openedx/openedx-events/pull/126, Description: build: this repo is not branched for Open edX releases, Author: nedbat
+  URL: https://github.com/openedx/openedx-events/pull/127, Description: Python Requirements Update, Author: edx-requirements-bot
+  URL: https://github.com/openedx/openedx-events/pull/129, Description: feat!: Remove subscription license signal and data, Author: timmc-edx
+  URL: https://github.com/openedx/openedx-events/pull/130, Description: Python Requirements Update, Author: edx-requirements-bot
+  URL: https://github.com/openedx/openedx-events/pull/131, Description: feat!: remove effort field from CourseCatalogData, Author: rgraber
+  URL: https://github.com/openedx/openedx-events/pull/132, Description: fix: Increase unit test coverage (string_schema, format_responses), Author: timmc-edx
+  URL: https://github.com/openedx/openedx-events/pull/134, Description: docs: Clean up EventBus TODO markers, Author: timmc-edx
+  URL: https://github.com/openedx/openedx-events/pull/135, Description: Python Requirements Update, Author: edx-requirements-bot
+  URL: https://github.com/openedx/openedx-events/pull/137, Description: Python Requirements Update, Author: edx-requirements-bot
+  URL: https://github.com/openedx/openedx-events/pull/138, Description: fix: use None instead of null as default value for optional fields, Author: rgraber
+  URL: https://github.com/openedx/openedx-events/pull/139, Description: fix: contrain fastavro, Author: robrap
+  URL: https://github.com/openedx/openedx-events/pull/141, Description: Python Requirements Update, Author: edx-requirements-bot
+  URL: https://github.com/openedx/openedx-events/pull/142, Description: Python Requirements Update, Author: edx-requirements-bot
+  URL: https://github.com/openedx/openedx-events/pull/143, Description: feat: adds events to handle changes in xblocks, Author: navinkarkera
+  URL: https://github.com/openedx/openedx-events/pull/144, Description: Python Requirements Update, Author: edx-requirements-bot
+  URL: https://github.com/openedx/openedx-events/pull/145, Description: docs: Note that PII may also enter logs, Author: timmc-edx
+  URL: https://github.com/openedx/openedx-events/pull/146, Description: Python Requirements Update, Author: edx-requirements-bot
+  URL: https://github.com/openedx/openedx-events/pull/148, Description: Python Requirements Update, Author: edx-requirements-bot
+  URL: https://github.com/openedx/openedx-events/pull/149, Description: docs: mark implemented ADRs as accepted, Author: rgraber
+  URL: https://github.com/openedx/openedx-events/pull/150, Description: docs: Use real example for `EVENT_BUS_PRODUCER`, Author: timmc-edx
+  URL: https://github.com/openedx/openedx-events/pull/152, Description: feat: add event_metadata parameter to EventBusProducer send API, Author: rgraber
+  URL: https://github.com/openedx/openedx-events/pull/154, Description: feat!: make event_metadata parameter required, Author: rgraber
+  URL: https://github.com/openedx/openedx-events/pull/155, Description: fix: update version to 4.0.0, Author: rgraber
+  URL: https://github.com/openedx/openedx-events/pull/156, Description: Python Requirements Update, Author: edx-requirements-bot
+  URL: https://github.com/openedx/openedx-events/pull/157, Description: Python Requirements Update, Author: edx-requirements-bot
+  URL: https://github.com/openedx/openedx-events/pull/158, Description: [FC-0004][RG]/edxoldmng 218/Signals to save/delete certificate configuration for a course., Author: NikolayBorovenskiy
+  URL: https://github.com/openedx/openedx-events/pull/160, Description: Python Requirements Update, Author: edx-requirements-bot
+  URL: https://github.com/openedx/openedx-events/pull/163, Description: Python Requirements Update, Author: edx-requirements-bot
+  URL: https://github.com/openedx/openedx-events/pull/164, Description: Python Requirements Update, Author: edx-requirements-bot
+  URL: https://github.com/openedx/openedx-events/pull/165, Description: feat: xblock skill verification event, Author: navinkarkera
+  URL: https://github.com/openedx/openedx-events/pull/166, Description: Python Requirements Update, Author: edx-requirements-bot
+  URL: https://github.com/openedx/openedx-events/pull/167, Description: Python Requirements Update, Author: edx-requirements-bot
+  URL: https://github.com/openedx/openedx-events/pull/168, Description: feat: updated event signal metadata time, Author: robrap
+  URL: https://github.com/openedx/openedx-events/pull/169, Description: docs: use new standard Open edX for documentation, Author: mariajgrimaldi
+  URL: https://github.com/openedx/openedx-events/pull/170, Description: refactor: use collections.abc import to use with python 3.8 and 3.10, Author: JuanDavidBuitrago
+  URL: https://github.com/openedx/openedx-events/pull/172, Description: fix: make minorversion actually optional, Author: robrap
+  URL: https://github.com/openedx/openedx-events/pull/173, Description: Python Requirements Update, Author: edx-requirements-bot
+  URL: https://github.com/openedx/openedx-events/pull/174, Description: docs: bump version for patch release, Author: mariajgrimaldi
+  URL: https://github.com/openedx/openedx-events/pull/175, Description: feat: add send_event_with_custom_metadata, Author: robrap
+  URL: https://github.com/openedx/openedx-events/pull/176, Description: Python Requirements Update, Author: edx-requirements-bot
+  URL: https://github.com/openedx/openedx-events/pull/177, Description: test: Check that there are no data/metadata key collisions, Author: timmc-edx
+  URL: https://github.com/openedx/openedx-events/pull/179, Description: feat!: Only accept metadata object in `send_event_with_custom_metadata`, Author: timmc-edx
+  URL: https://github.com/openedx/openedx-events/pull/180, Description: docs: Include new cert signals in changelog, Author: timmc-edx
+  URL: https://github.com/openedx/openedx-events/pull/181, Description: test: Automatically discover new signals.py files in tests, Author: timmc-edx
+  URL: https://github.com/openedx/openedx-events/pull/182, Description: Python Requirements Update, Author: edx-requirements-bot
+  URL: https://github.com/openedx/openedx-events/pull/183, Description: Python Requirements Update, Author: edx-requirements-bot
+  URL: https://github.com/openedx/openedx-events/pull/185, Description: Python Requirements Update, Author: edx-requirements-bot
+  URL: https://github.com/openedx/openedx-events/pull/186, Description: Update standard workflow files., Author: feanil
+  URL: https://github.com/openedx/openedx-events/pull/187, Description: refactor!: move load_all_events to more visible location, Author: rgraber
+  URL: https://github.com/openedx/openedx-events/pull/188, Description: Python Requirements Update, Author: edx-requirements-bot
+  URL: https://github.com/openedx/openedx-events/pull/189, Description: refactor!: move serializer and deserializer utility methods out of tests, Author: navinkarkera
+  URL: https://github.com/openedx/openedx-events/pull/190, Description: Python Requirements Update, Author: edx-requirements-bot
+  URL: https://github.com/openedx/openedx-events/pull/191, Description: Python Requirements Update, Author: edx-requirements-bot
+  URL: https://github.com/openedx/openedx-events/pull/192, Description: Python Requirements Update, Author: edx-requirements-bot
+  URL: https://github.com/openedx/openedx-events/pull/193, Description: Python Requirements Update, Author: edx-requirements-bot
+  URL: https://github.com/openedx/openedx-events/pull/194, Description: docs: fix incorrect event annotation, Author: robrap
+  URL: https://github.com/openedx/openedx-events/pull/195, Description: Python Requirements Update, Author: edx-requirements-bot
+  URL: https://github.com/openedx/openedx-events/pull/197, Description: fix: broken link in adding-events-to-event-bus.rst, Author: robrap
+  URL: https://github.com/openedx/openedx-events/pull/198, Description: fix: creating-new-events.rst table, Author: robrap
+  URL: https://github.com/openedx/openedx-events/pull/199, Description: Python Requirements Update, Author: edx-requirements-bot
+  URL: https://github.com/openedx/openedx-events/pull/200, Description: feat: configurable loading of event bus consumer, Author: navinkarkera
+  URL: https://github.com/openedx/openedx-events/pull/201, Description: fix: Remove yanked codecov package to unbreak dev; upgrade GH action, Author: timmc-edx
+  URL: https://github.com/openedx/openedx-events/pull/202, Description: chore: Switch from edx-sphinx-theme to sphinx-book-theme, Author: xitij2000
+  URL: https://github.com/openedx/openedx-events/pull/205, Description: Python Requirements Update, Author: edx-requirements-bot
+  URL: https://github.com/openedx/openedx-events/pull/206, Description: Adding a codeowners file as part of the maintainers protocol, Author: felipemontoya
+  URL: https://github.com/openedx/openedx-events/pull/207, Description: Adding dependabot as part of the maintainers protocol, Author: felipemontoya
+  URL: https://github.com/openedx/openedx-events/pull/208, Description: Python Requirements Update, Author: edx-requirements-bot
+  URL: https://github.com/openedx/openedx-events/pull/211, Description: docs: Adjust date of pending 7.1.0 in changelog, Author: timmc-edx
+  URL: https://github.com/openedx/openedx-events/pull/212, Description: feat: add namespace to schemas, Author: rgraber
+  URL: https://github.com/openedx/openedx-events/pull/213, Description: build(deps): bump actions/checkout from 2 to 3, Author: dependabot
+  URL: https://github.com/openedx/openedx-events/pull/214, Description: build(deps): bump actions/setup-python from 2 to 4, Author: dependabot
+  URL: https://github.com/openedx/openedx-events/pull/216, Description: Python Requirements Update, Author: edx-requirements-bot
+  URL: https://github.com/openedx/openedx-events/pull/217, Description: docs: ADR for multiple event types per topic, Author: rgraber
+  URL: https://github.com/openedx/openedx-events/pull/219, Description: feat: make signal parameter optional in preparation for removal, Author: rgraber
+  URL: https://github.com/openedx/openedx-events/pull/220, Description: Python Requirements Update, Author: edx-requirements-bot
+  URL: https://github.com/openedx/openedx-events/pull/221, Description: feat!: remove signal argument from consumer, Author: rgraber
+  URL: https://github.com/openedx/openedx-events/pull/222, Description: Python Requirements Update, Author: edx-requirements-bot
+  URL: https://github.com/openedx/openedx-events/pull/224, Description: docs: adr for enabling producing to event bus via settings, Author: navinkarkera
+  URL: https://github.com/openedx/openedx-events/pull/225, Description: feat: add unit tests around schema evolution, Author: rgraber
+  URL: https://github.com/openedx/openedx-events/pull/227, Description: docs: Add ADR for depending on multiple event bus implementations, Author: timmc-edx
+  URL: https://github.com/openedx/openedx-events/pull/228, Description: Python Requirements Update, Author: edx-requirements-bot
+  URL: https://github.com/openedx/openedx-events/pull/229, Description: fix: use correct subdomain in event_type of XBLOCK_SKILL_VERIFIED, Author: rgraber
+  URL: https://github.com/openedx/openedx-events/pull/230, Description: feat: add signal for event-tracking emission, Author: Ian2012
+  URL: https://github.com/openedx/openedx-events/pull/231, Description: Python Requirements Update, Author: edx-requirements-bot
+  URL: https://github.com/openedx/openedx-events/pull/232, Description: Cag/add support for dicts, Author: Ian2012
+  URL: https://github.com/openedx/openedx-events/pull/233, Description: Python Requirements Update, Author: edx-requirements-bot
+  URL: https://github.com/openedx/openedx-events/pull/234, Description: Added signal for notifications , Author: AhtishamShahid
+  URL: https://github.com/openedx/openedx-events/pull/239, Description: fix: update security contact email for the correct new one, Author: mariajgrimaldi
+  URL: https://github.com/openedx/openedx-events/pull/240, Description: Python Requirements Update, Author: edx-requirements-bot
+  URL: https://github.com/openedx/openedx-events/pull/241, Description: Python Requirements Update, Author: edx-requirements-bot
+  URL: https://github.com/openedx/openedx-events/pull/243, Description: docs: change docs link to edx-platform Hooks guide, Author: kdmccormick
+  URL: https://github.com/openedx/openedx-events/pull/244, Description: feat: add new content authoring event signals, Author: rpenido
+  URL: https://github.com/openedx/openedx-events/pull/245, Description: Python Requirements Update, Author: edx-requirements-bot
+  URL: https://github.com/openedx/openedx-events/pull/246, Description: Python Requirements Update, Author: edx-requirements-bot
+  URL: https://github.com/openedx/openedx-events/pull/248, Description: Python Requirements Update, Author: edx-requirements-bot
+  URL: https://github.com/openedx/openedx-events/pull/249, Description: feat: enable producing to event bus via settings, Author: navinkarkera
+  URL: https://github.com/openedx/openedx-events/pull/252, Description: Python Requirements Update, Author: edx-requirements-bot
+  URL: https://github.com/openedx/openedx-events/pull/253, Description: feat: add new program certificate events, Author: justinhynes
+  URL: https://github.com/openedx/openedx-events/pull/254, Description: Python Requirements Update, Author: edx-requirements-bot
+  URL: https://github.com/openedx/openedx-events/pull/255, Description: Python Requirements Update, Author: edx-requirements-bot
+  URL: https://github.com/openedx/openedx-events/pull/256, Description: feat: add de/serialization for EventsMetadata, Author: rgraber
+  URL: https://github.com/openedx/openedx-events/pull/257, Description: Python Requirements Update, Author: edx-requirements-bot
+  URL: https://github.com/openedx/openedx-events/pull/258, Description: chore: Re-license repository to Apache 2.0, Author: bmtcril
+  URL: https://github.com/openedx/openedx-events/pull/259, Description: Python Requirements Update, Author: edx-requirements-bot
+  URL: https://github.com/openedx/openedx-events/pull/260, Description: fix: readthedocs file renamed, Author: edx-requirements-bot
+  URL: https://github.com/openedx/openedx-events/pull/261, Description: Python Requirements Update, Author: edx-requirements-bot
+  URL: https://github.com/openedx/openedx-events/pull/262, Description: fix: setup.py update using script, Author: edx-requirements-bot
+  URL: https://github.com/openedx/openedx-events/pull/263, Description: Python Requirements Update, Author: edx-requirements-bot
+  URL: https://github.com/openedx/openedx-events/pull/264, Description: build(deps): bump actions/checkout from 3 to 4, Author: dependabot
+  URL: https://github.com/openedx/openedx-events/pull/266, Description: Python Requirements Update, Author: edx-requirements-bot
+  URL: https://github.com/openedx/openedx-events/pull/267, Description: feat: add/remove course staff role events, Author: ilee2u
+  URL: https://github.com/openedx/openedx-events/pull/268, Description: Events for exams IDA, Author: ilee2u
+  URL: https://github.com/openedx/openedx-events/pull/271, Description: Python Requirements Update, Author: edx-requirements-bot
+  URL: https://github.com/openedx/openedx-events/pull/272, Description: feat!: new event bus config format, Author: rgraber
+  URL: https://github.com/openedx/openedx-events/pull/273, Description: feat: create event for discussion events, Author: Ian2012
+  URL: https://github.com/openedx/openedx-events/pull/274, Description: Python Requirements Update, Author: edx-requirements-bot
+  URL: https://github.com/openedx/openedx-events/pull/275, Description: chore: bump version to 8.9.0, Author: Ian2012
+  URL: https://github.com/openedx/openedx-events/pull/276, Description: Python Requirements Update, Author: edx-requirements-bot
+  URL: https://github.com/openedx/openedx-events/pull/277, Description: feat: utility to reset application state before processing event, Author: navinkarkera
+  URL: https://github.com/openedx/openedx-events/pull/278, Description: Python Requirements Update, Author: edx-requirements-bot
+  URL: https://github.com/openedx/openedx-events/pull/281, Description: fix: Replaced whitelist_externals with allowlist_externals in tox and removed tox-battery, Author: edx-requirements-bot
+  URL: https://github.com/openedx/openedx-events/pull/282, Description: Python Requirements Update, Author: edx-requirements-bot
+  URL: https://github.com/openedx/openedx-events/pull/283, Description: fix: Replaced whitelist_externals with allowlist_externals in tox and removed tox-battery, Author: edx-requirements-bot
+  URL: https://github.com/openedx/openedx-events/pull/284, Description: Python Requirements Update, Author: edx-requirements-bot
+  URL: https://github.com/openedx/openedx-events/pull/285, Description: feat: add event for course wide notification request, Author: saadyousafarbi
+  URL: https://github.com/openedx/openedx-events/pull/286, Description: Replaced whitelist_externals with allowlist_externals in tox and removed tox-battery, Author: zubairshakoorarbisoft
+  URL: https://github.com/openedx/openedx-events/pull/287, Description: rsgraber/20231031 fix merge producer configs, Author: rgraber
+  URL: https://github.com/openedx/openedx-events/pull/288, Description: Python Requirements Update, Author: edx-requirements-bot
+  URL: https://github.com/openedx/openedx-events/pull/289, Description: docs: Replace getting-started instructions with link, Author: timmc-edx
+  URL: https://github.com/openedx/openedx-events/pull/290, Description: Python Requirements Update, Author: edx-requirements-bot
+  URL: https://github.com/openedx/openedx-events/pull/291, Description: Python Requirements Update, Author: edx-requirements-bot
+  URL: https://github.com/openedx/openedx-events/pull/292, Description: docs: ADR for outbox pattern and production modes, Author: timmc-edx
+  URL: https://github.com/openedx/openedx-events/pull/293, Description: Python Requirements Update, Author: edx-requirements-bot
+  URL: https://github.com/openedx/openedx-events/pull/294, Description: Python Requirements Update, Author: edx-requirements-bot
+  URL: https://github.com/openedx/openedx-events/pull/295, Description: build(deps): bump actions/setup-python from 4 to 5, Author: dependabot
+  URL: https://github.com/openedx/openedx-events/pull/296, Description: Python Requirements Update, Author: edx-requirements-bot
+  URL: https://github.com/openedx/openedx-events/pull/297, Description: Python Requirements Update, Author: edx-requirements-bot
+  URL: https://github.com/openedx/openedx-events/pull/298, Description: Python Requirements Update, Author: edx-requirements-bot
+  URL: https://github.com/openedx/openedx-events/pull/299, Description: Python Requirements Update, Author: edx-requirements-bot
+  URL: https://github.com/openedx/openedx-events/pull/300, Description: Remove codecov, replace with python-coverage-comment-action, Author: nedbat
+  URL: https://github.com/openedx/openedx-events/pull/301, Description: Python Requirements Update, Author: edx-requirements-bot
+  URL: https://github.com/openedx/openedx-events/pull/302, Description: Python Requirements Update, Author: edx-requirements-bot
+  URL: https://github.com/openedx/openedx-events/pull/303, Description: feat: add new learning events for course grades and badges, Author: kyrylo-kh
+  URL: https://github.com/openedx/openedx-events/pull/304, Description: chore: Updating Python Requirements, Author: mariajgrimaldi
+  URL: https://github.com/openedx/openedx-events/pull/305, Description: feat: use new setting to set ce_source, Author: rgraber
+  URL: https://github.com/openedx/openedx-events/pull/306, Description: build: remove sphinx-book-theme constraint to use latest release, Author: mariajgrimaldi
+  URL: https://github.com/openedx/openedx-events/pull/307, Description: fix: setup.py update using script, Author: mariajgrimaldi
+  URL: https://github.com/openedx/openedx-events/pull/308, Description: Python Requirements Update, Author: edx-requirements-bot
+  URL: https://github.com/openedx/openedx-events/pull/309, Description: feat: add courseaccessrole events, Author: Zacharis278
+  URL: https://github.com/openedx/openedx-events/pull/310, Description: Python Requirements Update, Author: edx-requirements-bot
+  URL: https://github.com/openedx/openedx-events/pull/311, Description: build(deps): bump codecov/codecov-action from 3 to 4, Author: dependabot
+  URL: https://github.com/openedx/openedx-events/pull/312, Description: fix: avoid infinite recursion of openedx-event, Author: Ian2012
+  URL: https://github.com/openedx/openedx-events/pull/313, Description: Python Requirements Update, Author: edx-requirements-bot
+  URL: https://github.com/openedx/openedx-events/pull/314, Description: feat: removed unused permission events, Author: Zacharis278
+  URL: https://github.com/openedx/openedx-events/pull/315, Description: docs: Fix heading of ADR 14, Author: timmc-edx
+  URL: https://github.com/openedx/openedx-events/pull/317, Description: Python Requirements Update, Author: edx-requirements-bot
+  URL: https://github.com/openedx/openedx-events/pull/318, Description: feat: Add autodoc for event annotations, Author: bmtcril
+  URL: https://github.com/openedx/openedx-events/pull/320, Description: feat: add python 3.11 support, Author: edx-requirements-bot
+  URL: https://github.com/openedx/openedx-events/pull/321, Description: Python Requirements Update, Author: edx-requirements-bot
+  URL: https://github.com/openedx/openedx-events/pull/322, Description: chore: modernize repo supporting latest django-app cookiecutter changes, Author: mariajgrimaldi
+  URL: https://github.com/openedx/openedx-events/pull/323, Description: build: replace codecov with python-coverage-comment-action, Author: mariajgrimaldi
+  URL: https://github.com/openedx/openedx-events/pull/324, Description: Python Requirements Update, Author: edx-requirements-bot
+  URL: https://github.com/openedx/openedx-events/pull/325, Description: Python Requirements Update, Author: edx-requirements-bot
+  URL: https://github.com/openedx/openedx-events/pull/326, Description: Python Requirements Update, Author: edx-requirements-bot
+  URL: https://github.com/openedx/openedx-events/pull/327, Description: [FC-0040] feat: Add `CONTENT_OBJECT_TAGS_CHANGED` signal, Author: yusuf-musleh
+  URL: https://github.com/openedx/openedx-events/pull/328, Description: Python Requirements Update, Author: edx-requirements-bot
+  URL: https://github.com/openedx/openedx-events/pull/330, Description: [IGNORE] Mjg/external contrib codecov, Author: mariajgrimaldi
+  URL: https://github.com/openedx/openedx-events/pull/331, Description: Mjg/another uncovered test, Author: mariajgrimaldi
+  URL: https://github.com/openedx/openedx-events/pull/332, Description: Python Requirements Update, Author: edx-requirements-bot
+  URL: https://github.com/openedx/openedx-events/pull/333, Description: feat: Added enterprise subsidy events. OEP-49, Author: irfanuddinahmad
+  URL: https://github.com/openedx/openedx-events/pull/334, Description: Python Requirements Update, Author: edx-requirements-bot
+  URL: https://github.com/openedx/openedx-events/pull/335, Description: feat: add ora submission created event, Author: BryanttV
+  URL: https://github.com/openedx/openedx-events/pull/338, Description: docs: update python classifiers in setup file, Author: mariajgrimaldi
+  URL: https://github.com/openedx/openedx-events/pull/339, Description: build: update codecov action to latest version with repo-specific tokens, Author: mariajgrimaldi
+  URL: https://github.com/openedx/openedx-events/pull/340, Description: Python Requirements Update, Author: edx-requirements-bot
+  URL: https://github.com/openedx/openedx-events/pull/341, Description: refactor: update ora submission data, Author: BryanttV
+  URL: https://github.com/openedx/openedx-events/pull/342, Description: Python Requirements Update, Author: edx-requirements-bot
+  URL: https://github.com/openedx/openedx-events/pull/343, Description: Python Requirements Update, Author: edx-requirements-bot
+  URL: https://github.com/openedx/openedx-events/pull/344, Description: Python Requirements Update, Author: edx-requirements-bot
+  URL: https://github.com/openedx/openedx-events/pull/345, Description: docs: update docs for upcoming release, Author: mariajgrimaldi
+  URL: https://github.com/openedx/openedx-events/pull/346, Description: Python Requirements Update, Author: edx-requirements-bot
+  URL: https://github.com/openedx/openedx-events/pull/347, Description: feat: new enterprise transaction data/signals, Author: iloveagent57
+  URL: https://github.com/openedx/openedx-events/pull/349, Description: Python Requirements Update, Author: edx-requirements-bot
+  URL: https://github.com/openedx/openedx-events/pull/350, Description: Python Requirements Update, Author: edx-requirements-bot
+  URL: https://github.com/openedx/openedx-events/pull/351, Description: Python Requirements Update, Author: edx-requirements-bot
+  URL: https://github.com/openedx/openedx-events/pull/352, Description: chore: Upgrade Python requirements, Author: edx-requirements-bot
+  URL: https://github.com/openedx/openedx-events/pull/353, Description: chore: Upgrade Python requirements, Author: edx-requirements-bot
+  URL: https://github.com/openedx/openedx-events/pull/354, Description: chore: Upgrade Python requirements, Author: edx-requirements-bot
+
+Total Contributions: 285

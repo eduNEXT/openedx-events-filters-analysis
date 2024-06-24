@@ -1,0 +1,169 @@
+All Unique Contributions:
+  URL: https://github.com/openedx/openedx-filters/pull/1, Description: feat: add Hooks Extension Framework tooling for filters #2, Author: mariajgrimaldi
+  URL: https://github.com/openedx/openedx-filters/pull/2, Description: docs: add ADRs for filter tooling and configuration, Author: mariajgrimaldi
+  URL: https://github.com/openedx/openedx-filters/pull/3, Description: test: add missing configuration for testing, Author: mariajgrimaldi
+  URL: https://github.com/openedx/openedx-filters/pull/4, Description: [WIP] feat: add filters implementation P1, Author: mariajgrimaldi
+  URL: https://github.com/openedx/openedx-filters/pull/5, Description: docs: ADR for Open edX filters naming, Author: mariajgrimaldi
+  URL: https://github.com/openedx/openedx-filters/pull/6, Description: refactor: change base exception name to OpenEdxFilterException, Author: mariajgrimaldi
+  URL: https://github.com/openedx/openedx-filters/pull/7, Description: Mjg/refactor tooling, Author: mariajgrimaldi
+  URL: https://github.com/openedx/openedx-filters/pull/8, Description: Mjg/filters data, Author: mariajgrimaldi
+  URL: https://github.com/openedx/openedx-filters/pull/9, Description: feat: add more filters, Author: mariajgrimaldi
+  URL: https://github.com/openedx/openedx-filters/pull/10, Description: docs: changed max-doc-length due to community recommendation, Author: mariajgrimaldi
+  URL: https://github.com/openedx/openedx-filters/pull/11, Description: fix: change variables names to match repository purpose, Author: mariajgrimaldi
+  URL: https://github.com/openedx/openedx-filters/pull/12, Description: fix: add missing configuration for bumpversion, Author: mariajgrimaldi
+  URL: https://github.com/openedx/openedx-filters/pull/13, Description: fix: missing tag configuration for bumpversion, Author: mariajgrimaldi
+  URL: https://github.com/openedx/openedx-filters/pull/14, Description: refactor: change relative imports to absolute to match openedx-events, Author: mariajgrimaldi
+  URL: https://github.com/openedx/openedx-filters/pull/15, Description: Mjg/class based filters poc, Author: mariajgrimaldi
+  URL: https://github.com/openedx/openedx-filters/pull/16, Description: feat: add class based tooling for filters, Author: mariajgrimaldi
+  URL: https://github.com/openedx/openedx-filters/pull/17, Description: [WIP] feat: add Log Strategy for Open edX Public Filter, Author: mariajgrimaldi
+  URL: https://github.com/openedx/openedx-filters/pull/18, Description: Update setup.py, Author: anukaal
+  URL: https://github.com/openedx/openedx-filters/pull/19, Description: docs: update readme with repository info, Author: mariajgrimaldi
+  URL: https://github.com/openedx/openedx-filters/pull/20, Description: feat: add 1st batch of filters, Author: mariajgrimaldi
+  URL: https://github.com/openedx/openedx-filters/pull/21, Description: fix: remove "OpenEdxFilterException:" from exception str repr, Author: mariajgrimaldi
+  URL: https://github.com/openedx/openedx-filters/pull/22, Description:  feat: add 2nd batch of filters, Author: mariajgrimaldi
+  URL: https://github.com/openedx/openedx-filters/pull/23, Description: fix: use run_filter instead of run, Author: mariajgrimaldi
+  URL: https://github.com/openedx/openedx-filters/pull/24, Description: fix: copy dictionary before modifications, Author: mariajgrimaldi
+  URL: https://github.com/openedx/openedx-filters/pull/25, Description: refactor: add fail_silently flag when importing pipeline steps, Author: mariajgrimaldi
+  URL: https://github.com/openedx/openedx-filters/pull/26, Description: feat: add broader range of exceptions for filters to use, Author: mariajgrimaldi
+  URL: https://github.com/openedx/openedx-filters/pull/27, Description: docs: update organization from eduNEXT/edx to openedx, Author: mariajgrimaldi
+  URL: https://github.com/openedx/openedx-filters/pull/28, Description: refactor: add more relevant arguments to certificate creation filter, Author: mariajgrimaldi
+  URL: https://github.com/openedx/openedx-filters/pull/29, Description: test: add test cases for each filter definition, Author: mariajgrimaldi
+  URL: https://github.com/openedx/openedx-filters/pull/30, Description: refactor: change course home filter exception name so it's more descriptive, Author: mariajgrimaldi
+  URL: https://github.com/openedx/openedx-filters/pull/31, Description: refactor!: refactor due to integration feedback, Author: mariajgrimaldi
+  URL: https://github.com/openedx/openedx-filters/pull/32, Description: test: add tests cases to improve coverage, Author: mariajgrimaldi
+  URL: https://github.com/openedx/openedx-filters/pull/33, Description: refactor: change dashboard/course about exceptions naming for clarity, Author: mariajgrimaldi
+  URL: https://github.com/openedx/openedx-filters/pull/34, Description: feat: add cohort assignment filter definition, Author: mariajgrimaldi
+  URL: https://github.com/openedx/openedx-filters/pull/35, Description: [BB-6206] Introduce a Filter to hook into courseware XBlock rendering, Author: tecoholic
+  URL: https://github.com/openedx/openedx-filters/pull/36, Description: fix: Install pip and pip-tools in upgrade script, Author: Jawayria
+  URL: https://github.com/openedx/openedx-filters/pull/37, Description: fix: Update the slack invite link., Author: feanil
+  URL: https://github.com/openedx/openedx-filters/pull/38, Description: feat: adds the VerticalBlockChildRenderStarted filter, Author: tecoholic
+  URL: https://github.com/openedx/openedx-filters/pull/42, Description: Fix github url strings (org edx -> openedx), Author: sarina
+  URL: https://github.com/openedx/openedx-filters/pull/43, Description: Fix make upgrade job, Author: UsamaSadiq
+  URL: https://github.com/openedx/openedx-filters/pull/44, Description: build: this repo is not branched for Open edX releases, Author: nedbat
+  URL: https://github.com/openedx/openedx-filters/pull/45, Description: build: Add structured maintainers information, Author: felipemontoya
+  URL: https://github.com/openedx/openedx-filters/pull/46, Description: feat: add filter before user setttings context is rendered, Author: Henrrypg
+  URL: https://github.com/openedx/openedx-filters/pull/47, Description: feat: adds the CourseEnrollmentSiteFilterRequested filter, Author: JuanDavidBuitrago
+  URL: https://github.com/openedx/openedx-filters/pull/48, Description: ci: add commitlint GitHub workflow for pull requests, Author: mariajgrimaldi
+  URL: https://github.com/openedx/openedx-filters/pull/49, Description: docs: update documentation according latest standards, Author: mariajgrimaldi
+  URL: https://github.com/openedx/openedx-filters/pull/50, Description: fix: Install pip and pip-tools in upgrade script, Author: mariajgrimaldi
+  URL: https://github.com/openedx/openedx-filters/pull/51, Description: build: add upgrade python requirements bot, Author: mariajgrimaldi
+  URL: https://github.com/openedx/openedx-filters/pull/52, Description: feat: adds VerticalBlockRenderCompleted filter, Author: tecoholic
+  URL: https://github.com/openedx/openedx-filters/pull/53, Description: Python Requirements Update, Author: edx-requirements-bot
+  URL: https://github.com/openedx/openedx-filters/pull/54, Description: Python Requirements Update, Author: edx-requirements-bot
+  URL: https://github.com/openedx/openedx-filters/pull/55, Description: Python Requirements Update, Author: edx-requirements-bot
+  URL: https://github.com/openedx/openedx-filters/pull/56, Description: Python Requirements Update, Author: edx-requirements-bot
+  URL: https://github.com/openedx/openedx-filters/pull/57, Description: Python Requirements Update, Author: edx-requirements-bot
+  URL: https://github.com/openedx/openedx-filters/pull/58, Description: Python Requirements Update, Author: edx-requirements-bot
+  URL: https://github.com/openedx/openedx-filters/pull/59, Description: Python Requirements Update, Author: edx-requirements-bot
+  URL: https://github.com/openedx/openedx-filters/pull/60, Description: Python Requirements Update, Author: edx-requirements-bot
+  URL: https://github.com/openedx/openedx-filters/pull/61, Description: docs: Bump version to 1.x to acknowledge that this is in use in prod, Author: mariajgrimaldi
+  URL: https://github.com/openedx/openedx-filters/pull/62, Description: Python Requirements Update, Author: edx-requirements-bot
+  URL: https://github.com/openedx/openedx-filters/pull/63, Description:  docs: use new standard Open edX for documentation , Author: mariajgrimaldi
+  URL: https://github.com/openedx/openedx-filters/pull/64, Description: docs: add newest docs for openedx-filters , Author: mariajgrimaldi
+  URL: https://github.com/openedx/openedx-filters/pull/65, Description: Python Requirements Update, Author: edx-requirements-bot
+  URL: https://github.com/openedx/openedx-filters/pull/66, Description: Python Requirements Update, Author: edx-requirements-bot
+  URL: https://github.com/openedx/openedx-filters/pull/67, Description: Python Requirements Update, Author: edx-requirements-bot
+  URL: https://github.com/openedx/openedx-filters/pull/68, Description: build: update github actions to latest versions, Author: mariajgrimaldi
+  URL: https://github.com/openedx/openedx-filters/pull/69, Description: Python Requirements Update, Author: edx-requirements-bot
+  URL: https://github.com/openedx/openedx-filters/pull/70, Description: Update standard workflow files., Author: feanil
+  URL: https://github.com/openedx/openedx-filters/pull/71, Description: Python Requirements Update, Author: edx-requirements-bot
+  URL: https://github.com/openedx/openedx-filters/pull/72, Description: Python Requirements Update, Author: edx-requirements-bot
+  URL: https://github.com/openedx/openedx-filters/pull/74, Description: Python Requirements Update, Author: edx-requirements-bot
+  URL: https://github.com/openedx/openedx-filters/pull/75, Description: Python Requirements Update, Author: edx-requirements-bot
+  URL: https://github.com/openedx/openedx-filters/pull/76, Description: Python Requirements Update, Author: edx-requirements-bot
+  URL: https://github.com/openedx/openedx-filters/pull/77, Description: feat: adds TenantAwareLinkRenderStarted filter, Author: JuanDavidBuitrago
+  URL: https://github.com/openedx/openedx-filters/pull/78, Description: Python Requirements Update, Author: edx-requirements-bot
+  URL: https://github.com/openedx/openedx-filters/pull/79, Description: Python Requirements Update, Author: edx-requirements-bot
+  URL: https://github.com/openedx/openedx-filters/pull/80, Description: fix: remove deprecated codecov package to avoid failures, Author: mariajgrimaldi
+  URL: https://github.com/openedx/openedx-filters/pull/82, Description: Python Requirements Update, Author: edx-requirements-bot
+  URL: https://github.com/openedx/openedx-filters/pull/83, Description: Adding codeowners file, Author: felipemontoya
+  URL: https://github.com/openedx/openedx-filters/pull/84, Description: Adding dependabot as part of the maintainers protocol, Author: felipemontoya
+  URL: https://github.com/openedx/openedx-filters/pull/85, Description: Python Requirements Update, Author: edx-requirements-bot
+  URL: https://github.com/openedx/openedx-filters/pull/86, Description: Python Requirements Update, Author: edx-requirements-bot
+  URL: https://github.com/openedx/openedx-filters/pull/87, Description: chore: Switch from edx-sphinx-theme to sphinx-book-theme, Author: xitij2000
+  URL: https://github.com/openedx/openedx-filters/pull/88, Description: Python Requirements Update, Author: edx-requirements-bot
+  URL: https://github.com/openedx/openedx-filters/pull/89, Description: Python Requirements Update, Author: edx-requirements-bot
+  URL: https://github.com/openedx/openedx-filters/pull/90, Description: feat: Added a filter for modifying the course home url for externally hosted courses, Author: irfanuddinahmad
+  URL: https://github.com/openedx/openedx-filters/pull/92, Description: Python Requirements Update, Author: edx-requirements-bot
+  URL: https://github.com/openedx/openedx-filters/pull/93, Description: Python Requirements Update, Author: edx-requirements-bot
+  URL: https://github.com/openedx/openedx-filters/pull/94, Description: chore: updated security contact email, Author: MAAngamarca
+  URL: https://github.com/openedx/openedx-filters/pull/95, Description: Python Requirements Update, Author: edx-requirements-bot
+  URL: https://github.com/openedx/openedx-filters/pull/96, Description: feat: add filter design to modify the instructor dashboard render, Author: mariajgrimaldi
+  URL: https://github.com/openedx/openedx-filters/pull/97, Description: Python Requirements Update, Author: edx-requirements-bot
+  URL: https://github.com/openedx/openedx-filters/pull/98, Description: Python Requirements Update, Author: edx-requirements-bot
+  URL: https://github.com/openedx/openedx-filters/pull/99, Description: docs: change docs link to edx-platform Hooks guide, Author: kdmccormick
+  URL: https://github.com/openedx/openedx-filters/pull/100, Description: Python Requirements Update, Author: edx-requirements-bot
+  URL: https://github.com/openedx/openedx-filters/pull/101, Description: Python Requirements Update, Author: edx-requirements-bot
+  URL: https://github.com/openedx/openedx-filters/pull/102, Description: Python Requirements Update, Author: edx-requirements-bot
+  URL: https://github.com/openedx/openedx-filters/pull/103, Description: [POC] feat: add filters for roles management (1st approach), Author: mariajgrimaldi
+  URL: https://github.com/openedx/openedx-filters/pull/104, Description: feat: added filter for modifying the isStarted for externally hosted …, Author: bilaltahir21
+  URL: https://github.com/openedx/openedx-filters/pull/105, Description: Python Requirements Update, Author: edx-requirements-bot
+  URL: https://github.com/openedx/openedx-filters/pull/106, Description: feat: added filter for modifying the isStarted for externally hosted …, Author: jajjibhai008
+  URL: https://github.com/openedx/openedx-filters/pull/107, Description: [WIP] feat: add ORA filter for student_view rendering intervention, Author: mariajgrimaldi
+  URL: https://github.com/openedx/openedx-filters/pull/108, Description: Python Requirements Update, Author: edx-requirements-bot
+  URL: https://github.com/openedx/openedx-filters/pull/109, Description: Python Requirements Update, Author: edx-requirements-bot
+  URL: https://github.com/openedx/openedx-filters/pull/110, Description: Python Requirements Update, Author: edx-requirements-bot
+  URL: https://github.com/openedx/openedx-filters/pull/111, Description: feat: add filter to modify the courserun data for externally hosted c…, Author: jajjibhai008
+  URL: https://github.com/openedx/openedx-filters/pull/112, Description: Python Requirements Update, Author: edx-requirements-bot
+  URL: https://github.com/openedx/openedx-filters/pull/113, Description: Python Requirements Update, Author: edx-requirements-bot
+  URL: https://github.com/openedx/openedx-filters/pull/114, Description: fix: readthedocs file renamed, Author: edx-requirements-bot
+  URL: https://github.com/openedx/openedx-filters/pull/115, Description: Python Requirements Update, Author: edx-requirements-bot
+  URL: https://github.com/openedx/openedx-filters/pull/116, Description: fix: setup.py update using script, Author: edx-requirements-bot
+  URL: https://github.com/openedx/openedx-filters/pull/117, Description: Python Requirements Update, Author: edx-requirements-bot
+  URL: https://github.com/openedx/openedx-filters/pull/118, Description: build(deps): bump actions/checkout from 3 to 4, Author: dependabot
+  URL: https://github.com/openedx/openedx-filters/pull/119, Description: Python Requirements Update, Author: edx-requirements-bot
+  URL: https://github.com/openedx/openedx-filters/pull/120, Description: Python Requirements Update, Author: edx-requirements-bot
+  URL: https://github.com/openedx/openedx-filters/pull/121, Description: Python Requirements Update, Author: edx-requirements-bot
+  URL: https://github.com/openedx/openedx-filters/pull/123, Description: Python Requirements Update, Author: edx-requirements-bot
+  URL: https://github.com/openedx/openedx-filters/pull/124, Description: fix: Replaced whitelist_externals with allowlist_externals in tox and removed tox-battery, Author: edx-requirements-bot
+  URL: https://github.com/openedx/openedx-filters/pull/125, Description: Python Requirements Update, Author: edx-requirements-bot
+  URL: https://github.com/openedx/openedx-filters/pull/126, Description: fix: Replaced whitelist_externals with allowlist_externals in tox and removed tox-battery, Author: edx-requirements-bot
+  URL: https://github.com/openedx/openedx-filters/pull/127, Description: Python Requirements Update, Author: edx-requirements-bot
+  URL: https://github.com/openedx/openedx-filters/pull/128, Description: Python Requirements Update, Author: edx-requirements-bot
+  URL: https://github.com/openedx/openedx-filters/pull/129, Description: fix: add tox 4.0 support, Author: UsamaSadiq
+  URL: https://github.com/openedx/openedx-filters/pull/130, Description: Python Requirements Update, Author: edx-requirements-bot
+  URL: https://github.com/openedx/openedx-filters/pull/131, Description: Python Requirements Update, Author: edx-requirements-bot
+  URL: https://github.com/openedx/openedx-filters/pull/132, Description: Python Requirements Update, Author: edx-requirements-bot
+  URL: https://github.com/openedx/openedx-filters/pull/133, Description: Python Requirements Update, Author: edx-requirements-bot
+  URL: https://github.com/openedx/openedx-filters/pull/134, Description: build(deps): bump actions/setup-python from 4 to 5, Author: dependabot
+  URL: https://github.com/openedx/openedx-filters/pull/135, Description: Python Requirements Update, Author: edx-requirements-bot
+  URL: https://github.com/openedx/openedx-filters/pull/136, Description: Python Requirements Update, Author: edx-requirements-bot
+  URL: https://github.com/openedx/openedx-filters/pull/137, Description: Python Requirements Update, Author: edx-requirements-bot
+  URL: https://github.com/openedx/openedx-filters/pull/138, Description: Python Requirements Update, Author: edx-requirements-bot
+  URL: https://github.com/openedx/openedx-filters/pull/139, Description: Python Requirements Update, Author: edx-requirements-bot
+  URL: https://github.com/openedx/openedx-filters/pull/140, Description: Python Requirements Update, Author: edx-requirements-bot
+  URL: https://github.com/openedx/openedx-filters/pull/141, Description: Python Requirements Update, Author: edx-requirements-bot
+  URL: https://github.com/openedx/openedx-filters/pull/142, Description: Python Requirements Update, Author: edx-requirements-bot
+  URL: https://github.com/openedx/openedx-filters/pull/143, Description: build(deps): bump codecov/codecov-action from 3 to 4, Author: dependabot
+  URL: https://github.com/openedx/openedx-filters/pull/144, Description: Python Requirements Update, Author: edx-requirements-bot
+  URL: https://github.com/openedx/openedx-filters/pull/145, Description: Python Requirements Update, Author: edx-requirements-bot
+  URL: https://github.com/openedx/openedx-filters/pull/146, Description: feat: add python 3.12 support, Author: edx-requirements-bot
+  URL: https://github.com/openedx/openedx-filters/pull/147, Description: Python Requirements Update, Author: edx-requirements-bot
+  URL: https://github.com/openedx/openedx-filters/pull/148, Description: docs: Update README.rst with latest specifications, Author: mariajgrimaldi
+  URL: https://github.com/openedx/openedx-filters/pull/149, Description: Python Requirements Update, Author: edx-requirements-bot
+  URL: https://github.com/openedx/openedx-filters/pull/150, Description: Python Requirements Update, Author: edx-requirements-bot
+  URL: https://github.com/openedx/openedx-filters/pull/151, Description: Python Requirements Update, Author: edx-requirements-bot
+  URL: https://github.com/openedx/openedx-filters/pull/152, Description: Python Requirements Update, Author: edx-requirements-bot
+  URL: https://github.com/openedx/openedx-filters/pull/154, Description: Python Requirements Update, Author: edx-requirements-bot
+  URL: https://github.com/openedx/openedx-filters/pull/155, Description: chore: deleting unused files, Author: felipemontoya
+  URL: https://github.com/openedx/openedx-filters/pull/156, Description: feat: Adding python3.11 support., Author: awais786
+  URL: https://github.com/openedx/openedx-filters/pull/157, Description: Python Requirements Update, Author: edx-requirements-bot
+  URL: https://github.com/openedx/openedx-filters/pull/158, Description: feat: add ORA filter for submission view rendering intervention, Author: BryanttV
+  URL: https://github.com/openedx/openedx-filters/pull/159, Description: build: add support for Python 3.11, Author: mariajgrimaldi
+  URL: https://github.com/openedx/openedx-filters/pull/161, Description: docs: update python classifiers in setup file, Author: mariajgrimaldi
+  URL: https://github.com/openedx/openedx-filters/pull/162, Description: Python Requirements Update, Author: edx-requirements-bot
+  URL: https://github.com/openedx/openedx-filters/pull/163, Description: build: update codecov action to latest version with repo-specific tokens, Author: mariajgrimaldi
+  URL: https://github.com/openedx/openedx-filters/pull/164, Description: Python Requirements Update, Author: edx-requirements-bot
+  URL: https://github.com/openedx/openedx-filters/pull/165, Description: Python Requirements Update, Author: edx-requirements-bot
+  URL: https://github.com/openedx/openedx-filters/pull/167, Description: Python Requirements Update, Author: edx-requirements-bot
+  URL: https://github.com/openedx/openedx-filters/pull/168, Description: Python Requirements Update, Author: edx-requirements-bot
+  URL: https://github.com/openedx/openedx-filters/pull/169, Description: Python Requirements Update, Author: edx-requirements-bot
+  URL: https://github.com/openedx/openedx-filters/pull/170, Description: Python Requirements Update, Author: edx-requirements-bot
+  URL: https://github.com/openedx/openedx-filters/pull/171, Description: feat: add filter for hooking XBlock Render, Author: nsprenkle
+  URL: https://github.com/openedx/openedx-filters/pull/172, Description: Python Requirements Update, Author: edx-requirements-bot
+  URL: https://github.com/openedx/openedx-filters/pull/173, Description: docs: add configuration for automatic filters docs generation, Author: mariajgrimaldi
+  URL: https://github.com/openedx/openedx-filters/pull/174, Description: chore: Upgrade Python requirements, Author: edx-requirements-bot
+  URL: https://github.com/openedx/openedx-filters/pull/175, Description: chore: Upgrade Python requirements, Author: edx-requirements-bot
+  URL: https://github.com/openedx/openedx-filters/pull/176, Description: chore: Upgrade Python requirements, Author: edx-requirements-bot
+
+Total Contributions: 166

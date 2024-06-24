@@ -37,6 +37,7 @@ def process_pull_requests(access_token, org_name, repo_name):
     }
 
     all_contributions = []
+    total_contributions = 0
     end_cursor = None
     has_next_page = True
 
@@ -54,11 +55,15 @@ def process_pull_requests(access_token, org_name, repo_name):
                 'author': pr['author']['login']
             }
             all_contributions.append(pr_info)
+            total_contributions += 1
 
     # Display all unique contributions
     print("All Unique Contributions:")
     for contribution in all_contributions:
         print(f"  URL: {contribution['url']}, Description: {contribution['title']}, Author: {contribution['author']}")
+
+    # Display total contributions
+    print(f"\nTotal Contributions: {total_contributions}")
 
 # Argument parser setup
 if __name__ == "__main__":
