@@ -1,173 +1,527 @@
-URL: https://github.com/openedx/edx-platform/blob/5e3181ce61f4c18471221f5e1663f681b1bc1735/common/djangoapps/student/signals/signals.py, Path: common/djangoapps/student/signals/signals.py, Repository: edx-platform, Repository URL: https://github.com/openedx/edx-platform
-URL: https://github.com/openedx/code-annotations/blob/c1b81734380de7bb45a8bee09cf19f4e4cbf846a/code_annotations/contrib/sphinx/extensions/openedx_events.py, Path: code_annotations/contrib/sphinx/extensions/openedx_events.py, Repository: code-annotations, Repository URL: https://github.com/openedx/code-annotations
-URL: https://github.com/eduNEXT/openedx-events-2-zapier/blob/fb551db50b77e46710d839f0e7cb2ea901969676/openedx_events_2_zapier/apps.py, Path: openedx_events_2_zapier/apps.py, Repository: openedx-events-2-zapier, Repository URL: https://github.com/eduNEXT/openedx-events-2-zapier
-URL: https://github.com/open-craft/openedx-events-sender/blob/63a04fb5fedb45a72e5161a775bfe9f2d95cffea/openedx_events_sender/receivers.py, Path: openedx_events_sender/receivers.py, Repository: openedx-events-sender, Repository URL: https://github.com/open-craft/openedx-events-sender
-URL: https://github.com/openedx/event-tracking/blob/c32b68ce6fa8cf8086cbd128c004c53a9e1e584a/eventtracking/handlers.py, Path: eventtracking/handlers.py, Repository: event-tracking, Repository URL: https://github.com/openedx/event-tracking
-URL: https://github.com/fccn/edx-platform/blob/452b82e68b63bef8b4ff7a5027cde0b38961df6b/openedx/core/djangoapps/discussions/tasks.py, Path: openedx/core/djangoapps/discussions/tasks.py, Repository: edx-platform, Repository URL: https://github.com/fccn/edx-platform
-URL: https://github.com/ilesoviy/OpenAI_LMS/blob/f1de313b6124ae783e6f4f0f075ae760264d9089/xmodule/modulestore/mixed.py, Path: xmodule/modulestore/mixed.py, Repository: OpenAI_LMS, Repository URL: https://github.com/ilesoviy/OpenAI_LMS
-URL: https://github.com/edx/edx-arch-experiments/blob/1d4ba69cc6be374b28fedff57ded7c4f6c802ced/edx_arch_experiments/scripts/republish_failed_events.py, Path: edx_arch_experiments/scripts/republish_failed_events.py, Repository: edx-arch-experiments, Repository URL: https://github.com/edx/edx-arch-experiments
-URL: https://github.com/eduNEXT/edunext-platform/blob/176422e11b77015a6308f4a0986b43e67571aeb9/openedx/core/djangoapps/course_groups/models.py, Path: openedx/core/djangoapps/course_groups/models.py, Repository: edunext-platform, Repository URL: https://github.com/eduNEXT/edunext-platform
-URL: https://github.com/vavv-dev/edx-operation/blob/43ead305bc40f39998bab10afbed8c182d6fd10d/edx_operation/settings/base.py, Path: edx_operation/settings/base.py, Repository: edx-operation, Repository URL: https://github.com/vavv-dev/edx-operation
-URL: https://github.com/cookiecutter-openedx/openedx-plugin-example/blob/082b781374f5184d657f2ade4a72d22df411af1c/openedx_plugin/apps.py, Path: openedx_plugin/apps.py, Repository: openedx-plugin-example, Repository URL: https://github.com/cookiecutter-openedx/openedx-plugin-example
-URL: https://github.com/StepwiseMath/stepwise-edx-plugin/blob/989c1ca5a822396bb22941caf54a9db38317e527/stepwise_plugin/student/session.py, Path: stepwise_plugin/student/session.py, Repository: stepwise-edx-plugin, Repository URL: https://github.com/StepwiseMath/stepwise-edx-plugin
-URL: https://github.com/ImaginaryLandscape/uic_edx-platform/blob/a72d495077f0282a3f4a79d6c18b5ab8e838afac/openedx/core/djangoapps/user_authn/views/register.py, Path: openedx/core/djangoapps/user_authn/views/register.py, Repository: uic_edx-platform, Repository URL: https://github.com/ImaginaryLandscape/uic_edx-platform
-URL: https://github.com/bregoNMI/HALO_LMS/blob/2c9e6305290d66fd50ab146e4424f4b38575c872/edx-platform/cms/envs/common.py, Path: edx-platform/cms/envs/common.py, Repository: HALO_LMS, Repository URL: https://github.com/bregoNMI/HALO_LMS
-URL: https://github.com/edx/edx-exams/blob/3bd5ab5853285bdf0ffbba9e9975ac380544e4a7/edx_exams/apps/core/signals/handlers.py, Path: edx_exams/apps/core/signals/handlers.py, Repository: edx-exams, Repository URL: https://github.com/edx/edx-exams
-URL: https://github.com/eduNEXT/eox-nelp/blob/3ce24149250c1318b25f0a04d9e3a5eeaa6f2b1e/eox_nelp/signals/utils.py, Path: eox_nelp/signals/utils.py, Repository: eox-nelp, Repository URL: https://github.com/eduNEXT/eox-nelp
-URL: https://github.com/academic-innovation/mogc-partnerships/blob/ef8384f4e177a93cfe6ec163b561d1e2d91c103d/mogc_partnerships/receivers.py, Path: mogc_partnerships/receivers.py, Repository: mogc-partnerships, Repository URL: https://github.com/academic-innovation/mogc-partnerships
-URL: https://github.com/openedx/edx-ora2/blob/8b320d69745a92aa64696c5f2617bd76dff88cb3/openassessment/xblock/ui_mixins/legacy/handlers_mixin.py, Path: openassessment/xblock/ui_mixins/legacy/handlers_mixin.py, Repository: edx-ora2, Repository URL: https://github.com/openedx/edx-ora2
-URL: https://github.com/eduNEXT/openedx-events-2-zapier/blob/fb551db50b77e46710d839f0e7cb2ea901969676/openedx_events_2_zapier/__init__.py, Path: openedx_events_2_zapier/__init__.py, Repository: openedx-events-2-zapier, Repository URL: https://github.com/eduNEXT/openedx-events-2-zapier
-URL: https://github.com/jswope00/ndi-edx-platform/blob/1a139c900c62d491ab7e2e86b06f7112319d0ada/openedx/core/djangoapps/user_authn/views/register.py, Path: openedx/core/djangoapps/user_authn/views/register.py, Repository: ndi-edx-platform, Repository URL: https://github.com/jswope00/ndi-edx-platform
-URL: https://github.com/bhaveshmandloi/slx/blob/5f673f4cdbacee01181d190b1741699f635cc78d/app/edxapp/edx-platform/common/djangoapps/student/models.py, Path: app/edxapp/edx-platform/common/djangoapps/student/models.py, Repository: slx, Repository URL: https://github.com/bhaveshmandloi/slx
-URL: https://github.com/aulasneo/openedx-webhooks/blob/74ffc490983d8e39cff3cbbe150dfb0b8a3979bc/openedx_webhooks/apps.py, Path: openedx_webhooks/apps.py, Repository: openedx-webhooks, Repository URL: https://github.com/aulasneo/openedx-webhooks
-URL: https://github.com/ilesoviy/OpenAI_LMS/blob/f1de313b6124ae783e6f4f0f075ae760264d9089/cms/djangoapps/contentstore/views/block.py, Path: cms/djangoapps/contentstore/views/block.py, Repository: OpenAI_LMS, Repository URL: https://github.com/ilesoviy/OpenAI_LMS
-URL: https://github.com/openedx/credentials/blob/557a0e42cc17d77e5298c8a311f4b97ebec16114/credentials/apps/core/api.py, Path: credentials/apps/core/api.py, Repository: credentials, Repository URL: https://github.com/openedx/credentials
-URL: https://github.com/bhaveshmandloi/slx/blob/5f673f4cdbacee01181d190b1741699f635cc78d/app/edxapp/edx-platform/openedx/core/djangoapps/user_authn/views/register.py, Path: app/edxapp/edx-platform/openedx/core/djangoapps/user_authn/views/register.py, Repository: slx, Repository URL: https://github.com/bhaveshmandloi/slx
-URL: https://github.com/openedx/edx-platform/blob/5e3181ce61f4c18471221f5e1663f681b1bc1735/cms/envs/production.py, Path: cms/envs/production.py, Repository: edx-platform, Repository URL: https://github.com/openedx/edx-platform
-URL: https://github.com/openedx/event-bus-kafka/blob/9961dd8137e306ce712dd9485d1cc4d4d5272247/edx_event_bus_kafka/internal/producer.py, Path: edx_event_bus_kafka/internal/producer.py, Repository: event-bus-kafka, Repository URL: https://github.com/openedx/event-bus-kafka
-URL: https://github.com/bhaveshmandloi/slx/blob/5f673f4cdbacee01181d190b1741699f635cc78d/app/edxapp/edx-platform/openedx/core/djangoapps/course_groups/models.py, Path: app/edxapp/edx-platform/openedx/core/djangoapps/course_groups/models.py, Repository: slx, Repository URL: https://github.com/bhaveshmandloi/slx
-URL: https://github.com/cookiecutter-openedx/cookiecutter-openedx-plugin/blob/e01c667c21dc941bb4fceadd9db5a3120a6a358f/cookiecutter_plugin/apps.py, Path: cookiecutter_plugin/apps.py, Repository: cookiecutter-openedx-plugin, Repository URL: https://github.com/cookiecutter-openedx/cookiecutter-openedx-plugin
-URL: https://github.com/openedx/edx-platform/blob/5e3181ce61f4c18471221f5e1663f681b1bc1735/openedx/features/course_experience/__init__.py, Path: openedx/features/course_experience/__init__.py, Repository: edx-platform, Repository URL: https://github.com/openedx/edx-platform
-URL: https://github.com/openedx/event-routing-backends/blob/9ae9c4f10f20f8d21e4ce4a8f72f7fa635af0241/event_routing_backends/processors/openedx_filters/filters.py, Path: event_routing_backends/processors/openedx_filters/filters.py, Repository: event-routing-backends, Repository URL: https://github.com/openedx/event-routing-backends
-URL: https://github.com/eduNEXT/openedx-filters-samples/blob/c22cf063ccc82b862310b8dae45731ecb3abdd73/openedx_filters_samples/apps.py, Path: openedx_filters_samples/apps.py, Repository: openedx-filters-samples, Repository URL: https://github.com/eduNEXT/openedx-filters-samples
-URL: https://github.com/edx/commerce-coordinator/blob/6e8c266c4b1eb809543617e9e7c00601ae76cb4e/commerce_coordinator/apps/core/pipeline.py, Path: commerce_coordinator/apps/core/pipeline.py, Repository: commerce-coordinator, Repository URL: https://github.com/edx/commerce-coordinator
-URL: https://github.com/open-craft/openedx-completion-aggregator/blob/2dfb6e24fc0d8f7cab5fb412cb446f7461c57ac8/completion_aggregator/xapi.py, Path: completion_aggregator/xapi.py, Repository: openedx-completion-aggregator, Repository URL: https://github.com/open-craft/openedx-completion-aggregator
-URL: https://github.com/mariajgrimaldi/openedx-filters-test-plugin/blob/7505ec5ff1955a6fa1c40c41fae2b935bb765a18/setup.py, Path: setup.py, Repository: openedx-filters-test-plugin, Repository URL: https://github.com/mariajgrimaldi/openedx-filters-test-plugin
-URL: https://github.com/ilesoviy/OpenAI_LMS/blob/f1de313b6124ae783e6f4f0f075ae760264d9089/xmodule/vertical_block.py, Path: xmodule/vertical_block.py, Repository: OpenAI_LMS, Repository URL: https://github.com/ilesoviy/OpenAI_LMS
-URL: https://github.com/eduNEXT/edunext-platform/blob/176422e11b77015a6308f4a0986b43e67571aeb9/common/djangoapps/student/models.py, Path: common/djangoapps/student/models.py, Repository: edunext-platform, Repository URL: https://github.com/eduNEXT/edunext-platform
-URL: https://github.com/fccn/edx-platform/blob/452b82e68b63bef8b4ff7a5027cde0b38961df6b/lms/djangoapps/certificates/generation_handler.py, Path: lms/djangoapps/certificates/generation_handler.py, Repository: edx-platform, Repository URL: https://github.com/fccn/edx-platform
-URL: https://github.com/ImaginaryLandscape/uic_edx-platform/blob/a72d495077f0282a3f4a79d6c18b5ab8e838afac/lms/djangoapps/courseware/views/views.py, Path: lms/djangoapps/courseware/views/views.py, Repository: uic_edx-platform, Repository URL: https://github.com/ImaginaryLandscape/uic_edx-platform
-URL: https://github.com/open-craft/openedx-ltistore/blob/a0d6c36481fc1a03a48e328720f13e6962225e7f/lti_store/pipelines.py, Path: lti_store/pipelines.py, Repository: openedx-ltistore, Repository URL: https://github.com/open-craft/openedx-ltistore
-URL: https://github.com/nelc/manifest-sagar/blob/5e35b0ed6ee8726da8d4895988e3f98be3cb54ef/environments/prod/openedx/env/apps/openedx/settings/lms/production.py, Path: environments/prod/openedx/env/apps/openedx/settings/lms/production.py, Repository: manifest-sagar, Repository URL: https://github.com/nelc/manifest-sagar
-URL: https://github.com/openedx/event-routing-backends/blob/9ae9c4f10f20f8d21e4ce4a8f72f7fa635af0241/event_routing_backends/processors/openedx_filters/decorators.py, Path: event_routing_backends/processors/openedx_filters/decorators.py, Repository: event-routing-backends, Repository URL: https://github.com/openedx/event-routing-backends
-URL: https://github.com/lektorium-tutor/lektorium_main/blob/00ed7e3bd57f4a5363ae7fbd89ecc0619c576701/lektorium_main/tilda/pipeline.py, Path: lektorium_main/tilda/pipeline.py, Repository: lektorium_main, Repository URL: https://github.com/lektorium-tutor/lektorium_main
-URL: https://github.com/python-benchmark/edx-platform/blob/c2a2eb6202eb37cbbb0eef285320c01035753aec/common/djangoapps/student/views/dashboard.py, Path: common/djangoapps/student/views/dashboard.py, Repository: edx-platform, Repository URL: https://github.com/python-benchmark/edx-platform
-URL: https://github.com/bregoNMI/HALO_LMS/blob/2c9e6305290d66fd50ab146e4424f4b38575c872/edx-platform/lms/djangoapps/instructor/views/instructor_dashboard.py, Path: edx-platform/lms/djangoapps/instructor/views/instructor_dashboard.py, Repository: HALO_LMS, Repository URL: https://github.com/bregoNMI/HALO_LMS
-URL: https://github.com/UAMx/uamx-social-auth/blob/52abc6c80c5d8ceb525dd3b95c208f243c073f3b/uamx_social_auth/settings/common.py, Path: uamx_social_auth/settings/common.py, Repository: uamx-social-auth, Repository URL: https://github.com/UAMx/uamx-social-auth
-URL: https://github.com/eduNEXT/openedx-basic-hooks/blob/21498db7a89205d0d3839e4f0c43b4fa7d405634/openedx_basic_hooks/filters/pre_register.py, Path: openedx_basic_hooks/filters/pre_register.py, Repository: openedx-basic-hooks, Repository URL: https://github.com/eduNEXT/openedx-basic-hooks
-URL: https://github.com/edx/commerce-coordinator/blob/6e8c266c4b1eb809543617e9e7c00601ae76cb4e/commerce_coordinator/apps/core/constants.py, Path: commerce_coordinator/apps/core/constants.py, Repository: commerce-coordinator, Repository URL: https://github.com/edx/commerce-coordinator
-URL: https://github.com/openedx/edx-platform/blob/5e3181ce61f4c18471221f5e1663f681b1bc1735/lms/djangoapps/learner_home/serializers.py, Path: lms/djangoapps/learner_home/serializers.py, Repository: edx-platform, Repository URL: https://github.com/openedx/edx-platform
-URL: https://github.com/edx/commerce-coordinator/blob/6e8c266c4b1eb809543617e9e7c00601ae76cb4e/commerce_coordinator/apps/lms/filters.py, Path: commerce_coordinator/apps/lms/filters.py, Repository: commerce-coordinator, Repository URL: https://github.com/edx/commerce-coordinator
-URL: https://github.com/edx/commerce-coordinator/blob/6e8c266c4b1eb809543617e9e7c00601ae76cb4e/commerce_coordinator/apps/demo_lms/filters.py, Path: commerce_coordinator/apps/demo_lms/filters.py, Repository: commerce-coordinator, Repository URL: https://github.com/edx/commerce-coordinator
-URL: https://github.com/openedx/edx-platform/blob/5e3181ce61f4c18471221f5e1663f681b1bc1735/openedx/core/djangoapps/user_authn/views/login.py, Path: openedx/core/djangoapps/user_authn/views/login.py, Repository: edx-platform, Repository URL: https://github.com/openedx/edx-platform
-URL: https://github.com/openedx/edx-platform/blob/5e3181ce61f4c18471221f5e1663f681b1bc1735/openedx/core/djangoapps/user_api/accounts/settings_views.py, Path: openedx/core/djangoapps/user_api/accounts/settings_views.py, Repository: edx-platform, Repository URL: https://github.com/openedx/edx-platform
-URL: https://github.com/openedx/edx-platform/blob/5e3181ce61f4c18471221f5e1663f681b1bc1735/common/djangoapps/student/models/course_enrollment.py, Path: common/djangoapps/student/models/course_enrollment.py, Repository: edx-platform, Repository URL: https://github.com/openedx/edx-platform
-URL: https://github.com/mariajgrimaldi/openedx-filters-test-plugin/blob/7505ec5ff1955a6fa1c40c41fae2b935bb765a18/docs/conf.py, Path: docs/conf.py, Repository: openedx-filters-test-plugin, Repository URL: https://github.com/mariajgrimaldi/openedx-filters-test-plugin
-URL: https://github.com/fccn/nau-openedx-extensions/blob/653f5d49b4d726f051b379448f4cb4db3a3a34ba/nau_openedx_extensions/filters/pipeline.py, Path: nau_openedx_extensions/filters/pipeline.py, Repository: nau-openedx-extensions, Repository URL: https://github.com/fccn/nau-openedx-extensions
-URL: https://github.com/openedx/edx-ora2/blob/8b320d69745a92aa64696c5f2617bd76dff88cb3/openassessment/xblock/ui_mixins/legacy/views/submission.py, Path: openassessment/xblock/ui_mixins/legacy/views/submission.py, Repository: edx-ora2, Repository URL: https://github.com/openedx/edx-ora2
-URL: https://github.com/openedx/edx-platform/blob/5e3181ce61f4c18471221f5e1663f681b1bc1735/lms/envs/common.py, Path: lms/envs/common.py, Repository: edx-platform, Repository URL: https://github.com/openedx/edx-platform
-URL: https://github.com/eduNEXT/openedx-events-2-zapier/blob/fb551db50b77e46710d839f0e7cb2ea901969676/setup.py, Path: setup.py, Repository: openedx-events-2-zapier, Repository URL: https://github.com/eduNEXT/openedx-events-2-zapier
-URL: https://github.com/cookiecutter-openedx/openedx-plugin-example/blob/082b781374f5184d657f2ade4a72d22df411af1c/openedx_plugin/signals.py, Path: openedx_plugin/signals.py, Repository: openedx-plugin-example, Repository URL: https://github.com/cookiecutter-openedx/openedx-plugin-example
-URL: https://github.com/eduNEXT/openedx-basic-hooks/blob/21498db7a89205d0d3839e4f0c43b4fa7d405634/openedx_basic_hooks/receivers.py, Path: openedx_basic_hooks/receivers.py, Repository: openedx-basic-hooks, Repository URL: https://github.com/eduNEXT/openedx-basic-hooks
-URL: https://github.com/academic-innovation/mogc-partnerships/blob/ef8384f4e177a93cfe6ec163b561d1e2d91c103d/setup.py, Path: setup.py, Repository: mogc-partnerships, Repository URL: https://github.com/academic-innovation/mogc-partnerships
-URL: https://github.com/openedx/event-bus-kafka/blob/9961dd8137e306ce712dd9485d1cc4d4d5272247/edx_event_bus_kafka/internal/consumer.py, Path: edx_event_bus_kafka/internal/consumer.py, Repository: event-bus-kafka, Repository URL: https://github.com/openedx/event-bus-kafka
-URL: https://github.com/openedx/edx-platform/blob/5e3181ce61f4c18471221f5e1663f681b1bc1735/cms/envs/common.py, Path: cms/envs/common.py, Repository: edx-platform, Repository URL: https://github.com/openedx/edx-platform
-URL: https://github.com/eduNEXT/eox-nelp/blob/3ce24149250c1318b25f0a04d9e3a5eeaa6f2b1e/eox_nelp/signals/tasks.py, Path: eox_nelp/signals/tasks.py, Repository: eox-nelp, Repository URL: https://github.com/eduNEXT/eox-nelp
-URL: https://github.com/cookiecutter-openedx/cookiecutter-openedx-plugin/blob/e01c667c21dc941bb4fceadd9db5a3120a6a358f/cookiecutter_plugin/signals.py, Path: cookiecutter_plugin/signals.py, Repository: cookiecutter-openedx-plugin, Repository URL: https://github.com/cookiecutter-openedx/cookiecutter-openedx-plugin
-URL: https://github.com/open-craft/openedx-events-sender/blob/63a04fb5fedb45a72e5161a775bfe9f2d95cffea/setup.py, Path: setup.py, Repository: openedx-events-sender, Repository URL: https://github.com/open-craft/openedx-events-sender
-URL: https://github.com/eduNEXT/openedx-events-2-zapier/blob/fb551db50b77e46710d839f0e7cb2ea901969676/docs/conf.py, Path: docs/conf.py, Repository: openedx-events-2-zapier, Repository URL: https://github.com/eduNEXT/openedx-events-2-zapier
-URL: https://github.com/bregoNMI/HALO_LMS/blob/2c9e6305290d66fd50ab146e4424f4b38575c872/edx-platform/lms/envs/common.py, Path: edx-platform/lms/envs/common.py, Repository: HALO_LMS, Repository URL: https://github.com/bregoNMI/HALO_LMS
-URL: https://github.com/eduNEXT/eox-nelp/blob/3ce24149250c1318b25f0a04d9e3a5eeaa6f2b1e/eox_nelp/signals/receivers.py, Path: eox_nelp/signals/receivers.py, Repository: eox-nelp, Repository URL: https://github.com/eduNEXT/eox-nelp
-URL: https://github.com/openedx/event-bus-redis/blob/da6e46489db0030bfc44bec86343cdf0c793cae6/edx_event_bus_redis/internal/tests/test_producer.py, Path: edx_event_bus_redis/internal/tests/test_producer.py, Repository: event-bus-redis, Repository URL: https://github.com/openedx/event-bus-redis
-URL: https://github.com/eduNEXT/openedx-events-2-zapier/blob/fb551db50b77e46710d839f0e7cb2ea901969676/tests/test_models.py, Path: tests/test_models.py, Repository: openedx-events-2-zapier, Repository URL: https://github.com/eduNEXT/openedx-events-2-zapier
-URL: https://github.com/openedx/event-bus-kafka/blob/9961dd8137e306ce712dd9485d1cc4d4d5272247/edx_event_bus_kafka/internal/tests/test_producer.py, Path: edx_event_bus_kafka/internal/tests/test_producer.py, Repository: event-bus-kafka, Repository URL: https://github.com/openedx/event-bus-kafka
-URL: https://github.com/openedx/xblock-lti-consumer/blob/8636d58bdd635a70f2b6231336c4dced2e1ac245/lti_consumer/models.py, Path: lti_consumer/models.py, Repository: xblock-lti-consumer, Repository URL: https://github.com/openedx/xblock-lti-consumer
-URL: https://github.com/eduNEXT/eox-tenant/blob/99d22290b49e314fa02b0ac353fe149c1eed7ab2/eox_tenant/filters/pipeline.py, Path: eox_tenant/filters/pipeline.py, Repository: eox-tenant, Repository URL: https://github.com/eduNEXT/eox-tenant
-URL: https://github.com/open-craft/openedx-filter-demos/blob/78e494b82ffd2b5c7828f48d33e0cb126af66852/openedx_filter_demos/__init__.py, Path: openedx_filter_demos/__init__.py, Repository: openedx-filter-demos, Repository URL: https://github.com/open-craft/openedx-filter-demos
-URL: https://github.com/eduNEXT/platform-global-teacher-campus/blob/713760f01314d7535140233c1c193a48bc2c444c/platform_global_teacher_campus/unable_publish_or_update.py, Path: platform_global_teacher_campus/unable_publish_or_update.py, Repository: platform-global-teacher-campus, Repository URL: https://github.com/eduNEXT/platform-global-teacher-campus
-URL: https://github.com/eduNEXT/openedx-filters-samples/blob/c22cf063ccc82b862310b8dae45731ecb3abdd73/docs/conf.py, Path: docs/conf.py, Repository: openedx-filters-samples, Repository URL: https://github.com/eduNEXT/openedx-filters-samples
-URL: https://github.com/openedx/xblock-lti-consumer/blob/8636d58bdd635a70f2b6231336c4dced2e1ac245/lti_consumer/plugin/compat.py, Path: lti_consumer/plugin/compat.py, Repository: xblock-lti-consumer, Repository URL: https://github.com/openedx/xblock-lti-consumer
-URL: https://github.com/open-craft/openedx-filter-demos/blob/78e494b82ffd2b5c7828f48d33e0cb126af66852/docs/conf.py, Path: docs/conf.py, Repository: openedx-filter-demos, Repository URL: https://github.com/open-craft/openedx-filter-demos
-URL: https://github.com/eduNEXT/platform-global-teacher-campus/blob/713760f01314d7535140233c1c193a48bc2c444c/platform_global_teacher_campus/filters/pipeline.py, Path: platform_global_teacher_campus/filters/pipeline.py, Repository: platform-global-teacher-campus, Repository URL: https://github.com/eduNEXT/platform-global-teacher-campus
-URL: https://github.com/UAMx/uamx-social-auth/blob/52abc6c80c5d8ceb525dd3b95c208f243c073f3b/uamx_social_auth/pipeline.py, Path: uamx_social_auth/pipeline.py, Repository: uamx-social-auth, Repository URL: https://github.com/UAMx/uamx-social-auth
-URL: https://github.com/eduNEXT/openedx-filters-samples/blob/c22cf063ccc82b862310b8dae45731ecb3abdd73/setup.py, Path: setup.py, Repository: openedx-filters-samples, Repository URL: https://github.com/eduNEXT/openedx-filters-samples
-URL: https://github.com/eduNEXT/console/blob/a0fd7175c1d4b3430a5c8b25b17ed7e1f0a68e9f/apps/core/pipeline.py, Path: apps/core/pipeline.py, Repository: console, Repository URL: https://github.com/eduNEXT/console
-URL: https://github.com/open-craft/openedx-filter-demos/blob/78e494b82ffd2b5c7828f48d33e0cb126af66852/setup.py, Path: setup.py, Repository: openedx-filter-demos, Repository URL: https://github.com/open-craft/openedx-filter-demos
-URL: https://github.com/open-craft/openedx-edit-links/blob/edaa7f45512d968063044fcd1e9d6c9661ea80d4/tests/test_pipeline.py, Path: tests/test_pipeline.py, Repository: openedx-edit-links, Repository URL: https://github.com/open-craft/openedx-edit-links
-URL: https://github.com/openedx/xblock-skill-tagging/blob/1d598130fcaa950a8f67df9498e202781d06a77f/tests/test_pipeline.py, Path: tests/test_pipeline.py, Repository: xblock-skill-tagging, Repository URL: https://github.com/openedx/xblock-skill-tagging
-URL: https://github.com/mariajgrimaldi/openedx-filters-test-plugin/blob/7505ec5ff1955a6fa1c40c41fae2b935bb765a18/tests/test_models.py, Path: tests/test_models.py, Repository: openedx-filters-test-plugin, Repository URL: https://github.com/mariajgrimaldi/openedx-filters-test-plugin
-URL: https://github.com/eduNEXT/openedx-filters-samples/blob/c22cf063ccc82b862310b8dae45731ecb3abdd73/tests/test_models.py, Path: tests/test_models.py, Repository: openedx-filters-samples, Repository URL: https://github.com/eduNEXT/openedx-filters-samples
-URL: https://github.com/UAMx/uamx-social-auth/blob/52abc6c80c5d8ceb525dd3b95c208f243c073f3b/uamx_social_auth/settings/production.py, Path: uamx_social_auth/settings/production.py, Repository: uamx-social-auth, Repository URL: https://github.com/UAMx/uamx-social-auth
-URL: https://github.com/vavv-dev/edx-operation/blob/43ead305bc40f39998bab10afbed8c182d6fd10d/edx_operation/apps/event/kafka.py, Path: edx_operation/apps/event/kafka.py, Repository: edx-operation, Repository URL: https://github.com/vavv-dev/edx-operation
-URL: https://github.com/openedx/enterprise-subsidy/blob/f091544ad857a16288c925a22d35182989e20975/enterprise_subsidy/apps/core/management/commands/produce_enterprise_ping_event.py, Path: enterprise_subsidy/apps/core/management/commands/produce_enterprise_ping_event.py, Repository: enterprise-subsidy, Repository URL: https://github.com/openedx/enterprise-subsidy
-URL: https://github.com/openedx/event-bus-redis/blob/da6e46489db0030bfc44bec86343cdf0c793cae6/edx_event_bus_redis/internal/consumer.py, Path: edx_event_bus_redis/internal/consumer.py, Repository: event-bus-redis, Repository URL: https://github.com/openedx/event-bus-redis
-URL: https://github.com/openedx/enterprise-access/blob/9d333fa2e32e42e065a2060fd7452d9322ca81fb/enterprise_access/apps/core/management/commands/consume_enterprise_ping_events.py, Path: enterprise_access/apps/core/management/commands/consume_enterprise_ping_events.py, Repository: enterprise-access, Repository URL: https://github.com/openedx/enterprise-access
-URL: https://github.com/openedx/event-bus-kafka/blob/9961dd8137e306ce712dd9485d1cc4d4d5272247/edx_event_bus_kafka/management/commands/produce_event.py, Path: edx_event_bus_kafka/management/commands/produce_event.py, Repository: event-bus-kafka, Repository URL: https://github.com/openedx/event-bus-kafka
-URL: https://github.com/openedx/event-bus-redis/blob/da6e46489db0030bfc44bec86343cdf0c793cae6/edx_event_bus_redis/internal/utils.py, Path: edx_event_bus_redis/internal/utils.py, Repository: event-bus-redis, Repository URL: https://github.com/openedx/event-bus-redis
-URL: https://github.com/openedx/event-bus-redis/blob/da6e46489db0030bfc44bec86343cdf0c793cae6/edx_event_bus_redis/internal/producer.py, Path: edx_event_bus_redis/internal/producer.py, Repository: event-bus-redis, Repository URL: https://github.com/openedx/event-bus-redis
-URL: https://github.com/openedx/enterprise-access/blob/9d333fa2e32e42e065a2060fd7452d9322ca81fb/enterprise_access/apps/events/signals.py, Path: enterprise_access/apps/events/signals.py, Repository: enterprise-access, Repository URL: https://github.com/openedx/enterprise-access
-URL: https://github.com/open-craft/openedx-events-sender/blob/63a04fb5fedb45a72e5161a775bfe9f2d95cffea/tests/test_receivers.py, Path: tests/test_receivers.py, Repository: openedx-events-sender, Repository URL: https://github.com/open-craft/openedx-events-sender
-URL: https://github.com/openedx/event-bus-kafka/blob/9961dd8137e306ce712dd9485d1cc4d4d5272247/edx_event_bus_kafka/internal/utils.py, Path: edx_event_bus_kafka/internal/utils.py, Repository: event-bus-kafka, Repository URL: https://github.com/openedx/event-bus-kafka
-URL: https://github.com/openedx/event-bus-redis/blob/da6e46489db0030bfc44bec86343cdf0c793cae6/edx_event_bus_redis/management/commands/produce_event.py, Path: edx_event_bus_redis/management/commands/produce_event.py, Repository: event-bus-redis, Repository URL: https://github.com/openedx/event-bus-redis
-URL: https://github.com/openedx/credentials/blob/557a0e42cc17d77e5298c8a311f4b97ebec16114/credentials/apps/credentials/tests/test_signals.py, Path: credentials/apps/credentials/tests/test_signals.py, Repository: credentials, Repository URL: https://github.com/openedx/credentials
-URL: https://github.com/openedx/event-bus-kafka/blob/9961dd8137e306ce712dd9485d1cc4d4d5272247/edx_event_bus_kafka/internal/tests/test_consumer.py, Path: edx_event_bus_kafka/internal/tests/test_consumer.py, Repository: event-bus-kafka, Repository URL: https://github.com/openedx/event-bus-kafka
-URL: https://github.com/openedx/event-bus-redis/blob/da6e46489db0030bfc44bec86343cdf0c793cae6/edx_event_bus_redis/internal/tests/test_consumer.py, Path: edx_event_bus_redis/internal/tests/test_consumer.py, Repository: event-bus-redis, Repository URL: https://github.com/openedx/event-bus-redis
-URL: https://github.com/jxxghp/MoviePilot/blob/7dd1e75ad7d553723402ddbf44a0f514a047d22d/app/command.py, Path: app/command.py, Repository: MoviePilot, Repository URL: https://github.com/jxxghp/MoviePilot
-URL: https://github.com/hsuyelin/nas-tools/blob/a1124877a04eb8dc60652d30895c79dd9a2d2000/web/main.py, Path: web/main.py, Repository: nas-tools, Repository URL: https://github.com/hsuyelin/nas-tools
-URL: https://github.com/biliup/biliup/blob/f2571a3e3e5e5ace30ec9f731bf71ec7d19048bc/biliup/app.py, Path: biliup/app.py, Repository: biliup, Repository URL: https://github.com/biliup/biliup
-URL: https://github.com/unioslo/mreg/blob/8952b7973c142d90b2c35e37b64c665810237347/mreg/signals.py, Path: mreg/signals.py, Repository: mreg, Repository URL: https://github.com/unioslo/mreg
-URL: https://github.com/columbia/appdoctor/blob/f7e141fdc9e64a26b1d51bffc9064fa0d960ddac/reproduce.py, Path: reproduce.py, Repository: appdoctor, Repository URL: https://github.com/columbia/appdoctor
-URL: https://github.com/mypaint/mypaint/blob/8187b1e2cfdaebf7484f6da835667f46c9921a47/gui/mode.py, Path: gui/mode.py, Repository: mypaint, Repository URL: https://github.com/mypaint/mypaint
-URL: https://github.com/simple-login/app/blob/209ed65ebca281d375c3f8be7b12c1f05f49b7e1/app/models.py, Path: app/models.py, Repository: app, Repository URL: https://github.com/simple-login/app
-URL: https://github.com/claritylab/lucida/blob/3256bfa84be24eda7c988b1e61ed4cee0663410d/lucida/speechrecognition/kaldi_gstreamer_asr/kaldigstserver/decoder.py, Path: lucida/speechrecognition/kaldi_gstreamer_asr/kaldigstserver/decoder.py, Repository: lucida, Repository URL: https://github.com/claritylab/lucida
-URL: https://github.com/gillescastel/inkscape-shortcut-manager/blob/8a6056db7be0be9036ae9fb8f471a91cebb1bef7/text.py, Path: text.py, Repository: inkscape-shortcut-manager, Repository URL: https://github.com/gillescastel/inkscape-shortcut-manager
-URL: https://github.com/Duckinahat/pyjector/blob/4601ce6ae6474d98ba3f91f317205d5dc6fabead/trickmode.py, Path: trickmode.py, Repository: pyjector, Repository URL: https://github.com/Duckinahat/pyjector
-URL: https://github.com/tarekziade/molotov/blob/487aa219fdfefe0ea7c4d5e3461921fb673d91c5/molotov/worker.py, Path: molotov/worker.py, Repository: molotov, Repository URL: https://github.com/tarekziade/molotov
-URL: https://github.com/gaelen/python-egi/blob/fc1742625fe655600c04917250b333c18eb1674e/example_multi.py, Path: example_multi.py, Repository: python-egi, Repository URL: https://github.com/gaelen/python-egi
-URL: https://github.com/ironman5366/W.I.L.L-Telegram/blob/3ca8f420ccef4ffd31c44f16a86df357f7f9866c/parser.py, Path: parser.py, Repository: W.I.L.L-Telegram, Repository URL: https://github.com/ironman5366/W.I.L.L-Telegram
-URL: https://github.com/stas2z/klipper-hc32/blob/5b98f01c64504336273952deb07095e27ffc370b/klippy/stepper.py, Path: klippy/stepper.py, Repository: klipper-hc32, Repository URL: https://github.com/stas2z/klipper-hc32
-URL: https://github.com/Mattoids/nas-tools/blob/4eb637d126db44def7c3a0ab496f3255a95d6797/app/sites/sites.py, Path: app/sites/sites.py, Repository: nas-tools, Repository URL: https://github.com/Mattoids/nas-tools
-URL: https://github.com/akkana/scripts/blob/d60ba71ab426bd0a923fa59e857bce73f2e542b2/pykey.py, Path: pykey.py, Repository: scripts, Repository URL: https://github.com/akkana/scripts
-URL: https://github.com/Diluka/nas-tools-unlock/blob/20ce515e6a488dfc42c1f06a3a3877f2e715fdb5/web/action.py, Path: web/action.py, Repository: nas-tools-unlock, Repository URL: https://github.com/Diluka/nas-tools-unlock
-URL: https://github.com/sugarlabs/portfolio-activity/blob/331c3e2542b4885112fd32b3c32ed4f5916d204c/arecord.py, Path: arecord.py, Repository: portfolio-activity, Repository URL: https://github.com/sugarlabs/portfolio-activity
-URL: https://github.com/quantopian/qdb/blob/c25018d2f0979589a38a07667478cb6022d57ed9/qdb/comm.py, Path: qdb/comm.py, Repository: qdb, Repository URL: https://github.com/quantopian/qdb
-URL: https://github.com/BurntSushi/pytyle1/blob/fec5546e2c32808737acc1a7d6ab2bf9a0f475eb/PyTyle/Probe.py, Path: PyTyle/Probe.py, Repository: pytyle1, Repository URL: https://github.com/BurntSushi/pytyle1
-URL: https://github.com/Podshot/MCEdit-Unified/blob/90abfb170c65b877ac67193e717fa3a3ded635dd/mcplatform.py, Path: mcplatform.py, Repository: MCEdit-Unified, Repository URL: https://github.com/Podshot/MCEdit-Unified
-URL: https://github.com/OpenAgricultureFoundation/openag-device-software/blob/a51d2de399c0a6781ae51d0dcfaae1583d75f346/app/views.py, Path: app/views.py, Repository: openag-device-software, Repository URL: https://github.com/OpenAgricultureFoundation/openag-device-software
-URL: https://github.com/Cimbali/pympress/blob/fc5ebfc79b5255ea801e4935aaa33f7bcadc595d/pympress/ui.py, Path: pympress/ui.py, Repository: pympress, Repository URL: https://github.com/Cimbali/pympress
-URL: https://github.com/windelbouwman/lognplot/blob/339ab93f903510c651bee03753616b1c266e2edb/demo/demo.py, Path: demo/demo.py, Repository: lognplot, Repository URL: https://github.com/windelbouwman/lognplot
-URL: https://github.com/mercure-imaging/mercure/blob/1cf4cf3288b38d393d1d94412d310069a7923f0c/cleaner.py, Path: cleaner.py, Repository: mercure, Repository URL: https://github.com/mercure-imaging/mercure
-URL: https://github.com/KenT2/pipresents-gapless/blob/debfbfdbae1b553e5191caf542b602fb987c3550/pp_animate.py, Path: pp_animate.py, Repository: pipresents-gapless, Repository URL: https://github.com/KenT2/pipresents-gapless
-URL: https://github.com/mercure-imaging/mercure/blob/1cf4cf3288b38d393d1d94412d310069a7923f0c/dispatcher.py, Path: dispatcher.py, Repository: mercure, Repository URL: https://github.com/mercure-imaging/mercure
-URL: https://github.com/luanfonceca/speakerfight/blob/c9350d84664ac3bad83dd661a2c5d55d1b8cbf5b/deck/views.py, Path: deck/views.py, Repository: speakerfight, Repository URL: https://github.com/luanfonceca/speakerfight
-URL: https://github.com/themanyone/whisper_dictation/blob/012bb2fe18edb507a68023f956facc2adc220304/record.py, Path: record.py, Repository: whisper_dictation, Repository URL: https://github.com/themanyone/whisper_dictation
-URL: https://github.com/nicholasjconn/python-alexa-voice-service/blob/6e58da80fbade79a8ac514d0a5e84c2cfb23c749/alexa_device.py, Path: alexa_device.py, Repository: python-alexa-voice-service, Repository URL: https://github.com/nicholasjconn/python-alexa-voice-service
-URL: https://github.com/MaterializeInc/materialize/blob/a4fbaf09496b21cfc06ec6f168e38239658a5eae/ci/mkpipeline.py, Path: ci/mkpipeline.py, Repository: materialize, Repository URL: https://github.com/MaterializeInc/materialize
-URL: https://github.com/erdc/ampl/blob/ec3f78ddfa6f35851e06ee851d72e2366b35ae07/src/ampl/pipelinestep.py, Path: src/ampl/pipelinestep.py, Repository: ampl, Repository URL: https://github.com/erdc/ampl
-URL: https://github.com/elastic/ml-cpp/blob/7d08ac600e7d9f1f239c0136301ae4b573762520/.buildkite/ml_pipeline/step.py, Path: .buildkite/ml_pipeline/step.py, Repository: ml-cpp, Repository URL: https://github.com/elastic/ml-cpp
-URL: https://github.com/wwu-mmll/more-alike-than-different-paper2021/blob/3eef01b81076e69bb583c27116a5f4ce64a0ba88/pipeline/steps/abc_pipelinestep.py, Path: pipeline/steps/abc_pipelinestep.py, Repository: more-alike-than-different-paper2021, Repository URL: https://github.com/wwu-mmll/more-alike-than-different-paper2021
-URL: https://github.com/huggingface/datatrove/blob/01a017b1bd03a6cdc59c4515545e80788de4e03d/src/datatrove/pipeline/base.py, Path: src/datatrove/pipeline/base.py, Repository: datatrove, Repository URL: https://github.com/huggingface/datatrove
-URL: https://github.com/facebook/sapp/blob/f60b49ef2446f5de82a2021fcfa5731fa7328eec/sapp/pipeline/__init__.py, Path: sapp/pipeline/__init__.py, Repository: sapp, Repository URL: https://github.com/facebook/sapp
-URL: https://github.com/oracle/accelerated-data-science/blob/916a7f5c4e23bfb51a47633a627d67614265a709/ads/pipeline/ads_pipeline_step.py, Path: ads/pipeline/ads_pipeline_step.py, Repository: accelerated-data-science, Repository URL: https://github.com/oracle/accelerated-data-science
-URL: https://github.com/isb-cgc/ISB-CGC-pipelines/blob/de982717c385657b0f62d96ff2e96d5115671833/lib/examples/api/steps.py, Path: lib/examples/api/steps.py, Repository: ISB-CGC-pipelines, Repository URL: https://github.com/isb-cgc/ISB-CGC-pipelines
-URL: https://github.com/microsoft/msticpy/blob/c0ef238db4ddeaec5b038401c09b28855b88d50b/msticpy/init/pivot_core/pivot_pipeline.py, Path: msticpy/init/pivot_core/pivot_pipeline.py, Repository: msticpy, Repository URL: https://github.com/microsoft/msticpy
-URL: https://github.com/aliyun/aliyun-odps-python-sdk/blob/fbf46bb9029c0ed163f9e31852094d160422d7dc/odps/ml/pipeline/core.py, Path: odps/ml/pipeline/core.py, Repository: aliyun-odps-python-sdk, Repository URL: https://github.com/aliyun/aliyun-odps-python-sdk
-URL: https://github.com/epoch8/datapipe/blob/53cee1b0c83b6d24effc3c7491f4759a27f76aac/datapipe/compute.py, Path: datapipe/compute.py, Repository: datapipe, Repository URL: https://github.com/epoch8/datapipe
-URL: https://github.com/certara/pyDarwin/blob/d431e68a2f4d854680b588da6b5eca4405439e60/src/darwin/utils.py, Path: src/darwin/utils.py, Repository: pyDarwin, Repository URL: https://github.com/certara/pyDarwin
-URL: https://github.com/vkit-x/vkit/blob/98ada2d99a378893296230f70b8f24b82ca149fe/vkit/pipeline/interface.py, Path: vkit/pipeline/interface.py, Repository: vkit, Repository URL: https://github.com/vkit-x/vkit
-URL: https://github.com/abacusai/api-python/blob/934b449b0eb87f06038413c46b0f695d3bc8961b/abacusai/pipeline_step.py, Path: abacusai/pipeline_step.py, Repository: api-python, Repository URL: https://github.com/abacusai/api-python
-URL: https://github.com/thismlguy/code-genie/blob/58f789ce7dbacc0159ab7ca87d59d894f65456f8/code_genie/pipeline.py, Path: code_genie/pipeline.py, Repository: code-genie, Repository URL: https://github.com/thismlguy/code-genie
-URL: https://github.com/lifelonglearner127/image_classification_pipeline/blob/afc7c0814b22e3f2a0c935054953e8a94c4cfae8/main.py, Path: main.py, Repository: image_classification_pipeline, Repository URL: https://github.com/lifelonglearner127/image_classification_pipeline
-URL: https://github.com/MikeDacre/python-pipeline/blob/9de466ef93a7377a10939c5cfc33b1f0aabf893e/pipeline/pl.py, Path: pipeline/pl.py, Repository: python-pipeline, Repository URL: https://github.com/MikeDacre/python-pipeline
-URL: https://github.com/MaisTodos/Alfred4chalice/blob/9d723c8c85c845a6d5f127e49cb62677e4144d0e/alfred/pipelines/base.py, Path: alfred/pipelines/base.py, Repository: Alfred4chalice, Repository URL: https://github.com/MaisTodos/Alfred4chalice
-URL: https://github.com/helderarr/ws_demo_app/blob/b95732ccee3c077efbd81550e45d3010598b1c10/interfaces.py, Path: interfaces.py, Repository: ws_demo_app, Repository URL: https://github.com/helderarr/ws_demo_app
-URL: https://github.com/hplt-project/OpusCleaner/blob/27c66a6c1a166da0f2ffeee8a6a00c5f32a3f217/opuscleaner/clean.py, Path: opuscleaner/clean.py, Repository: OpusCleaner, Repository URL: https://github.com/hplt-project/OpusCleaner
-URL: https://github.com/microbiomedata/nmdc-server/blob/b8f3c8ae7c1463623eebf53edbc784ea61db634a/nmdc_server/schemas.py, Path: nmdc_server/schemas.py, Repository: nmdc-server, Repository URL: https://github.com/microbiomedata/nmdc-server
-URL: https://github.com/KonduitAI/konduit-serving/blob/4885962d81e113010bc10cc8552a17c0906c4d93/python/konduit/base_inference.py, Path: python/konduit/base_inference.py, Repository: konduit-serving, Repository URL: https://github.com/KonduitAI/konduit-serving
-URL: https://github.com/melaniasala/RecSys-Competition/blob/388b46c678f04dfd8af895e71e6e01848bd79bf9/Recommenders/Ensambles.py, Path: Recommenders/Ensambles.py, Repository: RecSys-Competition, Repository URL: https://github.com/melaniasala/RecSys-Competition
-URL: https://github.com/Merck/deepbgc/blob/4cd5bb72c885cb279d360b3cc0afbb14ae14e996/deepbgc/pipeline/step.py, Path: deepbgc/pipeline/step.py, Repository: deepbgc, Repository URL: https://github.com/Merck/deepbgc
-URL: https://github.com/hidori-dev/hidori/blob/b73e178a1516a26438e5e5b3781d580075898f09/src/hidori_common/typings.py, Path: src/hidori_common/typings.py, Repository: hidori, Repository URL: https://github.com/hidori-dev/hidori
-URL: https://github.com/developmentseed/ingest-framework/blob/7c2492a54f916e3273f2c7eb30aa2f0b5dfe0edb/scratchpad/models.py, Path: scratchpad/models.py, Repository: ingest-framework, Repository URL: https://github.com/developmentseed/ingest-framework
-URL: https://github.com/aliyun/pai-python-sdk/blob/a2052ef635cde9be3425904dd7f0b2413fb4d158/pai/pipeline/step.py, Path: pai/pipeline/step.py, Repository: pai-python-sdk, Repository URL: https://github.com/aliyun/pai-python-sdk
-URL: https://github.com/riven314/TweakStory/blob/a612f7e8253782510d29aecbd756dc94d5fd1e34/model/preprocessor.py, Path: model/preprocessor.py, Repository: TweakStory, Repository URL: https://github.com/riven314/TweakStory
-URL: https://github.com/JannicMeetYu/annotation_backend/blob/de494afe66926eb72899597d6c3000c96f6ea164/pipeline/step.py, Path: pipeline/step.py, Repository: annotation_backend, Repository URL: https://github.com/JannicMeetYu/annotation_backend
-URL: https://github.com/serviceprototypinglab/mao-orchestrator/blob/f0aa6e8778dd22b2b173cc5ff493157d7c948d5a/api_client.py, Path: api_client.py, Repository: mao-orchestrator, Repository URL: https://github.com/serviceprototypinglab/mao-orchestrator
-URL: https://github.com/openedx/xblock-lti-consumer/blob/8636d58bdd635a70f2b6231336c4dced2e1ac245/lti_consumer/filters.py, Path: lti_consumer/filters.py, Repository: xblock-lti-consumer, Repository URL: https://github.com/openedx/xblock-lti-consumer
-URL: https://github.com/edx/commerce-coordinator/blob/6e8c266c4b1eb809543617e9e7c00601ae76cb4e/commerce_coordinator/apps/frontend_app_payment/filters.py, Path: commerce_coordinator/apps/frontend_app_payment/filters.py, Repository: commerce-coordinator, Repository URL: https://github.com/edx/commerce-coordinator
-URL: https://github.com/edx/commerce-coordinator/blob/6e8c266c4b1eb809543617e9e7c00601ae76cb4e/commerce_coordinator/apps/commercetools/filters.py, Path: commerce_coordinator/apps/commercetools/filters.py, Repository: commerce-coordinator, Repository URL: https://github.com/edx/commerce-coordinator
-URL: https://github.com/edx/commerce-coordinator/blob/6e8c266c4b1eb809543617e9e7c00601ae76cb4e/commerce_coordinator/apps/titan/filters.py, Path: commerce_coordinator/apps/titan/filters.py, Repository: commerce-coordinator, Repository URL: https://github.com/edx/commerce-coordinator
-URL: https://github.com/edx/commerce-coordinator/blob/6e8c266c4b1eb809543617e9e7c00601ae76cb4e/commerce_coordinator/apps/frontend_app_ecommerce/filters.py, Path: commerce_coordinator/apps/frontend_app_ecommerce/filters.py, Repository: commerce-coordinator, Repository URL: https://github.com/edx/commerce-coordinator
-URL: https://github.com/openedx/event-routing-backends/blob/9ae9c4f10f20f8d21e4ce4a8f72f7fa635af0241/event_routing_backends/processors/tests/openedx_filters/test_filters.py, Path: event_routing_backends/processors/tests/openedx_filters/test_filters.py, Repository: event-routing-backends, Repository URL: https://github.com/openedx/event-routing-backends
-URL: https://github.com/edx/commerce-coordinator/blob/6e8c266c4b1eb809543617e9e7c00601ae76cb4e/commerce_coordinator/apps/stripe/filters.py, Path: commerce_coordinator/apps/stripe/filters.py, Repository: commerce-coordinator, Repository URL: https://github.com/edx/commerce-coordinator
+Repository: edx-platform
+  URL: https://github.com/openedx/edx-platform/blob/5e3181ce61f4c18471221f5e1663f681b1bc1735/common/djangoapps/student/signals/signals.py
+  Path: common/djangoapps/student/signals/signals.py
+  Repository URL: https://github.com/openedx/edx-platform
 
-Total Results: 171
+  URL: https://github.com/fccn/edx-platform/blob/452b82e68b63bef8b4ff7a5027cde0b38961df6b/openedx/core/djangoapps/discussions/tasks.py
+  Path: openedx/core/djangoapps/discussions/tasks.py
+  Repository URL: https://github.com/fccn/edx-platform
+
+  URL: https://github.com/python-benchmark/edx-platform/blob/c2a2eb6202eb37cbbb0eef285320c01035753aec/common/djangoapps/student/views/dashboard.py
+  Path: common/djangoapps/student/views/dashboard.py
+  Repository URL: https://github.com/python-benchmark/edx-platform
+
+Total Results for edx-platform: 3
+
+Repository: code-annotations
+  URL: https://github.com/openedx/code-annotations/blob/c1b81734380de7bb45a8bee09cf19f4e4cbf846a/code_annotations/contrib/sphinx/extensions/openedx_events.py
+  Path: code_annotations/contrib/sphinx/extensions/openedx_events.py
+  Repository URL: https://github.com/openedx/code-annotations
+
+Total Results for code-annotations: 1
+
+Repository: openedx-events-2-zapier
+  URL: https://github.com/eduNEXT/openedx-events-2-zapier/blob/fb551db50b77e46710d839f0e7cb2ea901969676/openedx_events_2_zapier/apps.py
+  Path: openedx_events_2_zapier/apps.py
+  Repository URL: https://github.com/eduNEXT/openedx-events-2-zapier
+
+Total Results for openedx-events-2-zapier: 1
+
+Repository: openedx-events-sender
+  URL: https://github.com/open-craft/openedx-events-sender/blob/63a04fb5fedb45a72e5161a775bfe9f2d95cffea/openedx_events_sender/receivers.py
+  Path: openedx_events_sender/receivers.py
+  Repository URL: https://github.com/open-craft/openedx-events-sender
+
+Total Results for openedx-events-sender: 1
+
+Repository: event-tracking
+  URL: https://github.com/openedx/event-tracking/blob/c32b68ce6fa8cf8086cbd128c004c53a9e1e584a/eventtracking/handlers.py
+  Path: eventtracking/handlers.py
+  Repository URL: https://github.com/openedx/event-tracking
+
+Total Results for event-tracking: 1
+
+Repository: OpenAI_LMS
+  URL: https://github.com/ilesoviy/OpenAI_LMS/blob/f1de313b6124ae783e6f4f0f075ae760264d9089/xmodule/modulestore/mixed.py
+  Path: xmodule/modulestore/mixed.py
+  Repository URL: https://github.com/ilesoviy/OpenAI_LMS
+
+Total Results for OpenAI_LMS: 1
+
+Repository: edx-arch-experiments
+  URL: https://github.com/edx/edx-arch-experiments/blob/1d4ba69cc6be374b28fedff57ded7c4f6c802ced/edx_arch_experiments/scripts/republish_failed_events.py
+  Path: edx_arch_experiments/scripts/republish_failed_events.py
+  Repository URL: https://github.com/edx/edx-arch-experiments
+
+Total Results for edx-arch-experiments: 1
+
+Repository: edunext-platform
+  URL: https://github.com/eduNEXT/edunext-platform/blob/176422e11b77015a6308f4a0986b43e67571aeb9/openedx/core/djangoapps/course_groups/models.py
+  Path: openedx/core/djangoapps/course_groups/models.py
+  Repository URL: https://github.com/eduNEXT/edunext-platform
+
+Total Results for edunext-platform: 1
+
+Repository: edx-operation
+  URL: https://github.com/vavv-dev/edx-operation/blob/43ead305bc40f39998bab10afbed8c182d6fd10d/edx_operation/settings/base.py
+  Path: edx_operation/settings/base.py
+  Repository URL: https://github.com/vavv-dev/edx-operation
+
+Total Results for edx-operation: 1
+
+Repository: openedx-plugin-example
+  URL: https://github.com/cookiecutter-openedx/openedx-plugin-example/blob/082b781374f5184d657f2ade4a72d22df411af1c/openedx_plugin/apps.py
+  Path: openedx_plugin/apps.py
+  Repository URL: https://github.com/cookiecutter-openedx/openedx-plugin-example
+
+Total Results for openedx-plugin-example: 1
+
+Repository: stepwise-edx-plugin
+  URL: https://github.com/StepwiseMath/stepwise-edx-plugin/blob/989c1ca5a822396bb22941caf54a9db38317e527/stepwise_plugin/student/session.py
+  Path: stepwise_plugin/student/session.py
+  Repository URL: https://github.com/StepwiseMath/stepwise-edx-plugin
+
+Total Results for stepwise-edx-plugin: 1
+
+Repository: uic_edx-platform
+  URL: https://github.com/ImaginaryLandscape/uic_edx-platform/blob/a72d495077f0282a3f4a79d6c18b5ab8e838afac/openedx/core/djangoapps/user_authn/views/register.py
+  Path: openedx/core/djangoapps/user_authn/views/register.py
+  Repository URL: https://github.com/ImaginaryLandscape/uic_edx-platform
+
+Total Results for uic_edx-platform: 1
+
+Repository: HALO_LMS
+  URL: https://github.com/bregoNMI/HALO_LMS/blob/2c9e6305290d66fd50ab146e4424f4b38575c872/edx-platform/cms/envs/common.py
+  Path: edx-platform/cms/envs/common.py
+  Repository URL: https://github.com/bregoNMI/HALO_LMS
+
+Total Results for HALO_LMS: 1
+
+Repository: edx-exams
+  URL: https://github.com/edx/edx-exams/blob/3bd5ab5853285bdf0ffbba9e9975ac380544e4a7/edx_exams/apps/core/signals/handlers.py
+  Path: edx_exams/apps/core/signals/handlers.py
+  Repository URL: https://github.com/edx/edx-exams
+
+Total Results for edx-exams: 1
+
+Repository: eox-nelp
+  URL: https://github.com/eduNEXT/eox-nelp/blob/3ce24149250c1318b25f0a04d9e3a5eeaa6f2b1e/eox_nelp/signals/utils.py
+  Path: eox_nelp/signals/utils.py
+  Repository URL: https://github.com/eduNEXT/eox-nelp
+
+Total Results for eox-nelp: 1
+
+Repository: mogc-partnerships
+  URL: https://github.com/academic-innovation/mogc-partnerships/blob/ef8384f4e177a93cfe6ec163b561d1e2d91c103d/mogc_partnerships/receivers.py
+  Path: mogc_partnerships/receivers.py
+  Repository URL: https://github.com/academic-innovation/mogc-partnerships
+
+Total Results for mogc-partnerships: 1
+
+Repository: edx-ora2
+  URL: https://github.com/openedx/edx-ora2/blob/8b320d69745a92aa64696c5f2617bd76dff88cb3/openassessment/xblock/ui_mixins/legacy/handlers_mixin.py
+  Path: openassessment/xblock/ui_mixins/legacy/handlers_mixin.py
+  Repository URL: https://github.com/openedx/edx-ora2
+
+Total Results for edx-ora2: 1
+
+Repository: ndi-edx-platform
+  URL: https://github.com/jswope00/ndi-edx-platform/blob/1a139c900c62d491ab7e2e86b06f7112319d0ada/openedx/core/djangoapps/user_authn/views/register.py
+  Path: openedx/core/djangoapps/user_authn/views/register.py
+  Repository URL: https://github.com/jswope00/ndi-edx-platform
+
+Total Results for ndi-edx-platform: 1
+
+Repository: slx
+  URL: https://github.com/bhaveshmandloi/slx/blob/5f673f4cdbacee01181d190b1741699f635cc78d/app/edxapp/edx-platform/common/djangoapps/student/models.py
+  Path: app/edxapp/edx-platform/common/djangoapps/student/models.py
+  Repository URL: https://github.com/bhaveshmandloi/slx
+
+Total Results for slx: 1
+
+Repository: openedx-webhooks
+  URL: https://github.com/aulasneo/openedx-webhooks/blob/74ffc490983d8e39cff3cbbe150dfb0b8a3979bc/openedx_webhooks/apps.py
+  Path: openedx_webhooks/apps.py
+  Repository URL: https://github.com/aulasneo/openedx-webhooks
+
+Total Results for openedx-webhooks: 1
+
+Repository: credentials
+  URL: https://github.com/openedx/credentials/blob/557a0e42cc17d77e5298c8a311f4b97ebec16114/credentials/apps/core/api.py
+  Path: credentials/apps/core/api.py
+  Repository URL: https://github.com/openedx/credentials
+
+Total Results for credentials: 1
+
+Repository: event-bus-kafka
+  URL: https://github.com/openedx/event-bus-kafka/blob/9961dd8137e306ce712dd9485d1cc4d4d5272247/edx_event_bus_kafka/internal/producer.py
+  Path: edx_event_bus_kafka/internal/producer.py
+  Repository URL: https://github.com/openedx/event-bus-kafka
+
+Total Results for event-bus-kafka: 1
+
+Repository: cookiecutter-openedx-plugin
+  URL: https://github.com/cookiecutter-openedx/cookiecutter-openedx-plugin/blob/e01c667c21dc941bb4fceadd9db5a3120a6a358f/cookiecutter_plugin/apps.py
+  Path: cookiecutter_plugin/apps.py
+  Repository URL: https://github.com/cookiecutter-openedx/cookiecutter-openedx-plugin
+
+Total Results for cookiecutter-openedx-plugin: 1
+
+Repository: event-routing-backends
+  URL: https://github.com/openedx/event-routing-backends/blob/9ae9c4f10f20f8d21e4ce4a8f72f7fa635af0241/event_routing_backends/processors/openedx_filters/filters.py
+  Path: event_routing_backends/processors/openedx_filters/filters.py
+  Repository URL: https://github.com/openedx/event-routing-backends
+
+Total Results for event-routing-backends: 1
+
+Repository: openedx-filters-samples
+  URL: https://github.com/eduNEXT/openedx-filters-samples/blob/c22cf063ccc82b862310b8dae45731ecb3abdd73/openedx_filters_samples/apps.py
+  Path: openedx_filters_samples/apps.py
+  Repository URL: https://github.com/eduNEXT/openedx-filters-samples
+
+Total Results for openedx-filters-samples: 1
+
+Repository: commerce-coordinator
+  URL: https://github.com/edx/commerce-coordinator/blob/6e8c266c4b1eb809543617e9e7c00601ae76cb4e/commerce_coordinator/apps/core/pipeline.py
+  Path: commerce_coordinator/apps/core/pipeline.py
+  Repository URL: https://github.com/edx/commerce-coordinator
+
+Total Results for commerce-coordinator: 1
+
+Repository: openedx-completion-aggregator
+  URL: https://github.com/open-craft/openedx-completion-aggregator/blob/2dfb6e24fc0d8f7cab5fb412cb446f7461c57ac8/completion_aggregator/xapi.py
+  Path: completion_aggregator/xapi.py
+  Repository URL: https://github.com/open-craft/openedx-completion-aggregator
+
+Total Results for openedx-completion-aggregator: 1
+
+Repository: openedx-filters-test-plugin
+  URL: https://github.com/mariajgrimaldi/openedx-filters-test-plugin/blob/7505ec5ff1955a6fa1c40c41fae2b935bb765a18/setup.py
+  Path: setup.py
+  Repository URL: https://github.com/mariajgrimaldi/openedx-filters-test-plugin
+
+Total Results for openedx-filters-test-plugin: 1
+
+Repository: openedx-ltistore
+  URL: https://github.com/open-craft/openedx-ltistore/blob/a0d6c36481fc1a03a48e328720f13e6962225e7f/lti_store/pipelines.py
+  Path: lti_store/pipelines.py
+  Repository URL: https://github.com/open-craft/openedx-ltistore
+
+Total Results for openedx-ltistore: 1
+
+Repository: manifest-sagar
+  URL: https://github.com/nelc/manifest-sagar/blob/5e35b0ed6ee8726da8d4895988e3f98be3cb54ef/environments/prod/openedx/env/apps/openedx/settings/lms/production.py
+  Path: environments/prod/openedx/env/apps/openedx/settings/lms/production.py
+  Repository URL: https://github.com/nelc/manifest-sagar
+
+Total Results for manifest-sagar: 1
+
+Repository: lektorium_main
+  URL: https://github.com/lektorium-tutor/lektorium_main/blob/00ed7e3bd57f4a5363ae7fbd89ecc0619c576701/lektorium_main/tilda/pipeline.py
+  Path: lektorium_main/tilda/pipeline.py
+  Repository URL: https://github.com/lektorium-tutor/lektorium_main
+
+Total Results for lektorium_main: 1
+
+Repository: uamx-social-auth
+  URL: https://github.com/UAMx/uamx-social-auth/blob/52abc6c80c5d8ceb525dd3b95c208f243c073f3b/uamx_social_auth/settings/common.py
+  Path: uamx_social_auth/settings/common.py
+  Repository URL: https://github.com/UAMx/uamx-social-auth
+
+Total Results for uamx-social-auth: 1
+
+Repository: openedx-basic-hooks
+  URL: https://github.com/eduNEXT/openedx-basic-hooks/blob/21498db7a89205d0d3839e4f0c43b4fa7d405634/openedx_basic_hooks/filters/pre_register.py
+  Path: openedx_basic_hooks/filters/pre_register.py
+  Repository URL: https://github.com/eduNEXT/openedx-basic-hooks
+
+Total Results for openedx-basic-hooks: 1
+
+Repository: nau-openedx-extensions
+  URL: https://github.com/fccn/nau-openedx-extensions/blob/653f5d49b4d726f051b379448f4cb4db3a3a34ba/nau_openedx_extensions/filters/pipeline.py
+  Path: nau_openedx_extensions/filters/pipeline.py
+  Repository URL: https://github.com/fccn/nau-openedx-extensions
+
+Total Results for nau-openedx-extensions: 1
+
+Repository: event-bus-redis
+  URL: https://github.com/openedx/event-bus-redis/blob/da6e46489db0030bfc44bec86343cdf0c793cae6/edx_event_bus_redis/internal/tests/test_producer.py
+  Path: edx_event_bus_redis/internal/tests/test_producer.py
+  Repository URL: https://github.com/openedx/event-bus-redis
+
+Total Results for event-bus-redis: 1
+
+Repository: xblock-lti-consumer
+  URL: https://github.com/openedx/xblock-lti-consumer/blob/8636d58bdd635a70f2b6231336c4dced2e1ac245/lti_consumer/models.py
+  Path: lti_consumer/models.py
+  Repository URL: https://github.com/openedx/xblock-lti-consumer
+
+Total Results for xblock-lti-consumer: 1
+
+Repository: eox-tenant
+  URL: https://github.com/eduNEXT/eox-tenant/blob/99d22290b49e314fa02b0ac353fe149c1eed7ab2/eox_tenant/filters/pipeline.py
+  Path: eox_tenant/filters/pipeline.py
+  Repository URL: https://github.com/eduNEXT/eox-tenant
+
+Total Results for eox-tenant: 1
+
+Repository: openedx-filter-demos
+  URL: https://github.com/open-craft/openedx-filter-demos/blob/78e494b82ffd2b5c7828f48d33e0cb126af66852/openedx_filter_demos/__init__.py
+  Path: openedx_filter_demos/__init__.py
+  Repository URL: https://github.com/open-craft/openedx-filter-demos
+
+Total Results for openedx-filter-demos: 1
+
+Repository: platform-global-teacher-campus
+  URL: https://github.com/eduNEXT/platform-global-teacher-campus/blob/713760f01314d7535140233c1c193a48bc2c444c/platform_global_teacher_campus/unable_publish_or_update.py
+  Path: platform_global_teacher_campus/unable_publish_or_update.py
+  Repository URL: https://github.com/eduNEXT/platform-global-teacher-campus
+
+Total Results for platform-global-teacher-campus: 1
+
+Repository: console
+  URL: https://github.com/eduNEXT/console/blob/a0fd7175c1d4b3430a5c8b25b17ed7e1f0a68e9f/apps/core/pipeline.py
+  Path: apps/core/pipeline.py
+  Repository URL: https://github.com/eduNEXT/console
+
+Total Results for console: 1
+
+Repository: openedx-edit-links
+  URL: https://github.com/open-craft/openedx-edit-links/blob/edaa7f45512d968063044fcd1e9d6c9661ea80d4/tests/test_pipeline.py
+  Path: tests/test_pipeline.py
+  Repository URL: https://github.com/open-craft/openedx-edit-links
+
+Total Results for openedx-edit-links: 1
+
+Repository: xblock-skill-tagging
+  URL: https://github.com/openedx/xblock-skill-tagging/blob/1d598130fcaa950a8f67df9498e202781d06a77f/tests/test_pipeline.py
+  Path: tests/test_pipeline.py
+  Repository URL: https://github.com/openedx/xblock-skill-tagging
+
+Total Results for xblock-skill-tagging: 1
+
+Repository: enterprise-subsidy
+  URL: https://github.com/openedx/enterprise-subsidy/blob/f091544ad857a16288c925a22d35182989e20975/enterprise_subsidy/apps/core/management/commands/produce_enterprise_ping_event.py
+  Path: enterprise_subsidy/apps/core/management/commands/produce_enterprise_ping_event.py
+  Repository URL: https://github.com/openedx/enterprise-subsidy
+
+Total Results for enterprise-subsidy: 1
+
+Repository: enterprise-access
+  URL: https://github.com/openedx/enterprise-access/blob/9d333fa2e32e42e065a2060fd7452d9322ca81fb/enterprise_access/apps/core/management/commands/consume_enterprise_ping_events.py
+  Path: enterprise_access/apps/core/management/commands/consume_enterprise_ping_events.py
+  Repository URL: https://github.com/openedx/enterprise-access
+
+Total Results for enterprise-access: 1
+
+Repository: materialize
+  URL: https://github.com/MaterializeInc/materialize/blob/a4fbaf09496b21cfc06ec6f168e38239658a5eae/ci/mkpipeline.py
+  Path: ci/mkpipeline.py
+  Repository URL: https://github.com/MaterializeInc/materialize
+
+Total Results for materialize: 1
+
+Repository: ampl
+  URL: https://github.com/erdc/ampl/blob/ec3f78ddfa6f35851e06ee851d72e2366b35ae07/src/ampl/pipelinestep.py
+  Path: src/ampl/pipelinestep.py
+  Repository URL: https://github.com/erdc/ampl
+
+Total Results for ampl: 1
+
+Repository: ml-cpp
+  URL: https://github.com/elastic/ml-cpp/blob/7d08ac600e7d9f1f239c0136301ae4b573762520/.buildkite/ml_pipeline/step.py
+  Path: .buildkite/ml_pipeline/step.py
+  Repository URL: https://github.com/elastic/ml-cpp
+
+Total Results for ml-cpp: 1
+
+Repository: more-alike-than-different-paper2021
+  URL: https://github.com/wwu-mmll/more-alike-than-different-paper2021/blob/3eef01b81076e69bb583c27116a5f4ce64a0ba88/pipeline/steps/abc_pipelinestep.py
+  Path: pipeline/steps/abc_pipelinestep.py
+  Repository URL: https://github.com/wwu-mmll/more-alike-than-different-paper2021
+
+Total Results for more-alike-than-different-paper2021: 1
+
+Repository: datatrove
+  URL: https://github.com/huggingface/datatrove/blob/01a017b1bd03a6cdc59c4515545e80788de4e03d/src/datatrove/pipeline/base.py
+  Path: src/datatrove/pipeline/base.py
+  Repository URL: https://github.com/huggingface/datatrove
+
+Total Results for datatrove: 1
+
+Repository: sapp
+  URL: https://github.com/facebook/sapp/blob/f60b49ef2446f5de82a2021fcfa5731fa7328eec/sapp/pipeline/__init__.py
+  Path: sapp/pipeline/__init__.py
+  Repository URL: https://github.com/facebook/sapp
+
+Total Results for sapp: 1
+
+Repository: accelerated-data-science
+  URL: https://github.com/oracle/accelerated-data-science/blob/916a7f5c4e23bfb51a47633a627d67614265a709/ads/pipeline/ads_pipeline_step.py
+  Path: ads/pipeline/ads_pipeline_step.py
+  Repository URL: https://github.com/oracle/accelerated-data-science
+
+Total Results for accelerated-data-science: 1
+
+Repository: ISB-CGC-pipelines
+  URL: https://github.com/isb-cgc/ISB-CGC-pipelines/blob/de982717c385657b0f62d96ff2e96d5115671833/lib/examples/api/steps.py
+  Path: lib/examples/api/steps.py
+  Repository URL: https://github.com/isb-cgc/ISB-CGC-pipelines
+
+Total Results for ISB-CGC-pipelines: 1
+
+Repository: msticpy
+  URL: https://github.com/microsoft/msticpy/blob/c0ef238db4ddeaec5b038401c09b28855b88d50b/msticpy/init/pivot_core/pivot_pipeline.py
+  Path: msticpy/init/pivot_core/pivot_pipeline.py
+  Repository URL: https://github.com/microsoft/msticpy
+
+Total Results for msticpy: 1
+
+Repository: aliyun-odps-python-sdk
+  URL: https://github.com/aliyun/aliyun-odps-python-sdk/blob/fbf46bb9029c0ed163f9e31852094d160422d7dc/odps/ml/pipeline/core.py
+  Path: odps/ml/pipeline/core.py
+  Repository URL: https://github.com/aliyun/aliyun-odps-python-sdk
+
+Total Results for aliyun-odps-python-sdk: 1
+
+Repository: datapipe
+  URL: https://github.com/epoch8/datapipe/blob/53cee1b0c83b6d24effc3c7491f4759a27f76aac/datapipe/compute.py
+  Path: datapipe/compute.py
+  Repository URL: https://github.com/epoch8/datapipe
+
+Total Results for datapipe: 1
+
+Repository: pyDarwin
+  URL: https://github.com/certara/pyDarwin/blob/d431e68a2f4d854680b588da6b5eca4405439e60/src/darwin/utils.py
+  Path: src/darwin/utils.py
+  Repository URL: https://github.com/certara/pyDarwin
+
+Total Results for pyDarwin: 1
+
+Repository: vkit
+  URL: https://github.com/vkit-x/vkit/blob/98ada2d99a378893296230f70b8f24b82ca149fe/vkit/pipeline/interface.py
+  Path: vkit/pipeline/interface.py
+  Repository URL: https://github.com/vkit-x/vkit
+
+Total Results for vkit: 1
+
+Repository: api-python
+  URL: https://github.com/abacusai/api-python/blob/934b449b0eb87f06038413c46b0f695d3bc8961b/abacusai/pipeline_step.py
+  Path: abacusai/pipeline_step.py
+  Repository URL: https://github.com/abacusai/api-python
+
+Total Results for api-python: 1
+
+Repository: code-genie
+  URL: https://github.com/thismlguy/code-genie/blob/58f789ce7dbacc0159ab7ca87d59d894f65456f8/code_genie/pipeline.py
+  Path: code_genie/pipeline.py
+  Repository URL: https://github.com/thismlguy/code-genie
+
+Total Results for code-genie: 1
+
+Repository: image_classification_pipeline
+  URL: https://github.com/lifelonglearner127/image_classification_pipeline/blob/afc7c0814b22e3f2a0c935054953e8a94c4cfae8/main.py
+  Path: main.py
+  Repository URL: https://github.com/lifelonglearner127/image_classification_pipeline
+
+Total Results for image_classification_pipeline: 1
+
+Repository: python-pipeline
+  URL: https://github.com/MikeDacre/python-pipeline/blob/9de466ef93a7377a10939c5cfc33b1f0aabf893e/pipeline/pl.py
+  Path: pipeline/pl.py
+  Repository URL: https://github.com/MikeDacre/python-pipeline
+
+Total Results for python-pipeline: 1
+
+Repository: Alfred4chalice
+  URL: https://github.com/MaisTodos/Alfred4chalice/blob/9d723c8c85c845a6d5f127e49cb62677e4144d0e/alfred/pipelines/base.py
+  Path: alfred/pipelines/base.py
+  Repository URL: https://github.com/MaisTodos/Alfred4chalice
+
+Total Results for Alfred4chalice: 1
+
+Repository: ws_demo_app
+  URL: https://github.com/helderarr/ws_demo_app/blob/b95732ccee3c077efbd81550e45d3010598b1c10/interfaces.py
+  Path: interfaces.py
+  Repository URL: https://github.com/helderarr/ws_demo_app
+
+Total Results for ws_demo_app: 1
+
+Repository: OpusCleaner
+  URL: https://github.com/hplt-project/OpusCleaner/blob/27c66a6c1a166da0f2ffeee8a6a00c5f32a3f217/opuscleaner/clean.py
+  Path: opuscleaner/clean.py
+  Repository URL: https://github.com/hplt-project/OpusCleaner
+
+Total Results for OpusCleaner: 1
+
+Repository: nmdc-server
+  URL: https://github.com/microbiomedata/nmdc-server/blob/b8f3c8ae7c1463623eebf53edbc784ea61db634a/nmdc_server/schemas.py
+  Path: nmdc_server/schemas.py
+  Repository URL: https://github.com/microbiomedata/nmdc-server
+
+Total Results for nmdc-server: 1
+
+Repository: konduit-serving
+  URL: https://github.com/KonduitAI/konduit-serving/blob/4885962d81e113010bc10cc8552a17c0906c4d93/python/konduit/base_inference.py
+  Path: python/konduit/base_inference.py
+  Repository URL: https://github.com/KonduitAI/konduit-serving
+
+Total Results for konduit-serving: 1
+
+Repository: RecSys-Competition
+  URL: https://github.com/melaniasala/RecSys-Competition/blob/388b46c678f04dfd8af895e71e6e01848bd79bf9/Recommenders/Ensambles.py
+  Path: Recommenders/Ensambles.py
+  Repository URL: https://github.com/melaniasala/RecSys-Competition
+
+Total Results for RecSys-Competition: 1
+
+Repository: deepbgc
+  URL: https://github.com/Merck/deepbgc/blob/4cd5bb72c885cb279d360b3cc0afbb14ae14e996/deepbgc/pipeline/step.py
+  Path: deepbgc/pipeline/step.py
+  Repository URL: https://github.com/Merck/deepbgc
+
+Total Results for deepbgc: 1
+
+Repository: hidori
+  URL: https://github.com/hidori-dev/hidori/blob/b73e178a1516a26438e5e5b3781d580075898f09/src/hidori_common/typings.py
+  Path: src/hidori_common/typings.py
+  Repository URL: https://github.com/hidori-dev/hidori
+
+Total Results for hidori: 1
+
+Repository: ingest-framework
+  URL: https://github.com/developmentseed/ingest-framework/blob/7c2492a54f916e3273f2c7eb30aa2f0b5dfe0edb/scratchpad/models.py
+  Path: scratchpad/models.py
+  Repository URL: https://github.com/developmentseed/ingest-framework
+
+Total Results for ingest-framework: 1
+
+Repository: pai-python-sdk
+  URL: https://github.com/aliyun/pai-python-sdk/blob/a2052ef635cde9be3425904dd7f0b2413fb4d158/pai/pipeline/step.py
+  Path: pai/pipeline/step.py
+  Repository URL: https://github.com/aliyun/pai-python-sdk
+
+Total Results for pai-python-sdk: 1
+
+Repository: TweakStory
+  URL: https://github.com/riven314/TweakStory/blob/a612f7e8253782510d29aecbd756dc94d5fd1e34/model/preprocessor.py
+  Path: model/preprocessor.py
+  Repository URL: https://github.com/riven314/TweakStory
+
+Total Results for TweakStory: 1
+
+Repository: annotation_backend
+  URL: https://github.com/JannicMeetYu/annotation_backend/blob/de494afe66926eb72899597d6c3000c96f6ea164/pipeline/step.py
+  Path: pipeline/step.py
+  Repository URL: https://github.com/JannicMeetYu/annotation_backend
+
+Total Results for annotation_backend: 1
+
+Repository: mao-orchestrator
+  URL: https://github.com/serviceprototypinglab/mao-orchestrator/blob/f0aa6e8778dd22b2b173cc5ff493157d7c948d5a/api_client.py
+  Path: api_client.py
+  Repository URL: https://github.com/serviceprototypinglab/mao-orchestrator
+
+Total Results for mao-orchestrator: 1
+
+Total Results: 76

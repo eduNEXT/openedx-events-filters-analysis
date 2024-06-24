@@ -13,7 +13,6 @@ def get_code_results(token):
         'openedx-events',
         'openedx-filters',
         'OpenEdxPublicSignal',
-        '.send_event',
         'PipelineStep',
         'OpenEdxPublicFilter'
     ]
@@ -36,7 +35,7 @@ def get_code_results(token):
         return None
 
     unique_results = set()
-    all_code_results = []
+    repo_code_results = {}
     for search_string in search_strings:
         page = 1
         while True:
@@ -52,12 +51,13 @@ def get_code_results(token):
                 if repository_name in ignored_repositories:
                     continue
 
-                url_hash = extract_hash_from_url(item['html_url'])
-                if url_hash:
-                    result_key = (item['path'], repository_name, url_hash)
+                result_key = extract_hash_from_url(item['html_url'])
+                if result_key:
                     if result_key not in unique_results:
                         unique_results.add(result_key)
-                        all_code_results.append({
+                        if repository_name not in repo_code_results:
+                            repo_code_results[repository_name] = []
+                        repo_code_results[repository_name].append({
                             'url': item['html_url'],
                             'path': item['path'],
                             'repository': repository_name,
@@ -68,7 +68,7 @@ def get_code_results(token):
             if 'next' not in data.get('links', {}):
                 break
 
-    return all_code_results
+    return repo_code_results
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description='Get code results with specific changes from GitHub.')
@@ -76,8 +76,15 @@ if __name__ == "__main__":
 
     args = parser.parse_args()
 
-    all_code_results = get_code_results(args.token)
-    for result in all_code_results:
-        print(f"URL: {result['url']}, Path: {result['path']}, Repository: {result['repository']}, Repository URL: {result['repository_url']}")
+    repo_code_results = get_code_results(args.token)
+    for repository, results in repo_code_results.items():
+        print(f"Repository: {repository}")
+        for result in results:
+            print(f"  URL: {result['url']}")
+            print(f"  Path: {result['path']}")
+            print(f"  Repository URL: {result['repository_url']}")
+            print()
+        print(f"Total Results for {repository}: {len(results)}\n")
 
-    print(f"\nTotal Results: {len(all_code_results)}")
+    total_results = sum(len(results) for results in repo_code_results.values())
+    print(f"Total Results: {total_results}")
