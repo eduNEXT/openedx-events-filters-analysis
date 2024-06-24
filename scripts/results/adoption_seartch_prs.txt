@@ -1,0 +1,57 @@
+URL: https://github.com/Pearson-Advance/edx-platform/pull/124, Description: PADV-1346: Backport edx-platform changes needed for Event Bus to work on our olive instance.
+URL: https://github.com/openedx/event-bus-redis/pull/56, Description: refactor: use utility from openedex_events to reset application …
+URL: https://github.com/openedx/edx-ora2/pull/2203, Description: feat: send event when ora submission is created
+URL: https://github.com/openedx/edx-platform/pull/33269, Description: feat: use event producer config
+URL: https://github.com/openedx/event-tracking/pull/246, Description: feat: add event bus backend
+URL: https://github.com/openedx/credentials/pull/2201, Description: feat: consume `CERTIFICATE_REVOKED` events from event bus
+URL: https://github.com/openedx/edx-platform/pull/32874, Description: feat: use event producer config
+URL: https://github.com/edx/edx-exams/pull/178, Description: Emit the ExamAttemptSubmitted Open edX event when an exam is submitted.
+URL: https://github.com/openedx/edx-platform/pull/33458, Description: feat: use new event_bus_producer_config
+URL: https://github.com/eduNEXT/eox-nelp/pull/76, Description: feat: add create external certificate task
+URL: https://github.com/openedx/credentials/pull/2014, Description: fix: unpin edx-event-bus-kafka and fix breaking changes
+URL: https://github.com/openedx/event-bus-kafka/pull/154, Description: feat: make use of abstract consumer API
+URL: https://github.com/openedx/event-bus-kafka/pull/133, Description: fix: add required parameter to produce_event command
+URL: https://github.com/openedx/xblock-skill-tagging/pull/6, Description: refactor: tweak verification form styles
+URL: https://github.com/openedx/edx-platform/pull/34865, Description: feat: add filter to hook render of XBlock
+URL: https://github.com/eduNEXT/eox-nelp/pull/121, Description: refactor!: generalize XApiBaseProblemsFilter to support module and qu…
+URL: https://github.com/eduNEXT/eox-nelp/pull/120, Description: refactor!: this modifies the enrollment filter in order to generalize…
+URL: https://github.com/eduNEXT/eox-nelp/pull/124, Description: feat: add context filter
+URL: https://github.com/openedx/openedx-aspects/pull/114, Description: docs: adds How To do xAPI Transforms
+URL: https://github.com/nelc/event-routing-backends/pull/5, Description: feat: implement XAPI openedx filters
+URL: https://github.com/openedx/event-routing-backends/pull/374, Description: feat!: add transformer to filter arguments.
+URL: https://github.com/openedx/event-routing-backends/pull/370, Description: feat: implement XAPI openedx filters
+URL: https://github.com/edx/commerce-coordinator/pull/128, Description: feat: Checks for redirecting to CT checkout
+URL: https://github.com/eduNEXT/eox-tenant/pull/190, Description: perf: added palm support and changed default settings to always use e…
+URL: https://github.com/openedx/edx-ora2/pull/2182, Description: docs: ADR for lightweight extension points
+URL: https://github.com/openedx/xblock-lti-consumer/pull/210, Description: BB-5051: Pluggable/reusable LTI configuration
+URL: https://github.com/openedx/edx-platform/pull/29949, Description: [BD-32] feat: add certificate creation Open edX Filter
+URL: https://github.com/edx/commerce-coordinator/pull/43, Description: REV-2701: decouple order history endpoint from calling ecommerce
+URL: https://github.com/openedx/edx-platform/pull/29995, Description: [BD-32] feat: add filter before course home rendering process starts
+URL: https://github.com/eduNEXT/edunext-platform/pull/589, Description: BC-19_P3 opchore: Test xblocks supported for lilac/limonero.
+URL: https://github.com/openedx/edx-platform/pull/29840, Description: [BD-32] feat: add 2nd batch of Open edX Filters
+URL: https://github.com/openedx/edx-platform/pull/29948, Description: [BD-32] feat: add unenrollment Open edX Filter
+URL: https://github.com/open-craft/openedx-events-sender/pull/76, Description: chore: Upgrade Python requirements
+URL: https://github.com/openedx/credentials/pull/2489, Description: feat: add badges feature
+URL: https://github.com/openedx/enterprise-subsidy/pull/244, Description: feat: emit transaction lifecycle events
+URL: https://github.com/openedx/xblock-skill-tagging/pull/14, Description: feat: replace signal handler with event producer config
+URL: https://github.com/openedx/tutor-contrib-event-bus-redis/pull/5, Description: feat: Add kafka to docker compose
+URL: https://github.com/openedx/edx-platform/pull/34865, Description: feat: add filter to hook render of XBlock
+URL: https://github.com/eduNEXT/eox-tenant/pull/179, Description: (DS-451)feat: adds TenantAwareLinkRenderStarted filter
+URL: https://github.com/eduNEXT/eox-core/pull/271, Description: docs: improve README and hows-to
+URL: https://github.com/openedx/xblock-skill-tagging/pull/14, Description: feat: replace signal handler with event producer config
+URL: https://github.com/openedx/enterprise-subsidy/pull/53, Description: [Do not merge] Segfault example event bus crash
+URL: https://github.com/Pearson-Advance/edx-platform/pull/108, Description: PADV-806: feat: add new content authoring event signals
+URL: https://github.com/openedx/edx-platform/pull/34847, Description:  fix: don't call signal handlers like XBLOCK_UPDATED before commit
+URL: https://github.com/openedx/event-tracking/pull/246, Description: feat: add event bus backend
+URL: https://github.com/openedx/edx-platform/pull/33269, Description: feat: use event producer config
+URL: https://github.com/edx/edx-arch-experiments/pull/13, Description: feat: skeleton unit test for avro bridge
+URL: https://github.com/Pearson-Advance/edx-platform/pull/109, Description: PADV-806: feat: add course created event signals
+URL: https://github.com/openedx/edx-ora2/pull/2182, Description: docs: ADR for lightweight extension points
+URL: https://github.com/openedx/edx-platform/pull/32874, Description: feat: use event producer config
+URL: https://github.com/openedx/event-bus-kafka/pull/186, Description: feat: add json-formatted event data to error logs
+URL: https://github.com/openedx/edx-platform/pull/32599, Description: feat: add new content event signals
+URL: https://github.com/openedx/event-bus-redis/pull/7, Description: feat: redis event consumer
+URL: https://github.com/DangerKlippers/danger-klipper/pull/291, Description: Per Axis M18
+URL: https://github.com/openedx/edx-ora2/pull/2182, Description: docs: ADR for lightweight extension points
+URL: https://github.com/edx/commerce-coordinator/pull/126, Description: feat: Basic joint (commerce tools and legacy) order history
+URL: https://github.com/edx/commerce-coordinator/pull/43, Description: REV-2701: decouple order history endpoint from calling ecommerce
