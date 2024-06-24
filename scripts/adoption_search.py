@@ -18,6 +18,11 @@ def get_pull_requests(token):
         'OpenEdxPublicFilter'
     ]
 
+    ignored_repositories = [
+        'openedx-events',
+        'openedx-filters',
+    ]
+
     def search_pull_requests(query, page=1):
         url = f'https://api.github.com/search/issues?q={query}&type=pr&page={page}'
         response = requests.get(url, headers=headers)
@@ -41,6 +46,12 @@ def get_pull_requests(token):
             for item in items:
                 if not item.get('pull_request'):
                     continue
+
+                repository_url = item.get('repository_url', '')
+                repository_name = repository_url.split('/')[-1]
+                if repository_name in ignored_repositories:
+                    continue
+
                 pr_files_url = item['pull_request']['url'] + '/files'
                 pr_files = get_pull_request_files(pr_files_url)
                 for pr_file in pr_files:
