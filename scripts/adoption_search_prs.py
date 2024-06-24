@@ -13,7 +13,6 @@ def get_pull_requests(token):
         'openedx-events',
         'openedx-filters',
         'OpenEdxPublicSignal',
-        '.send_event',
         'PipelineStep',
         'OpenEdxPublicFilter'
     ]
@@ -77,4 +76,6 @@ if __name__ == "__main__":
 
     prs = get_pull_requests(args.token)
     for pr in prs:
-        print(f"URL: {pr['url']}, Description: {pr['description']}")
+        print("URL:", pr['url'])
+        print("Description:", pr['description'])
+        print()
