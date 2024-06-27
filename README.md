@@ -107,8 +107,4 @@ python unique_contributors.py YOUR_GITHUB_API_TOKEN ORG_NAME REPO_NAME > scripts
 
 ## Results
 
-## Usage
-
-## Contributing
-
-## License
+The results for each script, dating back to June 24, are in the ``script/results`` folder.
