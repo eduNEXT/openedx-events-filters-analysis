@@ -16,8 +16,6 @@ This repository contains scripts for generating data on the usage of Open edX ev
   - [Unique contributors](#unique-contributors)
 - [Results](#results)
 - [Usage](#usage)
-- [Contributing](#contributing)
-- [License](#license)
 
 ## Introduction
 This project aims to provide insights into the usage of Open edX events and filters by querying data from the GitHub API. The scripts in this repository fetch github data, generating results that can be used to understand usage patterns and more.
