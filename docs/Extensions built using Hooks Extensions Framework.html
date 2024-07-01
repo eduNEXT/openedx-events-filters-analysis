@@ -1,0 +1,677 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"/><title>Extensions built using Hooks Extensions Framework</title><style>
+/* cspell:disable-file */
+/* webkit printing magic: print all background colors */
+html {
+	-webkit-print-color-adjust: exact;
+}
+* {
+	box-sizing: border-box;
+	-webkit-print-color-adjust: exact;
+}
+
+html,
+body {
+	margin: 0;
+	padding: 0;
+}
+@media only screen {
+	body {
+		margin: 2em auto;
+		max-width: 900px;
+		color: rgb(55, 53, 47);
+	}
+}
+
+body {
+	line-height: 1.5;
+	white-space: pre-wrap;
+}
+
+a,
+a.visited {
+	color: inherit;
+	text-decoration: underline;
+}
+
+.pdf-relative-link-path {
+	font-size: 80%;
+	color: #444;
+}
+
+h1,
+h2,
+h3 {
+	letter-spacing: -0.01em;
+	line-height: 1.2;
+	font-weight: 600;
+	margin-bottom: 0;
+}
+
+.page-title {
+	font-size: 2.5rem;
+	font-weight: 700;
+	margin-top: 0;
+	margin-bottom: 0.75em;
+}
+
+h1 {
+	font-size: 1.875rem;
+	margin-top: 1.875rem;
+}
+
+h2 {
+	font-size: 1.5rem;
+	margin-top: 1.5rem;
+}
+
+h3 {
+	font-size: 1.25rem;
+	margin-top: 1.25rem;
+}
+
+.source {
+	border: 1px solid #ddd;
+	border-radius: 3px;
+	padding: 1.5em;
+	word-break: break-all;
+}
+
+.callout {
+	border-radius: 3px;
+	padding: 1rem;
+}
+
+figure {
+	margin: 1.25em 0;
+	page-break-inside: avoid;
+}
+
+figcaption {
+	opacity: 0.5;
+	font-size: 85%;
+	margin-top: 0.5em;
+}
+
+mark {
+	background-color: transparent;
+}
+
+.indented {
+	padding-left: 1.5em;
+}
+
+hr {
+	background: transparent;
+	display: block;
+	width: 100%;
+	height: 1px;
+	visibility: visible;
+	border: none;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.09);
+}
+
+img {
+	max-width: 100%;
+}
+
+@media only print {
+	img {
+		max-height: 100vh;
+		object-fit: contain;
+	}
+}
+
+@page {
+	margin: 1in;
+}
+
+.collection-content {
+	font-size: 0.875rem;
+}
+
+.column-list {
+	display: flex;
+	justify-content: space-between;
+}
+
+.column {
+	padding: 0 1em;
+}
+
+.column:first-child {
+	padding-left: 0;
+}
+
+.column:last-child {
+	padding-right: 0;
+}
+
+.table_of_contents-item {
+	display: block;
+	font-size: 0.875rem;
+	line-height: 1.3;
+	padding: 0.125rem;
+}
+
+.table_of_contents-indent-1 {
+	margin-left: 1.5rem;
+}
+
+.table_of_contents-indent-2 {
+	margin-left: 3rem;
+}
+
+.table_of_contents-indent-3 {
+	margin-left: 4.5rem;
+}
+
+.table_of_contents-link {
+	text-decoration: none;
+	opacity: 0.7;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.18);
+}
+
+table,
+th,
+td {
+	border: 1px solid rgba(55, 53, 47, 0.09);
+	border-collapse: collapse;
+}
+
+table {
+	border-left: none;
+	border-right: none;
+}
+
+th,
+td {
+	font-weight: normal;
+	padding: 0.25em 0.5em;
+	line-height: 1.5;
+	min-height: 1.5em;
+	text-align: left;
+}
+
+th {
+	color: rgba(55, 53, 47, 0.6);
+}
+
+ol,
+ul {
+	margin: 0;
+	margin-block-start: 0.6em;
+	margin-block-end: 0.6em;
+}
+
+li > ol:first-child,
+li > ul:first-child {
+	margin-block-start: 0.6em;
+}
+
+ul > li {
+	list-style: disc;
+}
+
+ul.to-do-list {
+	padding-inline-start: 0;
+}
+
+ul.to-do-list > li {
+	list-style: none;
+}
+
+.to-do-children-checked {
+	text-decoration: line-through;
+	opacity: 0.375;
+}
+
+ul.toggle > li {
+	list-style: none;
+}
+
+ul {
+	padding-inline-start: 1.7em;
+}
+
+ul > li {
+	padding-left: 0.1em;
+}
+
+ol {
+	padding-inline-start: 1.6em;
+}
+
+ol > li {
+	padding-left: 0.2em;
+}
+
+.mono ol {
+	padding-inline-start: 2em;
+}
+
+.mono ol > li {
+	text-indent: -0.4em;
+}
+
+.toggle {
+	padding-inline-start: 0em;
+	list-style-type: none;
+}
+
+/* Indent toggle children */
+.toggle > li > details {
+	padding-left: 1.7em;
+}
+
+.toggle > li > details > summary {
+	margin-left: -1.1em;
+}
+
+.selected-value {
+	display: inline-block;
+	padding: 0 0.5em;
+	background: rgba(206, 205, 202, 0.5);
+	border-radius: 3px;
+	margin-right: 0.5em;
+	margin-top: 0.3em;
+	margin-bottom: 0.3em;
+	white-space: nowrap;
+}
+
+.collection-title {
+	display: inline-block;
+	margin-right: 1em;
+}
+
+.page-description {
+    margin-bottom: 2em;
+}
+
+.simple-table {
+	margin-top: 1em;
+	font-size: 0.875rem;
+	empty-cells: show;
+}
+.simple-table td {
+	height: 29px;
+	min-width: 120px;
+}
+
+.simple-table th {
+	height: 29px;
+	min-width: 120px;
+}
+
+.simple-table-header-color {
+	background: rgb(247, 246, 243);
+	color: black;
+}
+.simple-table-header {
+	font-weight: 500;
+}
+
+time {
+	opacity: 0.5;
+}
+
+.icon {
+	display: inline-block;
+	max-width: 1.2em;
+	max-height: 1.2em;
+	text-decoration: none;
+	vertical-align: text-bottom;
+	margin-right: 0.5em;
+}
+
+img.icon {
+	border-radius: 3px;
+}
+
+.user-icon {
+	width: 1.5em;
+	height: 1.5em;
+	border-radius: 100%;
+	margin-right: 0.5rem;
+}
+
+.user-icon-inner {
+	font-size: 0.8em;
+}
+
+.text-icon {
+	border: 1px solid #000;
+	text-align: center;
+}
+
+.page-cover-image {
+	display: block;
+	object-fit: cover;
+	width: 100%;
+	max-height: 30vh;
+}
+
+.page-header-icon {
+	font-size: 3rem;
+	margin-bottom: 1rem;
+}
+
+.page-header-icon-with-cover {
+	margin-top: -0.72em;
+	margin-left: 0.07em;
+}
+
+.page-header-icon img {
+	border-radius: 3px;
+}
+
+.link-to-page {
+	margin: 1em 0;
+	padding: 0;
+	border: none;
+	font-weight: 500;
+}
+
+p > .user {
+	opacity: 0.5;
+}
+
+td > .user,
+td > time {
+	white-space: nowrap;
+}
+
+input[type="checkbox"] {
+	transform: scale(1.5);
+	margin-right: 0.6em;
+	vertical-align: middle;
+}
+
+p {
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+}
+
+.image {
+	border: none;
+	margin: 1.5em 0;
+	padding: 0;
+	border-radius: 0;
+	text-align: center;
+}
+
+.code,
+code {
+	background: rgba(135, 131, 120, 0.15);
+	border-radius: 3px;
+	padding: 0.2em 0.4em;
+	border-radius: 3px;
+	font-size: 85%;
+	tab-size: 2;
+}
+
+code {
+	color: #eb5757;
+}
+
+.code {
+	padding: 1.5em 1em;
+}
+
+.code-wrap {
+	white-space: pre-wrap;
+	word-break: break-all;
+}
+
+.code > code {
+	background: none;
+	padding: 0;
+	font-size: 100%;
+	color: inherit;
+}
+
+blockquote {
+	font-size: 1.25em;
+	margin: 1em 0;
+	padding-left: 1em;
+	border-left: 3px solid rgb(55, 53, 47);
+}
+
+.bookmark {
+	text-decoration: none;
+	max-height: 8em;
+	padding: 0;
+	display: flex;
+	width: 100%;
+	align-items: stretch;
+}
+
+.bookmark-title {
+	font-size: 0.85em;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	height: 1.75em;
+	white-space: nowrap;
+}
+
+.bookmark-text {
+	display: flex;
+	flex-direction: column;
+}
+
+.bookmark-info {
+	flex: 4 1 180px;
+	padding: 12px 14px 14px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.bookmark-image {
+	width: 33%;
+	flex: 1 1 180px;
+	display: block;
+	position: relative;
+	object-fit: cover;
+	border-radius: 1px;
+}
+
+.bookmark-description {
+	color: rgba(55, 53, 47, 0.6);
+	font-size: 0.75em;
+	overflow: hidden;
+	max-height: 4.5em;
+	word-break: break-word;
+}
+
+.bookmark-href {
+	font-size: 0.75em;
+	margin-top: 0.25em;
+}
+
+.sans { font-family: ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol"; }
+.code { font-family: "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace; }
+.serif { font-family: Lyon-Text, Georgia, ui-serif, serif; }
+.mono { font-family: iawriter-mono, Nitti, Menlo, Courier, monospace; }
+.pdf .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK JP'; }
+.pdf:lang(zh-CN) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK SC'; }
+.pdf:lang(zh-TW) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK TC'; }
+.pdf:lang(ko-KR) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK KR'; }
+.pdf .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
+.pdf:lang(zh-CN) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
+.pdf:lang(zh-TW) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
+.pdf:lang(ko-KR) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
+.pdf .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK JP'; }
+.pdf:lang(zh-CN) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK SC'; }
+.pdf:lang(zh-TW) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK TC'; }
+.pdf:lang(ko-KR) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK KR'; }
+.pdf .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
+.pdf:lang(zh-CN) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
+.pdf:lang(zh-TW) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
+.pdf:lang(ko-KR) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
+.highlight-default {
+	color: rgba(55, 53, 47, 1);
+}
+.highlight-gray {
+	color: rgba(120, 119, 116, 1);
+	fill: rgba(120, 119, 116, 1);
+}
+.highlight-brown {
+	color: rgba(159, 107, 83, 1);
+	fill: rgba(159, 107, 83, 1);
+}
+.highlight-orange {
+	color: rgba(217, 115, 13, 1);
+	fill: rgba(217, 115, 13, 1);
+}
+.highlight-yellow {
+	color: rgba(203, 145, 47, 1);
+	fill: rgba(203, 145, 47, 1);
+}
+.highlight-teal {
+	color: rgba(68, 131, 97, 1);
+	fill: rgba(68, 131, 97, 1);
+}
+.highlight-blue {
+	color: rgba(51, 126, 169, 1);
+	fill: rgba(51, 126, 169, 1);
+}
+.highlight-purple {
+	color: rgba(144, 101, 176, 1);
+	fill: rgba(144, 101, 176, 1);
+}
+.highlight-pink {
+	color: rgba(193, 76, 138, 1);
+	fill: rgba(193, 76, 138, 1);
+}
+.highlight-red {
+	color: rgba(212, 76, 71, 1);
+	fill: rgba(212, 76, 71, 1);
+}
+.highlight-gray_background {
+	background: rgba(241, 241, 239, 1);
+}
+.highlight-brown_background {
+	background: rgba(244, 238, 238, 1);
+}
+.highlight-orange_background {
+	background: rgba(251, 236, 221, 1);
+}
+.highlight-yellow_background {
+	background: rgba(251, 243, 219, 1);
+}
+.highlight-teal_background {
+	background: rgba(237, 243, 236, 1);
+}
+.highlight-blue_background {
+	background: rgba(231, 243, 248, 1);
+}
+.highlight-purple_background {
+	background: rgba(244, 240, 247, 0.8);
+}
+.highlight-pink_background {
+	background: rgba(249, 238, 243, 0.8);
+}
+.highlight-red_background {
+	background: rgba(253, 235, 236, 1);
+}
+.block-color-default {
+	color: inherit;
+	fill: inherit;
+}
+.block-color-gray {
+	color: rgba(120, 119, 116, 1);
+	fill: rgba(120, 119, 116, 1);
+}
+.block-color-brown {
+	color: rgba(159, 107, 83, 1);
+	fill: rgba(159, 107, 83, 1);
+}
+.block-color-orange {
+	color: rgba(217, 115, 13, 1);
+	fill: rgba(217, 115, 13, 1);
+}
+.block-color-yellow {
+	color: rgba(203, 145, 47, 1);
+	fill: rgba(203, 145, 47, 1);
+}
+.block-color-teal {
+	color: rgba(68, 131, 97, 1);
+	fill: rgba(68, 131, 97, 1);
+}
+.block-color-blue {
+	color: rgba(51, 126, 169, 1);
+	fill: rgba(51, 126, 169, 1);
+}
+.block-color-purple {
+	color: rgba(144, 101, 176, 1);
+	fill: rgba(144, 101, 176, 1);
+}
+.block-color-pink {
+	color: rgba(193, 76, 138, 1);
+	fill: rgba(193, 76, 138, 1);
+}
+.block-color-red {
+	color: rgba(212, 76, 71, 1);
+	fill: rgba(212, 76, 71, 1);
+}
+.block-color-gray_background {
+	background: rgba(241, 241, 239, 1);
+}
+.block-color-brown_background {
+	background: rgba(244, 238, 238, 1);
+}
+.block-color-orange_background {
+	background: rgba(251, 236, 221, 1);
+}
+.block-color-yellow_background {
+	background: rgba(251, 243, 219, 1);
+}
+.block-color-teal_background {
+	background: rgba(237, 243, 236, 1);
+}
+.block-color-blue_background {
+	background: rgba(231, 243, 248, 1);
+}
+.block-color-purple_background {
+	background: rgba(244, 240, 247, 0.8);
+}
+.block-color-pink_background {
+	background: rgba(249, 238, 243, 0.8);
+}
+.block-color-red_background {
+	background: rgba(253, 235, 236, 1);
+}
+.select-value-color-uiBlue { background-color: rgba(35, 131, 226, .07); }
+.select-value-color-pink { background-color: rgba(245, 224, 233, 1); }
+.select-value-color-purple { background-color: rgba(232, 222, 238, 1); }
+.select-value-color-green { background-color: rgba(219, 237, 219, 1); }
+.select-value-color-gray { background-color: rgba(227, 226, 224, 1); }
+.select-value-color-transparentGray { background-color: rgba(227, 226, 224, 0); }
+.select-value-color-translucentGray { background-color: rgba(0, 0, 0, 0.06); }
+.select-value-color-orange { background-color: rgba(250, 222, 201, 1); }
+.select-value-color-brown { background-color: rgba(238, 224, 218, 1); }
+.select-value-color-red { background-color: rgba(255, 226, 221, 1); }
+.select-value-color-yellow { background-color: rgba(253, 236, 200, 1); }
+.select-value-color-blue { background-color: rgba(211, 229, 239, 1); }
+.select-value-color-pageGlass { background-color: undefined; }
+.select-value-color-washGlass { background-color: undefined; }
+
+.checkbox {
+	display: inline-flex;
+	vertical-align: text-bottom;
+	width: 16;
+	height: 16;
+	background-size: 16px;
+	margin-left: 2px;
+	margin-right: 5px;
+}
+
+.checkbox-on {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20width%3D%2216%22%20height%3D%2216%22%20fill%3D%22%2358A9D7%22%2F%3E%0A%3Cpath%20d%3D%22M6.71429%2012.2852L14%204.9995L12.7143%203.71436L6.71429%209.71378L3.28571%206.2831L2%207.57092L6.71429%2012.2852Z%22%20fill%3D%22white%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+
+.checkbox-off {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20x%3D%220.75%22%20y%3D%220.75%22%20width%3D%2214.5%22%20height%3D%2214.5%22%20fill%3D%22white%22%20stroke%3D%22%2336352F%22%20stroke-width%3D%221.5%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+	
+</style></head><body><article id="7f011d55-278d-4f7e-a340-88010d2c9c53" class="page sans"><header><img class="page-cover-image" src="https://www.notion.so/images/page-cover/gradients_3.png" style="object-position:center 60%"/><h1 class="page-title">Extensions built using Hooks Extensions Framework</h1><p class="page-description"></p></header><div class="page-body"><ol type="1" id="3dae56f9-1b4a-4f9a-aa2c-2b4caa8e6eee" class="numbered-list" start="1"><li>Webfilters: <a href="https://github.com/aulasneo/openedx-webhooks?tab=readme-ov-file#introduction">https://github.com/aulasneo/openedx-webhooks?tab=readme-ov-file#introduction</a></li></ol><ol type="1" id="2060a963-8132-4321-b485-de7d98d1a9d7" class="numbered-list" start="2"><li>Webhooks: <a href="https://github.com/aulasneo/openedx-webhooks?tab=readme-ov-file#introduction">https://github.com/aulasneo/openedx-webhooks?tab=readme-ov-file#introduction</a> </li></ol><ol type="1" id="e9bc93e8-ef55-4e00-aed6-1269ebc49b59" class="numbered-list" start="3"><li>Prevent enrollment from non-authorized users (non partners): <a href="https://github.com/academic-innovation/mogc-partnerships/commit/04f7dcad90a973114af31f6094afc28d06702e86">https://github.com/academic-innovation/mogc-partnerships/commit/04f7dcad90a973114af31f6094afc28d06702e86</a> </li></ol><ol type="1" id="32eb4d34-92f5-4933-9842-5c71c79cd44c" class="numbered-list" start="4"><li>Prevent enrollment from non-authoried users (email domain not allowed per course): <a href="https://github.com/fccn/nau-openedx-extensions/blob/653f5d49b4d726f051b379448f4cb4db3a3a34ba/nau_openedx_extensions/filters/pipeline.py#L17">https://github.com/fccn/nau-openedx-extensions/blob/653f5d49b4d726f051b379448f4cb4db3a3a34ba/nau_openedx_extensions/filters/pipeline.py#L17</a> </li></ol><ol type="1" id="15f4e048-d2b6-4b6d-b0f4-d525426efd6a" class="numbered-list" start="5"><li>Stop registration process if institutional email is found: <a href="https://github.com/UAMx/uamx-social-auth/blob/main/uamx_social_auth/pipeline.py">https://github.com/UAMx/uamx-social-auth/blob/main/uamx_social_auth/pipeline.py</a></li></ol><ol type="1" id="2894978a-302b-4c49-91bd-8191283b3ab3" class="numbered-list" start="6"><li>Render alternative course about from external source: <a href="https://github.com/lektorium-tutor/lektorium_main/blob/00ed7e3bd57f4a5363ae7fbd89ecc0619c576701/lektorium_main/tilda/pipeline.py#L3">https://github.com/lektorium-tutor/lektorium_main/blob/00ed7e3bd57f4a5363ae7fbd89ecc0619c576701/lektorium_main/tilda/pipeline.py#L3</a> </li></ol><ol type="1" id="25703f6f-91c4-46fb-9d3b-25b305a1c0ad" class="numbered-list" start="7"><li>Hide course about from non-partners: <a href="https://github.com/academic-innovation/mogc-partnerships/blob/ef8384f4e177a93cfe6ec163b561d1e2d91c103d/tests/test_pipeline.py#L103">https://github.com/academic-innovation/mogc-partnerships/blob/ef8384f4e177a93cfe6ec163b561d1e2d91c103d/tests/test_pipeline.py#L103</a> </li></ol><ol type="1" id="4084ee7e-36ce-48d8-bc13-bf8bf14e5bf8" class="numbered-list" start="8"><li>Add edit &quot;Edit on Git” on top of each child of verticals:  <a href="https://github.com/open-craft/openedx-edit-links">https://github.com/open-craft/openedx-edit-links</a> </li></ol><ol type="1" id="c93e1a0f-b63c-4ab5-9acb-f9d369cc1a6a" class="numbered-list" start="9"><li>Verification of skills by users: <a href="https://github.com/openedx/taxonomy-connector/blob/master/docs/decisions/0001-xblock-skill-tagging-design.rst#verification-of-skills-by-users">https://github.com/openedx/taxonomy-connector/blob/master/docs/decisions/0001-xblock-skill-tagging-design.rst#verification-of-skills-by-users</a></li></ol><ol type="1" id="926a8982-d47b-422b-ba8c-30ab52dbe88b" class="numbered-list" start="10"><li>Filter user enrollments by tenants: <a href="https://github.com/eduNEXT/eox-tenant/blob/1d072b58ceb00e0379ae08b00ab77e87a11c601d/eox_tenant/filters/pipeline.py#L11">https://github.com/eduNEXT/eox-tenant/blob/1d072b58ceb00e0379ae08b00ab77e87a11c601d/eox_tenant/filters/pipeline.py#L11</a> </li></ol><ol type="1" id="2441844b-a6c2-40e9-95f2-4a9103723ddf" class="numbered-list" start="11"><li>Filter certificates by org: <a href="https://github.com/eduNEXT/eox-tenant/blob/1d072b58ceb00e0379ae08b00ab77e87a11c601d/eox_tenant/filters/pipeline.py#L34">https://github.com/eduNEXT/eox-tenant/blob/1d072b58ceb00e0379ae08b00ab77e87a11c601d/eox_tenant/filters/pipeline.py#L34</a> </li></ol><ol type="1" id="c6f50902-76e2-42cf-bb5b-7d40275ffa85" class="numbered-list" start="12"><li>Add skill tags to vertical blocks UI: <a href="https://github.com/openedx/xblock-skill-tagging/blob/18df758c284f455619dc846298d313352b520a63/skill_tagging/pipeline.py#L77">https://github.com/openedx/xblock-skill-tagging/blob/18df758c284f455619dc846298d313352b520a63/skill_tagging/pipeline.py#L77</a> </li></ol><ol type="1" id="19c23873-aa4b-4436-93b4-abef54aa0b67" class="numbered-list" start="13"><li>Change homepage URL for course: <a href="https://github.com/edx/federated-content-connector/blob/e06f38241a0470d6b7cd6657dc826f4716725483/federated_content_connector/filters/pipeline.py#L14">https://github.com/edx/federated-content-connector/blob/e06f38241a0470d6b7cd6657dc826f4716725483/federated_content_connector/filters/pipeline.py#L14</a> </li></ol><ol type="1" id="78a8cb52-94d5-438c-b4b0-d969ff6bbdc0" class="numbered-list" start="14"><li>hook to modify courserun data for B2C dashboard: <a href="https://github.com/edx/federated-content-connector/pull/15">https://github.com/edx/federated-content-connector/pull/15</a> → PREGUNTARLE A <strong>irfanuddinahmad</strong></li></ol><ol type="1" id="42128756-c500-464f-b75b-d5d47df88a79" class="numbered-list" start="15"><li>Fetch re-usable LTI configurations from external plugins: <a href="https://github.com/openedx/xblock-lti-consumer/blob/master/docs/decisions/0006-pluggable-lti-configuration.rst">https://github.com/openedx/xblock-lti-consumer/blob/master/docs/decisions/0006-pluggable-lti-configuration.rst</a> <a href="https://github.com/openedx/xblock-lti-consumer/pull/239">https://github.com/openedx/xblock-lti-consumer/pull/239</a> </li></ol><ol type="1" id="ded3160c-7120-4393-89c9-53623d796ff8" class="numbered-list" start="16"><li>Add instructor tab to integrate LimeSurvey service: <a href="https://github.com/eduNEXT/xblock-limesurvey/blob/7c396ae49fc4b92e82650430f160c296a08e0555/limesurvey/extensions/filters.py#L6">https://github.com/eduNEXT/xblock-limesurvey/blob/7c396ae49fc4b92e82650430f160c296a08e0555/limesurvey/extensions/filters.py#L6</a> </li></ol><ol type="1" id="737b62ea-b4fd-4a80-944f-1441c54c2a8f" class="numbered-list" start="17"><li>Add instructor tab to integrate OnTask service: <a href="https://github.com/eduNEXT/platform-plugin-ontask/blob/09dab332a87e63f84c7e818d8c81ddf6d5074c6c/platform_plugin_ontask/extensions/filters.py#L8">filters.py </a></li></ol><ol type="1" id="655664ba-f08a-4d66-b80d-0137bd9af275" class="numbered-list" start="18"><li>Add instructor tab to show feedback aggregated data: <a href="https://github.com/openedx/FeedbackXBlock/blob/665f1548dffe84e7896ca0d22ace147030233dcb/feedback/extensions/filters.py#L8">https://github.com/openedx/FeedbackXBlock/blob/665f1548dffe84e7896ca0d22ace147030233dcb/feedback/extensions/filters.py#L8</a> </li></ol><ol type="1" id="be368dff-a3ba-4168-8f21-fb1b73e05179" class="numbered-list" start="19"><li>Add instructor tab to configure email frequency for forum digests: <a href="https://github.com/eduNEXT/platform-plugin-forum-email-notifier/blob/da6005c972df97bfac6a6153eb108d1bef499eb9/platform_plugin_forum_email_notifier/extensions/filters.py#L18">https://github.com/eduNEXT/platform-plugin-forum-email-notifier/blob/da6005c972df97bfac6a6153eb108d1bef499eb9/platform_plugin_forum_email_notifier/extensions/filters.py#L18</a> </li></ol><ol type="1" id="6e233a89-c790-4e1b-9565-dd4f73ad43ae" class="numbered-list" start="20"><li>Integration with external payment services like stripe, titan: <a href="https://github.com/edx/commerce-coordinator/blob/4172675dbcba0e9eb2c34aa2a5fc250de24e7d4c/commerce_coordinator/apps/stripe/pipeline.py#L26">https://github.com/edx/commerce-coordinator/blob/4172675dbcba0e9eb2c34aa2a5fc250de24e7d4c/commerce_coordinator/apps/stripe/pipeline.py#L26</a> <a href="https://github.com/edx/commerce-coordinator/blob/4172675dbcba0e9eb2c34aa2a5fc250de24e7d4c/commerce_coordinator/apps/titan/pipeline.py#L7">https://github.com/edx/commerce-coordinator/blob/4172675dbcba0e9eb2c34aa2a5fc250de24e7d4c/commerce_coordinator/apps/titan/pipeline.py#L7</a> </li></ol><ol type="1" id="c7325e19-27bd-4e79-b534-3971ac9ce159" class="numbered-list" start="21"><li>Assign instructors to teams: <a href="https://github.com/eduNEXT/openedx-unidigital/blob/959e016459e98497763ded19fe9962484c1b4313/openedx_unidigital/filters.py#L7">https://github.com/eduNEXT/openedx-unidigital/blob/959e016459e98497763ded19fe9962484c1b4313/openedx_unidigital/filters.py#L7</a> </li></ol><ol type="1" id="158bdb38-b764-45fb-8a48-3c3450b6d3a0" class="numbered-list" start="22"><li>Add instructor tab for Aspects reports: <a href="https://github.com/openedx/platform-plugin-aspects/blob/main/platform_plugin_aspects/extensions/filters.py">https://github.com/openedx/platform-plugin-aspects/blob/main/platform_plugin_aspects/extensions/filters.py</a> </li></ol><ol type="1" id="c5de6518-c96a-45aa-b230-0e7faa680a16" class="numbered-list" start="23"><li>Avoid force publish course render: <a href="https://github.com/eduNEXT/platform-global-teacher-campus/blob/713760f01314d7535140233c1c193a48bc2c444c/platform_global_teacher_campus/filters/pipeline.py#L7">https://github.com/eduNEXT/platform-global-teacher-campus/blob/713760f01314d7535140233c1c193a48bc2c444c/platform_global_teacher_campus/filters/pipeline.py#L7</a> → PREGUNTARLE A DEDALO PARA QUÉ SIRVE ESTO: el course author no puede publicar cursos, debe hacerlo una entidad externa</li></ol><ol type="1" id="e936f7d6-6428-4e03-ae79-7578eef93db5" class="numbered-list" start="24"><li><a href="https://github.com/eduNEXT/platform-global-teacher-campus/blob/713760f01314d7535140233c1c193a48bc2c444c/platform_global_teacher_campus/filters/pipeline.py#L49">https://github.com/eduNEXT/platform-global-teacher-campus/blob/713760f01314d7535140233c1c193a48bc2c444c/platform_global_teacher_campus/filters/pipeline.py#L49</a> → PREGUNTARLE A DEDALO PARA QUÉ SIRVE ESTO</li></ol><ol type="1" id="31e114fe-0479-488d-852b-4c61bcb78816" class="numbered-list" start="25"><li>Show data consent warning before submitting data to turnitin:  <a href="https://github.com/eduNEXT/platform-plugin-turnitin/blob/03aaa0fcb089c61d18b71a25ce39bcc689c8f972/platform_plugin_turnitin/extensions/filters.py#L4">https://github.com/eduNEXT/platform-plugin-turnitin/blob/03aaa0fcb089c61d18b71a25ce39bcc689c8f972/platform_plugin_turnitin/extensions/filters.py#L4</a> </li></ol><ol type="1" id="acf2e9c1-37af-4caf-a405-96baf5fd9162" class="numbered-list" start="26"><li>Send enrollment attempts email for course: <a href="https://github.com/eduNEXT/openedx-ceibal-plugin/blob/12b931b411761aafaafba749fd2a4798e4b412bd/openedx_ceibal_plugin/pipeline.py#L192">https://github.com/eduNEXT/openedx-ceibal-plugin/blob/12b931b411761aafaafba749fd2a4798e4b412bd/openedx_ceibal_plugin/pipeline.py#L192</a> </li></ol><ol type="1" id="9903e59c-a68d-4faa-bb04-c2598a0a4d69" class="numbered-list" start="27"><li>modify the returned value by the methods get_actor and get_objects: <a href="https://github.com/openedx/event-routing-backends/pull/370">https://github.com/openedx/event-routing-backends/pull/370</a> <a href="https://github.com/openedx/openedx-aspects/blob/20570b6babe67bba4bb83b521a5679e9bc4c63a8/docs/how-tos/xapi_transforms.rst#modifying-an-existing-transform">https://github.com/openedx/openedx-aspects/blob/20570b6babe67bba4bb83b521a5679e9bc4c63a8/docs/how-tos/xapi_transforms.rst#modifying-an-existing-transform</a></li></ol><ol type="1" id="5fe3e274-d90a-4fd5-836e-ba475999ec82" class="numbered-list" start="28"><li><a href="https://github.com/openedx/event-tracking">event-tracking: </a>used by send_tracking_log_to_backends → Hablar con Cristhian para conocer el estado actual de esto</li></ol><ol type="1" id="cb96edc1-ddfb-48ee-87e3-467eac3e3ab4" class="numbered-list" start="29"><li><a href="https://github.com/eduNEXT/openedx-events-2-zapier">https://github.com/eduNEXT/openedx-events-2-zapier</a>: Zapier integration</li></ol><ol type="1" id="37459c93-8477-48d3-99eb-c6445c4e5a3c" class="numbered-list" start="30"><li><a href="https://github.com/open-craft/openedx-events-sender">https://github.com/open-craft/openedx-events-sender</a>:  Send Open edX events to selected URLs.</li></ol><ol type="1" id="8b214979-4f39-4a41-a589-6b4258586dbc" class="numbered-list" start="31"><li>Webhooks:  </li></ol><ol type="1" id="ddd49e33-4150-4399-b03b-8595b31b963b" class="numbered-list" start="32"><li><a href="https://github.com/edx/edx-exams">https://github.com/edx/edx-exams</a>: <a href="https://github.com/edx/edx-exams/blob/b381833de5ce6cbe1ac1d9a76875e87bcfa452fc/docs/decisions/0004-downstream-effect-events.rst#L1-L2">https://github.com/edx/edx-exams/blob/b381833de5ce6cbe1ac1d9a76875e87bcfa452fc/docs/decisions/0004-downstream-effect-events.rst#L1-L2</a> edx-platform ↔ edx-exams integration, exams info updates, course roles</li></ol><ol type="1" id="8ee7af99-e36e-42d9-b01a-e5adf2bf9b73" class="numbered-list" start="33"><li>edx-ora2: <a href="https://github.com/openedx/edx-ora2/pull/2201/files">https://github.com/openedx/edx-ora2/pull/2201/files</a> Send Staff Notification</li></ol><ol type="1" id="93e23511-463d-4a35-b7f7-94621e07d185" class="numbered-list" start="34"><li>Notifications system (user/course wide): <a href="https://github.com/openedx/edx-platform/pull/33666">https://github.com/openedx/edx-platform/pull/33666</a><a href="https://github.com/openedx/edx-platform/pull/33009">https://github.com/openedx/edx-platform/pull/33009</a></li></ol><ol type="1" id="41f32e2a-7e02-42ab-aea0-cf8952196e1f" class="numbered-list" start="35"><li>Program certificates: <a href="https://github.com/openedx/credentials/pull/2119">https://github.com/openedx/credentials/pull/2119</a> </li></ol><ol type="1" id="a47e3cd5-b8da-4301-84b2-78687bcd3db1" class="numbered-list" start="36"><li>Discussion topic configuration mechanism: <a href="https://github.com/openedx/edx-platform/pull/29082">https://github.com/openedx/edx-platform/pull/29082</a></li></ol><ol type="1" id="76e36734-f397-4991-82a5-a9ab6ff04593" class="numbered-list" start="37"><li>System-defined automatic tagging: <a href="https://github.com/openedx/edx-platform/pull/32599">https://github.com/openedx/edx-platform/pull/32599</a>  <a href="https://github.com/openedx/modular-learning/issues/61">https://github.com/openedx/modular-learning/issues/61</a> <a href="https://github.com/openedx/modular-learning/issues/78">https://github.com/openedx/modular-learning/issues/78</a></li></ol><ol type="1" id="3d76fb5b-1dee-436d-89b6-6f3c3b4e4273" class="numbered-list" start="38"><li>Course catalog info update: edx-platform ↔ course-discovery integration <a href="https://github.com/openedx/edx-platform/commit/c1009b56f6a0b3f8acfab815e3fc55a6a1820612">https://github.com/openedx/edx-platform/commit/c1009b56f6a0b3f8acfab815e3fc55a6a1820612</a> <a href="https://github.com/openedx/course-discovery/pull/3588">https://github.com/openedx/course-discovery/pull/3588</a> <a href="https://github.com/aht007/course-discovery/blob/bc46057f5b6f1c678c80828fc8581c00077326b7/course_discovery/apps/course_metadata/signals.py#L342">https://github.com/aht007/course-discovery/blob/bc46057f5b6f1c678c80828fc8581c00077326b7/course_discovery/apps/course_metadata/signals.py#L342</a> </li></ol><ol type="1" id="0c347047-24f0-437f-9917-dbfba60e6c43" class="numbered-list" start="39"><li>Credentials emission process:  <a href="https://github.com/openedx/credentials/blob/409a2cc7bbf2cc5237a1da7b51d72fe850b441a9/credentials/apps/credentials/signals.py#L19-L21">https://github.com/openedx/credentials/blob/409a2cc7bbf2cc5237a1da7b51d72fe850b441a9/credentials/apps/credentials/signals.py#L19-L21</a> → Signal receiver for course certificate events consumed from the Event Bus. Depending on the type of event consumed,<br/>we will then try to award a credential to (or revoke a credential from) a learner <br/><a href="https://github.com/openedx/credentials/blob/236b770231a73e4c3c8e3442e7a8a1f1963b9a34/docs/event_bus.rst#events-consumed">https://github.com/openedx/credentials/blob/236b770231a73e4c3c8e3442e7a8a1f1963b9a34/docs/event_bus.rst#events-consumed</a></li></ol><ol type="1" id="8228785e-85c8-436b-a378-5fefe3b9fe29" class="numbered-list" start="40"><li>Enterprise subsidy records synchronization: <a href="https://github.com/openedx/enterprise-subsidy/pull/227">https://github.com/openedx/enterprise-subsidy/pull/227</a> (info en el PR de openedx-events)</li></ol><ol type="1" id="a3ec790b-8825-4f78-8e5b-bb649a4c1a13" class="numbered-list" start="41"><li>Link user to invite: create records before registration and update them after <a href="https://github.com/academic-innovation/mogc-partnerships/blob/ef8384f4e177a93cfe6ec163b561d1e2d91c103d/mogc_partnerships/receivers.py#L9">https://github.com/academic-innovation/mogc-partnerships/blob/ef8384f4e177a93cfe6ec163b561d1e2d91c103d/mogc_partnerships/receivers.py#L9</a></li></ol><ol type="1" id="112f414a-8359-4634-bdd5-66b801540946" class="numbered-list" start="42"><li>Automatic group association: <a href="https://github.com/eduNEXT/openedx-unidigital/blob/959e016459e98497763ded19fe9962484c1b4313/openedx_unidigital/apps.py#L41">https://github.com/eduNEXT/openedx-unidigital/blob/959e016459e98497763ded19fe9962484c1b4313/openedx_unidigital/apps.py#L41</a></li></ol><ol type="1" id="b5fdaf30-8e3f-418f-8903-257e7c4d77f7" class="numbered-list" start="43"><li>Enterprise enrollments synchronization: <a href="https://github.com/openedx/edx-enterprise/pull/1754">https://github.com/openedx/edx-enterprise/pull/1754</a></li></ol><ol type="1" id="45ebbc24-9421-4efd-970e-2be3e3d40dbb" class="numbered-list" start="44"><li>Taxonomy connector system (updates in Xblock content): <a href="https://github.com/openedx/taxonomy-connector/blob/master/docs/decisions/0001-xblock-skill-tagging-design.rst">https://github.com/openedx/taxonomy-connector/blob/master/docs/decisions/0001-xblock-skill-tagging-design.rst</a> <a href="https://github.com/openedx/edx-platform/commit/6e28ba329e0a5354d7264ea834861bf0cae4ceb3">https://github.com/openedx/edx-platform/commit/6e28ba329e0a5354d7264ea834861bf0cae4ceb3</a> e.g. blocks language tagging</li></ol><ol type="1" id="468a61d3-51ed-4418-bced-b71138c863c9" class="numbered-list" start="45"><li>Forum email notifier: <a href="https://github.com/eduNEXT/platform-plugin-forum-email-notifier/blob/da6005c972df97bfac6a6153eb108d1bef499eb9/platform_plugin_forum_email_notifier/handlers.py#L14">https://github.com/eduNEXT/platform-plugin-forum-email-notifier/blob/da6005c972df97bfac6a6153eb108d1bef499eb9/platform_plugin_forum_email_notifier/handlers.py#L14</a> </li></ol><ol type="1" id="73e143f5-8f56-44db-b57d-6524c1732d00" class="numbered-list" start="46"><li>Send ORA Submissions to Turnitin:  <a href="https://github.com/eduNEXT/platform-plugin-turnitin/blob/03aaa0fcb089c61d18b71a25ce39bcc689c8f972/platform_plugin_turnitin/tasks.py#L28">https://github.com/eduNEXT/platform-plugin-turnitin/blob/03aaa0fcb089c61d18b71a25ce39bcc689c8f972/platform_plugin_turnitin/tasks.py#L28</a> </li></ol><ol type="1" id="41237b7f-7d06-423e-915e-14a0655c71b0" class="numbered-list" start="47"><li>Open edX ↔ Credly integration: <a href="https://github.com/openedx/platform-roadmap/issues/280">https://github.com/openedx/platform-roadmap/issues/280</a> </li></ol><ol type="1" id="f3691e04-959c-4b7c-8359-61c958b0ccc9" class="numbered-list" start="48"><li>Create external certificates:  <a href="https://github.com/eduNEXT/eox-nelp/blob/master/eox_nelp/signals/receivers.py#L110">https://github.com/eduNEXT/eox-nelp/blob/master/eox_nelp/signals/receivers.py#L110</a> → this verifies that the publish action is active and validates the certificate mode in order<br/>to publish just certificates with valid modes<br/></li></ol><ol type="1" id="6058012b-79a6-4c31-bfaa-8865284169bc" class="numbered-list" start="49"><li>Update search indexes when content changes: <a href="https://github.com/openedx/edx-platform/pull/34391">https://github.com/openedx/edx-platform/pull/34391</a> </li></ol><ol type="1" id="48ba34f3-0323-4ffb-b22d-f7beb363c67f" class="numbered-list" start="50"><li>Send tracking events over the event bus for Aspects: <a href="https://github.com/openedx/openedx-events/pull/230">https://github.com/openedx/openedx-events/pull/230</a> </li></ol></div></article><span class="sans" style="font-size:14px;padding-top:2em"></span></body></html>
