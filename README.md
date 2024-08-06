@@ -2,6 +2,8 @@
 
 This repository contains scripts for generating data on the usage of Open edX events and filters by leveraging the GitHub API. The data and results obtained from these scripts are intended for use in a presentation at the Open edX Conference 2024 and for future analysis.
 
+These scripts were initially generated using ChatGPT 4.0 and were subsequently modified to meet specific project requirements.
+
 ## Table of Contents
 - [Introduction](#introduction)
 - [Requirements](#requirements)
