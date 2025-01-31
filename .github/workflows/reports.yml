@@ -24,12 +24,11 @@ jobs:
         run: |
           make reports TOKEN=${{ secrets.GH_FINE_GRAINED_PAT }}
 
-      - name: Open edX Events & Filters Adoptions Reports Pull Request
-        uses: peter-evans/create-pull-request@v3
-        with:
-          token: ${{ secrets.GITHUB_TOKEN }}
-          commit-message: "Generate Open edX Events & Filters Adoptions Reports"
-          title: "Generate Open edX Events & Filters Adoptions Reports"
-          body: "This PR contains the latest reports for Open edX Events & Filters Adoptions."
-          branch: reports
-          base: main
+      - name: Push Open edX Events & Filters Reports to GitHub Branch
+        run: |
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git config --global user.name "github-actions[bot]"
+          git checkout -b reports
+          git add scripts/results/
+          git commit -m "chore: generate Open edX Events & Filters Reports"
+          git push -f origin reports
