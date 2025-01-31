@@ -1,0 +1,36 @@
+name: Generate Reports for Open edX Events & Filters Adoptions
+
+on:
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v3
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install Requirements
+        run: |
+          pip install -r requirements.txt
+
+      - name: Build HTML
+        run: |
+          cd scripts
+          make reports TOKEN=${{ secrets.GH_FINE_GRAINED_PAT }}
+
+      - name: Open edX Events & Filters Adoptions Reports Pull Request
+        uses: peter-evans/create-pull-request@v3
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          commit-message: "Generate Open edX Events & Filters Adoptions Reports"
+          title: "Generate Open edX Events & Filters Adoptions Reports"
+          body: "This PR contains the latest reports for Open edX Events & Filters Adoptions."
+          branch: reports
+          base: main
