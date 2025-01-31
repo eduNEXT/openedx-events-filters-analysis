@@ -22,7 +22,6 @@ jobs:
 
       - name: Build HTML
         run: |
-          cd scripts
           make reports TOKEN=${{ secrets.GH_FINE_GRAINED_PAT }}
 
       - name: Open edX Events & Filters Adoptions Reports Pull Request
