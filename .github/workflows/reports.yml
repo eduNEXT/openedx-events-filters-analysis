@@ -4,7 +4,7 @@ on:
   workflow_dispatch:
 
 jobs:
-  build:
+  generate-reports:
     runs-on: ubuntu-latest
 
     steps:
@@ -20,7 +20,7 @@ jobs:
         run: |
           pip install -r requirements.txt
 
-      - name: Build HTML
+      - name: Generate Reports
         run: |
           make reports TOKEN=${{ secrets.GH_FINE_GRAINED_PAT }}
 
