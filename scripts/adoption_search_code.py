@@ -23,7 +23,7 @@ def get_code_results(token):
     ]
 
     def search_code(query, page=1):
-        url = f'https://api.github.com/search/code?q={query}+extension:py&page={page}'
+        url = f'https://api.github.com/search/code?q=\"{query}\"+extension:py&page={page}'
         response = requests.get(url, headers=headers)
         response.raise_for_status()
         return response.json()
