@@ -57,8 +57,9 @@ def get_code_results(token):
             return parts[1].split('/')[0]
         return None
 
-    def record_item(item, unique_results, repo_code_results):
-        repository_url = item.get('repository', {}).get('html_url', '')
+    def record_item(item, signal, phase, unique_results, repo_code_results):
+        repo = item.get('repository', {})
+        repository_url = repo.get('html_url', '')
         repository_name = repository_url.split('/')[-1]
         if repository_name in ignored_repositories:
             return
@@ -72,6 +73,9 @@ def get_code_results(token):
                 'path': item['path'],
                 'repository': repository_name,
                 'repository_url': repository_url,
+                'is_fork': repo.get('fork', False),
+                'signal': signal,
+                'phase': phase,
             })
 
     unique_results = set()
@@ -89,7 +93,7 @@ def get_code_results(token):
                     break
                 for item in items:
                     if is_dependency_file(item.get('path', '')):
-                        record_item(item, unique_results, repo_code_results)
+                        record_item(item, search_string, 'package', unique_results, repo_code_results)
                 page += 1
                 if 'next' not in data.get('links', {}):
                     break
@@ -108,7 +112,7 @@ def get_code_results(token):
             for item in items:
                 repository_name = item.get('repository', {}).get('html_url', '').split('/')[-1]
                 if repository_name in confirmed_repos:
-                    record_item(item, unique_results, repo_code_results)
+                    record_item(item, search_string, 'source', unique_results, repo_code_results)
             page += 1
             if 'next' not in data.get('links', {}):
                 break
@@ -118,6 +122,8 @@ def get_code_results(token):
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description='Get code results with specific changes from GitHub.')
     parser.add_argument('token', help='Your GitHub access token')
+    parser.add_argument('--db', help='Path to SQLite database file')
+    parser.add_argument('--notes', help='Optional label for this run')
 
     args = parser.parse_args()
 
@@ -133,3 +139,21 @@ if __name__ == "__main__":
 
     total_results = sum(len(results) for results in repo_code_results.values())
     print(f"Total Results: {total_results}")
+
+    if args.db:
+        import db as dbmod
+        dbmod.init_db(args.db)
+        run_id = dbmod.record_run(args.db, 'adoption_search_code', 'backend', args.notes)
+        flat = [
+            {
+                'repository': r['repository'],
+                'repository_url': r['repository_url'],
+                'is_fork': r['is_fork'],
+                'file_path': r['path'],
+                'file_url': r['url'],
+                'signal': r['signal'],
+                'phase': r['phase'],
+            }
+            for rs in repo_code_results.values() for r in rs
+        ]
+        dbmod.record_results(args.db, run_id, flat)

@@ -23,6 +23,8 @@ def get_pull_requests(token):
         'openedx-filters',
     ]
 
+    repo_cache = {}
+
     def search_pull_requests(query, page=1):
         url = f'https://api.github.com/search/issues?q={query}&type=pr&page={page}'
         response = requests.get(url, headers=headers)
@@ -40,6 +42,17 @@ def get_pull_requests(token):
             return []
         response.raise_for_status()
         return [org['login'] for org in response.json()]
+
+    def get_repo_info(repo_api_url):
+        if repo_api_url not in repo_cache:
+            response = requests.get(repo_api_url, headers=headers)
+            response.raise_for_status()
+            data = response.json()
+            repo_cache[repo_api_url] = {
+                'html_url': data.get('html_url', ''),
+                'is_fork': data.get('fork', False),
+            }
+        return repo_cache[repo_api_url]
 
     seen_pr_urls = set()
     org_prs = {}
@@ -60,9 +73,8 @@ def get_pull_requests(token):
                 if pr_url in seen_pr_urls:
                     continue
 
-                repository_url = item.get('repository_url', '')
-                repository_name = repository_url.split('/')[-1]
-
+                repo_api_url = item.get('repository_url', '')
+                repository_name = repo_api_url.split('/')[-1]
                 if repository_name in ignored_repositories:
                     continue
 
@@ -72,6 +84,7 @@ def get_pull_requests(token):
                     patch_content = pr_file.get('patch', '')
                     if any(s in patch_content for s in search_strings):
                         seen_pr_urls.add(pr_url)
+                        repo_info = get_repo_info(repo_api_url)
                         author_url = item['user']['url']
                         orgs = get_user_organizations(author_url)
 
@@ -80,7 +93,11 @@ def get_pull_requests(token):
                                 org_prs[org] = []
                             org_prs[org].append({
                                 'url': pr_url,
-                                'description': item.get('title', '')
+                                'description': item.get('title', ''),
+                                'repository': repository_name,
+                                'repository_url': repo_info['html_url'],
+                                'is_fork': repo_info['is_fork'],
+                                'author': item['user']['login'],
                             })
                         break
 
@@ -93,6 +110,8 @@ def get_pull_requests(token):
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description='Get pull requests with specific changes from GitHub.')
     parser.add_argument('token', help='Your GitHub access token')
+    parser.add_argument('--db', help='Path to SQLite database file')
+    parser.add_argument('--notes', help='Optional label for this run')
 
     args = parser.parse_args()
 
@@ -106,3 +125,21 @@ if __name__ == "__main__":
     print("Summary of total PRs per organization:")
     for org, prs in org_prs.items():
         print(f"{org}: {len(prs)} PRs")
+
+    if args.db:
+        import db as dbmod
+        dbmod.init_db(args.db)
+        run_id = dbmod.record_run(args.db, 'adoption_search_per_org_prs', 'backend', args.notes)
+        flat = [
+            {
+                'pr_url': pr['url'],
+                'title': pr['description'],
+                'repository': pr['repository'],
+                'repository_url': pr['repository_url'],
+                'is_fork': pr['is_fork'],
+                'author': pr['author'],
+                'organization': org,
+            }
+            for org, prs in org_prs.items() for pr in prs
+        ]
+        dbmod.record_pr_results(args.db, run_id, flat)
