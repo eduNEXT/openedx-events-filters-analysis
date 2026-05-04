@@ -39,7 +39,9 @@ def get_pull_requests(token):
         response.raise_for_status()
         return [org['login'] for org in response.json()]
 
+    seen_pr_urls = set()
     org_prs = {}
+
     for search_string in search_strings:
         page = 1
         while True:
@@ -52,6 +54,10 @@ def get_pull_requests(token):
                 if not item.get('pull_request'):
                     continue
 
+                pr_url = item['html_url']
+                if pr_url in seen_pr_urls:
+                    continue
+
                 repository_url = item.get('repository_url', '')
                 repository_name = repository_url.split('/')[-1]
 
@@ -62,16 +68,16 @@ def get_pull_requests(token):
                 pr_files = get_pull_request_files(pr_files_url)
                 for pr_file in pr_files:
                     patch_content = pr_file.get('patch', '')
-                    if any(search_string in patch_content for search_string in search_strings):
+                    if any(s in patch_content for s in search_strings):
+                        seen_pr_urls.add(pr_url)
                         author_url = item['user']['url']
                         orgs = get_user_organizations(author_url)
 
                         for org in orgs:
                             if org not in org_prs:
                                 org_prs[org] = []
-
                             org_prs[org].append({
-                                'url': item['html_url'],
+                                'url': pr_url,
                                 'description': item.get('title', '')
                             })
                         break
