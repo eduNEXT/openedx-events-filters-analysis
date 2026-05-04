@@ -36,6 +36,8 @@ def get_pull_requests(token):
 
     def get_user_organizations(user_url):
         response = requests.get(user_url + "/orgs", headers=headers)
+        if response.status_code == 404:
+            return []
         response.raise_for_status()
         return [org['login'] for org in response.json()]
 
