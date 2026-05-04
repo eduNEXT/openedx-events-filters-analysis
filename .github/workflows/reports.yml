@@ -13,6 +13,11 @@ jobs:
       - name: Checkout Repository
         uses: actions/checkout@v3
 
+      - name: Fetch existing database from reports branch
+        run: |
+          git fetch origin reports || true
+          git checkout origin/reports -- scripts/results/adoption.db || true
+
       - name: Set up Python
         uses: actions/setup-python@v5
         with:
@@ -24,13 +29,17 @@ jobs:
 
       - name: Generate Reports
         run: |
-          make reports TOKEN=${{ secrets.GH_FINE_GRAINED_PAT }}
+          make reports TOKEN=${{ secrets.GH_FINE_GRAINED_PAT }} DB=results/adoption.db
 
-      - name: Push Open edX Events & Filters Reports to GitHub Branch
+      - name: Generate Markdown Report
+        run: |
+          make report DB=results/adoption.db
+
+      - name: Push Reports to GitHub Branch
         run: |
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
           git config --global user.name "github-actions[bot]"
           git checkout -b reports
           git add scripts/results/
-          git commit -m "chore: generate Open edX Events & Filters Reports"
+          git commit -m "chore: generate Open edX Events, Filters & Frontend Plugin Reports"
           git push -f origin reports

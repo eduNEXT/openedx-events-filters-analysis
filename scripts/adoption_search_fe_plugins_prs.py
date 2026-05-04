@@ -8,18 +8,13 @@ def get_pull_requests(token):
     }
 
     search_strings = [
-        'openedx_events',
-        'openedx_filters',
-        'openedx-events',
-        'openedx-filters',
-        'OpenEdxPublicSignal',
-        'PipelineStep',
-        'OpenEdxPublicFilter'
+        'frontend-plugin-framework',
+        'PluginSlot',
+        'PLUGIN_OPERATIONS',
     ]
 
     ignored_repositories = [
-        'openedx-events',
-        'openedx-filters',
+        'frontend-plugin-framework',
     ]
 
     repo_cache = {}
@@ -94,7 +89,7 @@ def get_pull_requests(token):
     return unique_prs
 
 if __name__ == "__main__":
-    parser = argparse.ArgumentParser(description='Get pull requests with specific changes from GitHub.')
+    parser = argparse.ArgumentParser(description='Get PRs with frontend plugin framework changes from GitHub.')
     parser.add_argument('token', help='Your GitHub access token')
     parser.add_argument('--db', help='Path to SQLite database file')
     parser.add_argument('--notes', help='Optional label for this run')
@@ -110,7 +105,7 @@ if __name__ == "__main__":
     if args.db:
         import db as dbmod
         dbmod.init_db(args.db)
-        run_id = dbmod.record_run(args.db, 'adoption_search_prs', 'backend', args.notes)
+        run_id = dbmod.record_run(args.db, 'adoption_search_fe_plugins_prs', 'frontend', args.notes)
         dbmod.record_pr_results(args.db, run_id, [
             {
                 'pr_url': pr['url'],

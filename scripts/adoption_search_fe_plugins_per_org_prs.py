@@ -8,18 +8,13 @@ def get_pull_requests(token):
     }
 
     search_strings = [
-        'openedx_events',
-        'openedx_filters',
-        'openedx-events',
-        'openedx-filters',
-        'OpenEdxPublicSignal',
-        'PipelineStep',
-        'OpenEdxPublicFilter'
+        'frontend-plugin-framework',
+        'PluginSlot',
+        'PLUGIN_OPERATIONS',
     ]
 
     ignored_repositories = [
-        'openedx-events',
-        'openedx-filters',
+        'frontend-plugin-framework',
     ]
 
     repo_cache = {}
@@ -35,6 +30,13 @@ def get_pull_requests(token):
         response.raise_for_status()
         return response.json()
 
+    def get_user_organizations(user_url):
+        response = requests.get(user_url + "/orgs", headers=headers)
+        if response.status_code == 404:
+            return []
+        response.raise_for_status()
+        return [org['login'] for org in response.json()]
+
     def get_repo_info(repo_api_url):
         if repo_api_url not in repo_cache:
             response = requests.get(repo_api_url, headers=headers)
@@ -47,7 +49,7 @@ def get_pull_requests(token):
         return repo_cache[repo_api_url]
 
     seen_pr_urls = set()
-    unique_prs = []
+    org_prs = {}
 
     for search_string in search_strings:
         page = 1
@@ -77,41 +79,52 @@ def get_pull_requests(token):
                     if any(s in patch_content for s in search_strings):
                         seen_pr_urls.add(pr_url)
                         repo_info = get_repo_info(repo_api_url)
-                        unique_prs.append({
-                            'url': pr_url,
-                            'description': item.get('title', ''),
-                            'repository': repository_name,
-                            'repository_url': repo_info['html_url'],
-                            'is_fork': repo_info['is_fork'],
-                            'author': item['user']['login'],
-                        })
+                        author_url = item['user']['url']
+                        orgs = get_user_organizations(author_url)
+
+                        for org in orgs:
+                            if org not in org_prs:
+                                org_prs[org] = []
+                            org_prs[org].append({
+                                'url': pr_url,
+                                'description': item.get('title', ''),
+                                'repository': repository_name,
+                                'repository_url': repo_info['html_url'],
+                                'is_fork': repo_info['is_fork'],
+                                'author': item['user']['login'],
+                            })
                         break
 
             page += 1
             if 'next' not in data.get('links', {}):
                 break
 
-    return unique_prs
+    return org_prs
 
 if __name__ == "__main__":
-    parser = argparse.ArgumentParser(description='Get pull requests with specific changes from GitHub.')
+    parser = argparse.ArgumentParser(description='Get PRs with frontend plugin framework changes grouped by organization.')
     parser.add_argument('token', help='Your GitHub access token')
     parser.add_argument('--db', help='Path to SQLite database file')
     parser.add_argument('--notes', help='Optional label for this run')
 
     args = parser.parse_args()
 
-    prs = get_pull_requests(args.token)
-    for pr in prs:
-        print("URL:", pr['url'])
-        print("Description:", pr['description'])
-        print()
+    org_prs = get_pull_requests(args.token)
+    for org, prs in org_prs.items():
+        print(f"Organization: {org}")
+        for pr in prs:
+            print(f"  URL: {pr['url']}, Description: {pr['description']}")
+        print(f"Total PRs for {org}: {len(prs)}\n")
+
+    print("Summary of total PRs per organization:")
+    for org, prs in org_prs.items():
+        print(f"{org}: {len(prs)} PRs")
 
     if args.db:
         import db as dbmod
         dbmod.init_db(args.db)
-        run_id = dbmod.record_run(args.db, 'adoption_search_prs', 'backend', args.notes)
-        dbmod.record_pr_results(args.db, run_id, [
+        run_id = dbmod.record_run(args.db, 'adoption_search_fe_plugins_per_org_prs', 'frontend', args.notes)
+        flat = [
             {
                 'pr_url': pr['url'],
                 'title': pr['description'],
@@ -119,7 +132,8 @@ if __name__ == "__main__":
                 'repository_url': pr['repository_url'],
                 'is_fork': pr['is_fork'],
                 'author': pr['author'],
-                'organization': None,
+                'organization': org,
             }
-            for pr in prs
-        ])
+            for org, prs in org_prs.items() for pr in prs
+        ]
+        dbmod.record_pr_results(args.db, run_id, flat)

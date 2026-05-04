@@ -8,35 +8,22 @@ def get_code_results(token):
         'Accept': 'application/vnd.github.v3+json'
     }
 
-    # Hyphenated package names searched in requirements/config files —
-    # confirms the package is an actual declared dependency.
+    # Searched in package.json — confirms the package is an actual dependency
     pkg_search_strings = [
-        'openedx-events',
-        'openedx-filters',
+        'frontend-plugin-framework',
     ]
-    pkg_extensions = ['txt', 'cfg', 'toml']
 
-    # Python import/usage signals searched only in repos confirmed above
-    # to avoid false positives from unrelated projects.
+    # Searched across JS/TS source files
     src_search_strings = [
-        'openedx_events',
-        'openedx_filters',
-        'OpenEdxPublicSignal',
-        'PipelineStep',
-        'OpenEdxPublicFilter',
+        'PluginSlot',
+        'PLUGIN_OPERATIONS',
     ]
+
+    src_extensions = ['js', 'jsx', 'ts', 'tsx']
 
     ignored_repositories = [
-        'openedx-events',
-        'openedx-filters',
-        'openedx-events-filters-analysis',
+        'frontend-plugin-framework',
     ]
-
-    def is_dependency_file(path):
-        filename = path.split('/')[-1]
-        if filename in ('pyproject.toml', 'setup.cfg', 'setup.py'):
-            return True
-        return 'requirements' in path.lower() and path.endswith('.txt')
 
     def search_code(query, qualifier, page=1):
         url = f'https://api.github.com/search/code?q="{query}"+{qualifier}&page={page}'
@@ -81,10 +68,28 @@ def get_code_results(token):
     unique_results = set()
     repo_code_results = {}
 
-    # Phase 1: collect repos that declare openedx-events or openedx-filters
-    # in their requirements/config files.
+    # Phase 1: collect repos that declare frontend-plugin-framework in package.json.
+    # This is the authoritative adoption signal and the allowlist for phase 2.
     for search_string in pkg_search_strings:
-        for ext in pkg_extensions:
+        page = 1
+        while True:
+            data = search_code(search_string, 'filename:package.json', page)
+            items = data.get('items', [])
+            if not items:
+                break
+            for item in items:
+                record_item(item, search_string, 'package', unique_results, repo_code_results)
+            page += 1
+            if 'next' not in data.get('links', {}):
+                break
+
+    confirmed_repos = set(repo_code_results.keys())
+
+    # Phase 2: find specific usage in JS/TS files, restricted to confirmed repos
+    # to avoid false positives from unrelated projects that happen to use the
+    # same generic symbol names.
+    for search_string in src_search_strings:
+        for ext in src_extensions:
             page = 1
             while True:
                 data = search_code(search_string, f'extension:{ext}', page)
@@ -92,35 +97,17 @@ def get_code_results(token):
                 if not items:
                     break
                 for item in items:
-                    if is_dependency_file(item.get('path', '')):
-                        record_item(item, search_string, 'package', unique_results, repo_code_results)
+                    repository_name = item.get('repository', {}).get('html_url', '').split('/')[-1]
+                    if repository_name in confirmed_repos:
+                        record_item(item, search_string, 'source', unique_results, repo_code_results)
                 page += 1
                 if 'next' not in data.get('links', {}):
                     break
 
-    confirmed_repos = set(repo_code_results.keys())
-
-    # Phase 2: find specific usage in Python files, restricted to confirmed
-    # repos to avoid false positives from unrelated projects.
-    for search_string in src_search_strings:
-        page = 1
-        while True:
-            data = search_code(search_string, 'extension:py', page)
-            items = data.get('items', [])
-            if not items:
-                break
-            for item in items:
-                repository_name = item.get('repository', {}).get('html_url', '').split('/')[-1]
-                if repository_name in confirmed_repos:
-                    record_item(item, search_string, 'source', unique_results, repo_code_results)
-            page += 1
-            if 'next' not in data.get('links', {}):
-                break
-
     return repo_code_results
 
 if __name__ == "__main__":
-    parser = argparse.ArgumentParser(description='Get code results with specific changes from GitHub.')
+    parser = argparse.ArgumentParser(description='Get frontend plugin framework adoption from GitHub code search.')
     parser.add_argument('token', help='Your GitHub access token')
     parser.add_argument('--db', help='Path to SQLite database file')
     parser.add_argument('--notes', help='Optional label for this run')
@@ -143,7 +130,7 @@ if __name__ == "__main__":
     if args.db:
         import db as dbmod
         dbmod.init_db(args.db)
-        run_id = dbmod.record_run(args.db, 'adoption_search_code', 'backend', args.notes)
+        run_id = dbmod.record_run(args.db, 'adoption_search_fe_plugins_code', 'frontend', args.notes)
         flat = [
             {
                 'repository': r['repository'],
